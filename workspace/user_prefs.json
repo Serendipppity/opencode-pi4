@@ -1,0 +1,5 @@
+{
+  "focus_keywords": ["AI", "OpenAI", "苹果", "半导体", "美联储", "降息"],
+  "ignore_keywords": ["体育", "娱乐", "车祸", "八卦"],
+  "preferred_categories": ["TECH", "BUSINESS", "WORLD"]
+}
