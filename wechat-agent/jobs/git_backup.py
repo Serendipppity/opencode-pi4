@@ -9,6 +9,7 @@ SRC = [
     (f'{HOME}/agent-workspace', 'workspace'),
     (f'{HOME}/.config/opencode/skills', 'skills'),
     (f'{HOME}/.config/opencode/AGENTS.md', 'AGENTS.md'),
+    (f'{HOME}/.config/opencode/agents', 'agents'),
 ]
 SOUL_FILES = ['SOUL.md', 'IDENTITY.md', 'MEMORY.md', 'USER.md', 'HEARTBEAT.md']
 SKIP_WE = ['config.json', '__pycache__', '.git']
