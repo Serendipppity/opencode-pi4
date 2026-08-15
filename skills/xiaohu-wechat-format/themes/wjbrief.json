@@ -1,0 +1,140 @@
+{
+ "name": "wj简报",
+ "description": "PPT风格早报：橙色分区标题+左侧色条卡片+编号标签",
+ "colors": {
+  "primary": "#2c2c2c",
+  "accent": "#E8590C",
+  "background": "#ffffff",
+  "blockquote_bg": "#FFF5EE",
+  "code_bg": "#282c34",
+  "hr_color": "#E8590C",
+  "footnote_bg": "rgba(232,89,12,0.04)"
+ },
+ "settings": {
+  "disable_footnotes": true
+ },
+ "styles": {
+  "wrapper": {
+   "background_color": "#ffffff",
+   "padding": "16px"
+  },
+  "h1": {
+   "display": "none"
+  },
+  "h2": {
+   "font_size": "28px",
+   "font_weight": "700",
+   "color": "#E8590C",
+   "text_align": "left",
+   "padding": "8px 0 8px 0",
+   "line_height": "1.4",
+   "margin_top": "28px",
+   "margin_bottom": "12px"
+  },
+  "p": {
+   "font_size": "15px",
+   "color": "#2c2c2c",
+   "line_height": "1.7",
+   "margin_top": "0",
+   "margin_bottom": "14px",
+   "letter_spacing": "0.02em",
+   "text_align": "justify"
+  },
+  "blockquote": {
+   "border_left": "3px solid #E8590C",
+   "background_color": "#ffffff",
+   "padding": "2px 12px 2px 12px",
+   "margin_top": "4px",
+   "margin_bottom": "14px",
+   "border_radius": "0 4px 4px 0"
+  },
+  "blockquote_p": {
+   "font_size": "16px",
+   "color": "#555555",
+   "line_height": "1.6",
+   "margin_bottom": "0"
+  },
+  "strong": {
+   "font_weight": "700",
+   "color": "#2c2c2c",
+   "font_size": "22px"
+  },
+  "em": {
+   "font_style": "normal",
+   "color": "#E8590C",
+   "font_weight": "600"
+  },
+  "a": {
+   "color": "#BBBBBB",
+   "text_decoration": "none",
+   "font_size": "13px"
+  },
+  "hr": {
+   "margin_top": "24px",
+   "margin_bottom": "24px",
+   "height": "1px",
+   "width": "100%",
+   "background": "#E8E8E8",
+   "border": "none"
+  },
+  "code": {
+   "background": "rgba(94,110,140,0.12)",
+   "padding": "1px 4px",
+   "border_radius": "3px",
+   "font_size": "85%",
+   "color": "#5E6E8C"
+  },
+  "table": {
+   "width": "100%",
+   "border_collapse": "collapse",
+   "margin_top": "12px",
+   "margin_bottom": "12px",
+   "font_size": "14px"
+  },
+  "th": {
+   "background": "#E8590C",
+   "padding": "10px 12px",
+   "text_align": "center",
+   "font_weight": "600",
+   "color": "#ffffff",
+   "border": "1px solid rgba(232,89,12,0.2)"
+  },
+  "td": {
+   "padding": "10px 12px",
+   "border": "1px solid rgba(232,89,12,0.15)",
+   "color": "#333333"
+  },
+  "footnote_section": {
+   "display": "none"
+  },
+  "footnote_item": {
+   "display": "none"
+  },
+  "footnote_title": {
+   "display": "none"
+  }
+ },
+ "dark_mode": {
+  "wrapper": {
+   "bgcolor": "#1e1714"
+  },
+  "h2": {
+   "color": "#FB923C"
+  },
+  "blockquote": {
+   "bgcolor": "transparent"
+  },
+  "em": {
+   "color": "#FB923C"
+  },
+  "strong": {
+   "color": "#F5F0EB"
+  },
+  "p": {
+   "color": "#D6C8BA"
+  },
+  "a": {
+   "color": "#888888"
+  }
+ }
+}

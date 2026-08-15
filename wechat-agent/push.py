@@ -66,18 +66,34 @@ def push_mass_news(title, html, digest='', source_url=''):
     at = get_token()
     if not at:
         print('token fail'); return 1
-    # 封面（带日期）
-    today = datetime.datetime.now().strftime('%m-%d')
-    img = Image.new('RGB', (900, 500), (38, 46, 68))
+    # 封面：风景图 + 日期 + 星期 + 时段
+    now = datetime.datetime.now()
+    today = now.strftime('%m-%d')
+    weekday_cn = ['一','二','三','四','五','六','日'][now.weekday()]
+    # 标题含 早/午/晚 报，选对应风景图
+    label = '早报' if '早' in title else ('晚报' if '晚' in title else '午报')
+    cover_map = {'早报': 'morning.jpg', '午报': 'noon.jpg', '晚报': 'evening.jpg'}
+    cover_path = os.path.expanduser(f'~/wechat-agent/covers/{cover_map[label]}')
+    base = Image.open(cover_path).convert('RGB')
+    img = base.resize((900, 500), Image.LANCZOS)
+    # 半透明遮罩（底部渐变，保证文字可读）
+    overlay = Image.new('RGBA', (900, 500), (0, 0, 0, 0))
+    od = ImageDraw.Draw(overlay)
+    for i in range(500):
+        alpha = int(120 * (i / 500) ** 1.5)
+        od.line([(0, i), (900, i)], fill=(0, 0, 0, alpha))
+    img = Image.alpha_composite(img.convert('RGBA'), overlay).convert('RGB')
     d = ImageDraw.Draw(img)
     try:
-        f1 = ImageFont.truetype('/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf', 64)
-        f2 = ImageFont.truetype('/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf', 36)
+        f_date = ImageFont.truetype('/usr/share/fonts/opentype/noto/NotoSansCJK-Bold.ttc', 48)
+        f_week = ImageFont.truetype('/usr/share/fonts/opentype/noto/NotoSansCJK-Bold.ttc', 36)
+        f_label = ImageFont.truetype('/usr/share/fonts/opentype/noto/NotoSansCJK-Bold.ttc', 38)
     except Exception:
-        f1 = f2 = ImageFont.load_default()
-    d.text((450, 210), title[:12], fill=(255, 255, 255), font=f1, anchor='mm')
-    d.text((450, 320), today, fill=(160, 170, 200), font=f2, anchor='mm')
-    img.save('/tmp/kf_cover.jpg', 'JPEG', quality=88)
+        f_date = f_week = f_label = ImageFont.load_default()
+    d.text((450, 205), today, fill=(255, 255, 255), font=f_date, anchor='mm')
+    line2 = f'星期{weekday_cn} {label}'
+    d.text((450, 255), line2, fill=(255, 255, 255), font=f_label, anchor='mm')
+    img.save('/tmp/kf_cover.jpg', 'JPEG', quality=90)
     # 上传图片
     boundary = '----WXKFCOVER9xZ'
     body = b''

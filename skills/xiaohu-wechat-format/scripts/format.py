@@ -120,6 +120,7 @@ OUTPUT_DIR = Path(CONFIG["output_dir"])
 VAULT_ROOT = Path(CONFIG["vault_root"])
 DEFAULT_THEME = CONFIG["settings"]["default_theme"]
 AUTO_OPEN = CONFIG["settings"]["auto_open_browser"]
+_DISABLE_FOOTNOTES = CONFIG.get("settings", {}).get("disable_footnotes", False)
 # 卡片/时间线/hero 布局标题区的作者署名，可在 config.json 的
 # settings.header_author_label 单独配置（与 wechat.author 草稿作者字段解耦）
 HEADER_AUTHOR = (
@@ -2868,7 +2869,7 @@ def format_for_output(content: str, input_path: Path, theme: dict,
         }
 
     # 外链 → 脚注
-    html, footnote_html = extract_links_as_footnotes(html)
+    html, footnote_html = extract_links_as_footnotes(html) if not _DISABLE_FOOTNOTES else (html, "")
 
     if output_format == "html":
         # 标准 HTML，脚注转换但不内联样式
@@ -2886,6 +2887,23 @@ def format_for_output(content: str, input_path: Path, theme: dict,
     html = convert_image_captions(html)
     if footnote_html:
         footnote_html = convert_image_captions(footnote_html)
+
+    print("DEBUG output_format:", output_format)
+    # blockquote 内裸 URL 用 13px 浅灰样式
+    import re as _re
+    def _wrap_quote_url(m):
+        blk = m.group(0)
+        # 处理 <a> 标签内的 URL
+        blk = re.sub(r'(?:URL\s*|<br\s*/?>\s*)(<a\s+[^>]*href=["\'](https?://[^"\']+)["\'][^>]*>.*?</a>)',
+            r'<a href="\2" style="font-size:13px !important;color:#BBBBBB !important;text-decoration:none;word-break:break-all;">\2</a>', blk, flags=re.I)
+        # 处理纯文本 URL
+        blk = re.sub(r'(?:URL\s*|<br\s*/?>\s*)(https?://[^\s<"]+)',
+            r'<span style="font-size:13px !important;color:#BBBBBB !important;word-break:break-all;">\1</span>', blk, flags=re.I)
+        print("_wrap_quote_url called, blk len:", len(blk))
+        return blk
+    print('DEBUG: before _re.sub, html len:', len(html))
+    html = _re.sub(r'<section data-role="blockquote"[^>]*>.*?</section>', _wrap_quote_url, html, flags=_re.S)
+    print('DEBUG: after _re.sub, html len:', len(html))
 
     return {
         "html": html,
@@ -2979,7 +2997,7 @@ def main():
     content = copy_markdown_images(content, input_path.parent, output_dir)
 
     html = md_to_html(content)
-    html, footnote_html = extract_links_as_footnotes(html)
+    html, footnote_html = extract_links_as_footnotes(html) if not _DISABLE_FOOTNOTES else (html, "")
 
     # ── Gallery 模式：并行渲染多主题 ──
     if args.gallery:
