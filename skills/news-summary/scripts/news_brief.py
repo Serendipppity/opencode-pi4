@@ -16,6 +16,37 @@ for line in open('/home/pi/.bashrc'):
 date = datetime.datetime.now().strftime('%Y-%m-%d')
 SKILL_DIR = '/home/pi/.config/opencode/skills/xiaohu-wechat-format'
 PREFS = '/home/pi/agent-workspace/user_prefs.json'
+SEEN_FILE = '/home/pi/agent-workspace/seen_links.json'
+
+def _load_seen():
+    """已推送成功链接集合（跨天累积）"""
+    try:
+        data = json.load(open(SEEN_FILE))
+        return {l.strip() for links in data.values() for l in links}
+    except Exception:
+        return set()
+
+def _save_seen(new_links, date):
+    """推送成功后追加当天链接，保留近 7 天。失败不调用——保证补发不丢内容"""
+    try:
+        data = json.load(open(SEEN_FILE))
+    except Exception:
+        data = {}
+    data.setdefault(date, [])
+    cur = set(data[date])
+    for l in new_links:
+        if l and l not in cur:
+            data[date].append(l)
+            cur.add(l)
+    # 清理 7 天前
+    try:
+        from datetime import timedelta
+        cutoff = (datetime.datetime.now() - timedelta(days=7)).strftime('%Y-%m-%d')
+        for d in [k for k in data if k < cutoff]:
+            del data[d]
+    except Exception:
+        pass
+    json.dump(data, open(SEEN_FILE, 'w'), ensure_ascii=False, indent=1)
 
 import socket as _socket
 _ORIG_GETADDRINFO = _socket.getaddrinfo
@@ -90,9 +121,12 @@ def fetch_extra_sources():
                 break  # 该源成功即换下一个
 
     lines = []
+    seen_links = _load_seen()
     for name, title, desc, link in entries:
         cs = title + desc
         if any(w in cs for w in ignore):
+            continue
+        if link and link.strip() in seen_links:
             continue
         is_focus = any(w in cs for w in focus)
         prefix = '[⭐高相关] ' if is_focus else ''
@@ -170,3 +204,10 @@ sys.path.insert(0, '/home/pi/wechat-agent')
 from push import push_mass_news
 r = push_mass_news(f'{date} {label}报', html, digest=f'{label}报 · {date}')
 print('push:', r)
+# 推送成功才记账（errcode 0 即 r==0），失败不记——补发时该批新闻仍可再推
+if r == 0:
+    links = re.findall(r'https?://[^\s"<>)\]]+', html)
+    _save_seen([l.rstrip('.,;、。') for l in links], date)
+    print(f'[+] 已推送去重记账: {len(links)} 条链接')
+else:
+    print('[!] 推送失败，不记账，下次补发可重推')

@@ -863,3 +863,16 @@ Traceback (most recent call last):
     return _orig(host, port, socket.AF_INET, *a, **k)
   [Previous line repeated 2 more times]
 TypeError: getaddrinfo() takes from 2 to 6 positional arguments but 9 were given
+[+] 直连补抓财经源: 77 条 (Wallstreetcn API + RSSHub)
+MD_LEN: 6780
+format: OK
+HTML_LEN: 18004
+news: {'errcode': 0, 'errmsg': 'send job submission success', 'msg_id': 1000000015, 'msg_data_id': 2247483675}
+push: 0
+[+] 直连补抓财经源: 65 条 (Wallstreetcn API + RSSHub)
+MD_LEN: 7388
+format: OK
+HTML_LEN: 17629
+news: {'errcode': 0, 'errmsg': 'send job submission success', 'msg_id': 1000000016, 'msg_data_id': 2247483677}
+push: 0
+[+] 已推送去重记账: 12 条链接

@@ -13,6 +13,20 @@ import html
 WORKSPACE_DIR = "/home/pi/agent-workspace"
 ARCHIVE_DIR = os.path.join(WORKSPACE_DIR, "outbox_obsidian/news_archives")
 PREFS_FILE = os.path.join(WORKSPACE_DIR, "user_prefs.json")
+SEEN_FILE = os.path.join(WORKSPACE_DIR, "seen_links.json")
+
+def load_seen_links():
+    """已推送成功的链接集合（跨天累积）。推送成功后由 news_brief.py 写入。"""
+    try:
+        with open(SEEN_FILE, 'r', encoding='utf-8') as f:
+            data = json.load(f)
+        seen = set()
+        for links in data.values():
+            for l in links:
+                seen.add(l.strip())
+        return seen
+    except Exception:
+        return set()
 
 RSS_FEEDS = {
     "BBC": "https://feeds.bbci.co.uk/news/world/rss.xml",
@@ -51,6 +65,7 @@ def process_feeds():
     prefs = load_prefs()
     focus_words = prefs.get("focus_keywords", [])
     ignore_words = prefs.get("ignore_keywords", [])
+    seen_links = load_seen_links()
     
     today_str = datetime.now().strftime("%Y-%m-%d_%H%M")
     archive_path = os.path.join(ARCHIVE_DIR, f"raw_rss_{today_str}.md")
@@ -90,10 +105,13 @@ def process_feeds():
                     # 1. 全量写入底稿
                     archive_file.write(f"### {title}\n{desc}\n🔗 {link}\n\n")
                     
-                    # 2. 过滤逻辑
+                    # 2. 过滤逻辑：忽略词 + 已推送去重
                     content_str = title + desc
                     if any(w in content_str for w in ignore_words):
                         continue 
+                    if link and link.strip() in seen_links:
+                        print(f"  ↺ 跳过已推送: {title[:40]}", flush=True)
+                        continue
                         
                     is_focus = any(w in content_str for w in focus_words)
                     prefix = "[⭐高相关] " if is_focus else ""
