@@ -1,0 +1,1 @@
+/home/pi/.config/opencode/skills/news-summary/scripts/parse_rss.py

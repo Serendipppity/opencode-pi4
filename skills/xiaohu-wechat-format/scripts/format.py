@@ -2888,22 +2888,6 @@ def format_for_output(content: str, input_path: Path, theme: dict,
     if footnote_html:
         footnote_html = convert_image_captions(footnote_html)
 
-    print("DEBUG output_format:", output_format)
-    # blockquote 内裸 URL 用 13px 浅灰样式
-    import re as _re
-    def _wrap_quote_url(m):
-        blk = m.group(0)
-        # 处理 <a> 标签内的 URL
-        blk = re.sub(r'(?:URL\s*|<br\s*/?>\s*)(<a\s+[^>]*href=["\'](https?://[^"\']+)["\'][^>]*>.*?</a>)',
-            r'<a href="\2" style="font-size:13px !important;color:#BBBBBB !important;text-decoration:none;word-break:break-all;">\2</a>', blk, flags=re.I)
-        # 处理纯文本 URL
-        blk = re.sub(r'(?:URL\s*|<br\s*/?>\s*)(https?://[^\s<"]+)',
-            r'<span style="font-size:13px !important;color:#BBBBBB !important;word-break:break-all;">\1</span>', blk, flags=re.I)
-        print("_wrap_quote_url called, blk len:", len(blk))
-        return blk
-    print('DEBUG: before _re.sub, html len:', len(html))
-    html = _re.sub(r'<section data-role="blockquote"[^>]*>.*?</section>', _wrap_quote_url, html, flags=_re.S)
-    print('DEBUG: after _re.sub, html len:', len(html))
 
     return {
         "html": html,

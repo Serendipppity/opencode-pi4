@@ -793,3 +793,73 @@ format: OK
 HTML_LEN: 16258
 news: {'errcode': 0, 'errmsg': 'send job submission success', 'msg_id': 1000000012, 'msg_data_id': 2247483669}
 push: 0
+backup: [master fe555b2] Auto-backup: 2026-08-16
+ 53 files changed, 15852 insertions(+), 31 deletions(-)
+ cr
+[+] 直连补抓财经源: 18 条 (Wallstreetcn API + Google News RSS)
+MD_LEN: 7037
+format: OK
+HTML_LEN: 17953
+Traceback (most recent call last):
+  File "/home/pi/wechat-agent/jobs/news_brief.py", line 186, in <module>
+    r = push_mass_news(f'{date} {label}报', html, digest=f'{label}报 · {date}')
+        ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/pi/wechat-agent/push.py", line 66, in push_mass_news
+    at = get_token()
+  File "/home/pi/wechat-agent/push.py", line 9, in get_token
+    r = json.load(urllib.request.urlopen(url, timeout=15))
+                  ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/urllib/request.py", line 189, in urlopen
+    return opener.open(url, data, timeout)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/urllib/request.py", line 489, in open
+    response = self._open(req, data)
+  File "/usr/lib/python3.13/urllib/request.py", line 506, in _open
+    result = self._call_chain(self.handle_open, protocol, protocol +
+                              '_open', req)
+  File "/usr/lib/python3.13/urllib/request.py", line 466, in _call_chain
+    result = func(*args)
+  File "/usr/lib/python3.13/urllib/request.py", line 1367, in https_open
+    return self.do_open(http.client.HTTPSConnection, req,
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                        context=self._context)
+                        ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/urllib/request.py", line 1319, in do_open
+    h.request(req.get_method(), req.selector, req.data, headers,
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+              encode_chunked=req.has_header('Transfer-encoding'))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/http/client.py", line 1358, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/http/client.py", line 1404, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/http/client.py", line 1353, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/http/client.py", line 1113, in _send_output
+    self.send(msg)
+    ~~~~~~~~~^^^^^
+  File "/usr/lib/python3.13/http/client.py", line 1057, in send
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "/usr/lib/python3.13/http/client.py", line 1492, in connect
+    super().connect()
+    ~~~~~~~~~~~~~~~^^
+  File "/usr/lib/python3.13/http/client.py", line 1023, in connect
+    self.sock = self._create_connection(
+                ~~~~~~~~~~~~~~~~~~~~~~~^
+        (self.host,self.port), self.timeout, self.source_address)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/socket.py", line 840, in create_connection
+    for res in getaddrinfo(host, port, 0, SOCK_STREAM):
+               ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/pi/wechat-agent/jobs/news_brief.py", line 27, in _ipv4_only
+    return _orig(host, port, socket.AF_INET, *a, **k)
+  File "/home/pi/wechat-agent/jobs/news_brief.py", line 27, in _ipv4_only
+    return _orig(host, port, socket.AF_INET, *a, **k)
+  File "/home/pi/wechat-agent/jobs/news_brief.py", line 27, in _ipv4_only
+    return _orig(host, port, socket.AF_INET, *a, **k)
+  [Previous line repeated 2 more times]
+TypeError: getaddrinfo() takes from 2 to 6 positional arguments but 9 were given

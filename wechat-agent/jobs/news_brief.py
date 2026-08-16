@@ -17,17 +17,19 @@ date = datetime.datetime.now().strftime('%Y-%m-%d')
 SKILL_DIR = '/home/pi/.config/opencode/skills/xiaohu-wechat-format'
 PREFS = '/home/pi/agent-workspace/user_prefs.json'
 
+import socket as _socket
+_ORIG_GETADDRINFO = _socket.getaddrinfo
+
+def _ipv4_only(host, port, *a, **k):
+    k.pop('family', None)
+    try:
+        return _ORIG_GETADDRINFO(host, port, _socket.AF_INET, *a, **k)
+    except _socket.gaierror:
+        return _ORIG_GETADDRINFO(host, port, *a, **k)
+
 def _fetch(url, timeout=15):
-    import socket
-    socket.setdefaulttimeout(timeout)
-    _orig = socket.getaddrinfo
-    def _ipv4_only(host, port, *a, **k):
-        k.pop('family', None)
-        try:
-            return _orig(host, port, socket.AF_INET, *a, **k)
-        except socket.gaierror:
-            return _orig(host, port, *a, **k)
-    socket.getaddrinfo = _ipv4_only
+    _socket.setdefaulttimeout(timeout)
+    _socket.getaddrinfo = _ipv4_only
     req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 Chrome/126.0 Safari/537.36'})
     try:
         with urllib.request.urlopen(req, timeout=timeout) as r:
@@ -39,7 +41,7 @@ def _clean(raw):
     return re.sub(r'<[^>]+>', '', _html.unescape(raw or '')).strip()
 
 def fetch_extra_sources():
-    """直连补抓 5 个财经源（弃 RSSHub）。返回与 parse_rss 同格式文本"""
+    """直连补抓财经源：Wallstreetcn API + RSSHub。返回与 parse_rss 同格式文本"""
     focus, ignore = [], []
     try:
         prefs = json.load(open(PREFS))
@@ -63,25 +65,29 @@ def fetch_extra_sources():
     except Exception:
         pass
 
-    # b. Google News RSS（4 个弃 RSSHub 的源）
-    gsites = {
-        'Bloomberg': 'site:bloomberg.com',
-        'Zaobao China': 'site:zaobao.com.sg',
-        'Zaobao World': 'site:zaobao.com.sg/world',
-        'Caixin China': 'site:caixin.com',
-    }
-    for name, q in gsites.items():
-        url = 'https://news.google.com/rss/search?q=' + urllib.parse.quote(q) + '&hl=zh-CN&gl=CN&ceid=CN:zh-Hans'
-        try:
-            root = ET.fromstring(_fetch(url).lstrip('\ufeff'))
-            for item in root.findall('.//item')[:15]:
-                t = item.find('title'); l = item.find('link'); d = item.find('description')
-                title = t.text if t is not None and t.text else '无标题'
-                link = l.text if l is not None else ''
-                desc = _clean(d.text) if d is not None else ''
-                entries.append((name, title, desc, link))
-        except Exception:
-            pass
+    # b. RSSHub 直连 4 源（cups.moe 主，rssforever/woodland 备）
+    _RH = ['https://rsshub.cups.moe', 'https://rsshub.rssforever.com', 'https://rsshub.woodland.cafe']
+    rssites = [
+        ('Bloomberg', '/bloomberg'),
+        ('Zaobao China', '/zaobao/realtime/china'),
+        ('Zaobao World', '/zaobao/realtime/world'),
+        ('Caixin China', '/caixin/latest'),
+    ]
+    for name, path in rssites:
+        for inst in _RH:
+            root = None
+            try:
+                root = ET.fromstring(_fetch(inst + path).lstrip('\ufeff'))
+            except Exception:
+                root = None
+            if root is not None and len(root.findall('.//item')) > 0:
+                for item in root.findall('.//item')[:15]:
+                    t = item.find('title'); l = item.find('link'); d = item.find('description')
+                    title = t.text if t is not None and t.text else '无标题'
+                    link = l.text if l is not None else ''
+                    desc = _clean(d.text) if d is not None else ''
+                    entries.append((name, title, desc, link))
+                break  # 该源成功即换下一个
 
     lines = []
     for name, title, desc, link in entries:
@@ -94,7 +100,7 @@ def fetch_extra_sources():
     return '\n'.join(lines), len(entries)
 
 # 1. 抓 RSS（capture 材料）
-p1 = subprocess.run(['python3', '/home/pi/.config/opencode/skills/news-summary/scripts/parse_rss.py'],
+p1 = subprocess.run(['python3', os.path.join(os.path.dirname(os.path.abspath(__file__)), 'parse_rss.py')],
     cwd='/home/pi/agent-workspace', capture_output=True, text=True, timeout=300, env=env)
 material = (p1.stdout or '')
 
@@ -102,7 +108,7 @@ material = (p1.stdout or '')
 extra, extra_n = fetch_extra_sources()
 if extra:
     material += '\n' + extra
-    print(f'[+] 直连补抓财经源: {extra_n} 条 (Wallstreetcn API + Google News RSS)')
+    print(f'[+] 直连补抓财经源: {extra_n} 条 (Wallstreetcn API + RSSHub)')
 
 # 2. opencode 生成 Markdown（SKILL 标准格式）
 TPL = '/home/pi/wechat-agent/templates/brief.md'
@@ -124,6 +130,9 @@ if md.startswith('```'):
     md = md.strip('`').strip()
 md = re.sub(u'，?底稿已存.*$', '', md, flags=re.S)
 md = re.sub(u'🄻\\s*', '', md)  # 去 🄻 图标（LLM 偶尔会带）
+# 标题补粗：无 ** 包裹的 "N. 标题 `源标签`" 行统一加粗（LLM 偶会丢 **）
+md = re.sub(r'^(?!(?:\*\*|#|>|\d+\.\s*$))(\d+\.\s+\S.*?)\s+(?=`[^`]+`\s*$)(.+)$',
+    lambda m: '**' + m.group(1).rstrip() + '** ' + m.group(2), md, flags=re.M)
 if len(md) < 100:
     md = f'# {label}报生成失败\n\n{md[:300] or (p.stderr or "")[-200:]}'
 open('/tmp/brief.md', 'w').write(md)
@@ -137,40 +146,16 @@ r = subprocess.run(['/home/pi/agent-venv/bin/python3', f'{SKILL_DIR}/scripts/for
     '-i', '/tmp/brief.md', '-o', outdir, '--format', 'wechat', '--no-open'],
     capture_output=True, text=True, timeout=120)
 print('format:', 'OK' if r.returncode == 0 else ('FAIL ' + (r.stderr or r.stdout)[-300:]))
-# blockquote 内 URL 13px
-import re as _re
-def _wrap(m):
-    blk = m.group(0)
-    blk = _re.sub(r'URL\s+(https?://[^<"]+)', lambda u: '<span style="font-size:13px;color:#BBBBBB">' + u.group(1) + '</span>', blk)
-    blk = _re.sub(r'<br\s*/?>\s*(https?://[^<"]+)', lambda u: '<br /><span style="font-size:13px;color:#BBBBBB">' + u.group(1) + '</span>', blk)
-    return blk
+
+# 后处理清洗：读取 article.html 后统一处理（URL 13px + 英文副标题 17px）
+html = ''
 for _root, _dirs, _files in os.walk(outdir) if os.path.isdir(outdir) else []:
     if 'article.html' in _files:
         html = open(os.path.join(_root, 'article.html')).read()
         break
-
-# blockquote 内 URL 13px（必须在读取 article.html 之后）
-def _wrap(m):
-    blk = m.group(0)
-    # 去掉 URL 字面标记，只留链接；链接统一 13px 浅灰
-    pat = r'(?:🄻\s*|URL|<br\s*/?>)\s*(?:<br\s*/?>\s*)*(https?://[^\s<"]+)'
-    blk = re.sub(pat,
-        lambda u: '<span style="font-size:13px !important;color:#BBBBBB !important;word-break:break-all;">' + u.group(1) + '</span>', blk, flags=re.I)
-    return blk
-html = re.sub(r'<section data-role="blockquote"[^>]*>.*?</section>', _wrap, html, flags=re.S)
-
-# 清除残留的 URL 字面标记（<br />URL<br />）
-html = re.sub(r'<br\s*/?>\s*URL\s*(?=<br|</p>)', '<br />', html, flags=re.I)
-
-# 英文副标题行（</code><br /> 后紧跟英文字母文本）统一 22px
-html = re.sub(
-    r'(</code>\s*<br\s*/?>\s*)(?=[A-Za-z])',
-    lambda u: u.group(1) + '<span style="font-size:22px !important;color:#555555 !important;">',
-    html)
-# 关闭上面打开的 span：英文副标题行到 <br 或 </p> 结束
-html = re.sub(
-    r'(<span style="font-size:22px !important;color:#555555 !important;">[^<]{2,80}?)(?=<br|</p>)',
-    lambda u: u.group(1) + '</span>', html)
+sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__))))
+from clean_brief import clean_html
+html = clean_html(html)
 
 if not html:
     html = md
