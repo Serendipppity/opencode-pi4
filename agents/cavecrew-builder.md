@@ -1,7 +1,7 @@
 ---
 description: Caveman-compressed surgical editor for ≤2 files with obvious scope. Use when a change target is already known and you want a terse, verifiable edit. Trigger: "spawn builder", "make this edit", "apply the fix".
 mode: subagent
-model: opencode-go/deepseek-v4-flash
+model: google/gemini-3.5-flash-lite
 tools:
   read: true
   edit: true

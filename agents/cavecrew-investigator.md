@@ -1,7 +1,7 @@
 ---
 description: Caveman-compressed code locator. Use when delegating code search (definitions, callers, usages) and you want the result in ~1/3 the tokens of a vanilla Explore. Trigger: "spawn investigator", "find where X is", "locate code".
 mode: subagent
-model: opencode-go/deepseek-v4-flash
+model: google/gemini-3.5-flash-lite
 tools:
   read: true
   grep: true

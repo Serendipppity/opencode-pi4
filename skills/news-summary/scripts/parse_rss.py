@@ -38,6 +38,8 @@ RSS_FEEDS = {
     "NPR US": "https://feeds.npr.org/1001/rss.xml",
     "Al Jazeera": "https://www.aljazeera.com/xml/rss/all.xml"
 }
+# 已被 fetch_extra_sources() 覆盖的源（直连 API + 3 镜像），parse_rss 可跳过
+SKIP_SOURCES = {"Bloomberg", "Zaobao China", "Zaobao World", "Caixin China", "Wallstreetcn"}
 
 os.makedirs(ARCHIVE_DIR, exist_ok=True)
 
@@ -61,7 +63,7 @@ def clean_html(raw_html):
     clean = html.unescape(raw_html)
     return re.sub(r'<[^>]+>', '', clean).strip()
 
-def process_feeds():
+def process_feeds(skip=None):
     prefs = load_prefs()
     focus_words = prefs.get("focus_keywords", [])
     ignore_words = prefs.get("ignore_keywords", [])
@@ -71,13 +73,14 @@ def process_feeds():
     archive_path = os.path.join(ARCHIVE_DIR, f"raw_rss_{today_str}.md")
     
     final_output_for_llm = []
-    total_feeds = len(RSS_FEEDS)
+    feeds_to_fetch = {k: v for k, v in RSS_FEEDS.items() if not skip or k not in skip}
+    total_feeds = len(feeds_to_fetch)
     current_feed = 0
     
     with open(archive_path, 'w', encoding='utf-8') as archive_file:
         archive_file.write(f"# RSS 全量底稿 - {today_str}\n\n")
         
-        for source_name, url in RSS_FEEDS.items():
+        for source_name, url in feeds_to_fetch.items():
             current_feed += 1
             # 增加进度提示，并立刻刷新输出缓冲 (flush=True)
             print(f"[{current_feed}/{total_feeds}] 🔄 正在抓取: {source_name} ...", flush=True)
@@ -139,4 +142,16 @@ def process_feeds():
 if __name__ == "__main__":
     # 为了保证终端输出无延迟
     sys.stdout.reconfigure(line_buffering=True)
-    process_feeds()
+    # 支持 --skip-sources Bloomberg,Zaobao 跳过已被 fetch_extra_sources() 覆盖的源
+    skip = set()
+    for arg in sys.argv[1:]:
+        if arg.startswith('--skip-sources'):
+            if '=' in arg:
+                skip = {s.strip() for s in arg.split('=', 1)[1].split(',') if s.strip()}
+            elif '--skip-sources' in sys.argv:
+                idx = sys.argv.index('--skip-sources')
+                if idx + 1 < len(sys.argv) and not sys.argv[idx + 1].startswith('-'):
+                    skip = {s.strip() for s in sys.argv[idx + 1].split(',') if s.strip()}
+    if skip:
+        print(f'[+] 跳过已覆盖源: {", ".join(sorted(skip))}', flush=True)
+    process_feeds(skip=skip)

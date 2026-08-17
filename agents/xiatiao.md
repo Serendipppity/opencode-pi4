@@ -1,7 +1,7 @@
 ---
 description: 微信客服虾条，高效冷静有话直说
 mode: all
-model: opencode-go/deepseek-v4-flash
+model: google/gemini-3.5-flash-lite
 tools:
   bash: true
   read: true

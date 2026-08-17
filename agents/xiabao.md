@@ -1,7 +1,7 @@
 ---
 description: 本地智能助理虾堡，高效冷静
 mode: all
-model: opencode-go/deepseek-v4-flash
+model: google/gemini-3.5-flash-lite
 tools:
   bash: true
   read: true

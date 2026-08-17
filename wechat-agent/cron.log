@@ -876,3 +876,36 @@ HTML_LEN: 17629
 news: {'errcode': 0, 'errmsg': 'send job submission success', 'msg_id': 1000000016, 'msg_data_id': 2247483677}
 push: 0
 [+] 已推送去重记账: 12 条链接
+backup: [master 8cf1a50] Auto-backup: 2026-08-17
+ 12 files changed, 2581 insertions(+), 38 deletions(-)
+ cre
+[+] 直连补抓财经源: 58 条 (Wallstreetcn API + RSSHub)
+MD_LEN: 6456
+format: OK
+HTML_LEN: 18764
+[+] 最终版留底: /home/pi/agent-workspace/outbox_obsidian/news_archives/brief_final_2026-08-17_1204_午.{md,html}
+news: {'errcode': 0, 'errmsg': 'send job submission success', 'msg_id': 1000000018, 'msg_data_id': 2247483681}
+push: 0
+[+] 已推送去重记账: 12 条链接
+无过期文件
+无过期文件
+无过期文件
+无过期文件
+无过期文件
+无过期文件
+无过期文件
+[!] RSSHub 已超 30s，跳过剩余源
+[+] 直连补抓财经源: 13 条 (Wallstreetcn API + RSSHub)
+MD_LEN: 5437
+format: OK
+HTML_LEN: 17761
+[+] 最终版留底: /home/pi/agent-workspace/outbox_obsidian/news_archives/brief_final_2026-08-17_2034_晚.{md,html}
+news: {'errcode': 0, 'errmsg': 'send job submission success', 'msg_id': 1000000019, 'msg_data_id': 2247483683}
+push: 0
+[+] 已推送去重记账: 12 条链接
+无过期文件
+无过期文件
+无过期文件
+无过期文件
+无过期文件
+无过期文件

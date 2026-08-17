@@ -31,14 +31,20 @@ def clean_html(html):
 
     html = re.sub(r'<section data-role="blockquote"[^>]*>.*?</section>', _wrap, html, flags=re.S)
 
-    # 英文副标题行（</code><br /> 后紧跟英文字母文本）17px 左对齐
+    # 引用块内容 p 显式左对齐（微信编辑器默认 justify 会把英文拉伸出多余空格）
+    html = re.sub(
+        r'(<section data-role="blockquote"[^>]*>\s*<p style=")([^"]*)(")',
+        lambda m: m.group(1) + 'text-align:left !important;' + m.group(2) + m.group(3),
+        html)
+
+    # 英文副标题行（</code><br /> 后紧跟英文字母文本）17px 左对齐（加 display:block 使 text-align:left 生效，防止微信 justify 拉伸英文单词间距）
     html = re.sub(
         r'(</code>\s*<br\s*/?>\s*)(?=[A-Za-z])',
-        lambda u: u.group(1) + '<span style="font-size:17px !important;color:#555555 !important;text-align:left !important;">',
+        lambda u: u.group(1) + '<span style="display:block !important;font-size:17px !important;color:#555555 !important;text-align:left !important;margin-top:4px !important;">',
         html)
     # 关闭上面打开的 span：英文副标题行到 <br 或 </p> 结束
     html = re.sub(
-        r'(<span style="font-size:17px !important;color:#555555 !important;text-align:left !important;">[^<]{2,80}?)(?=<br|</p>)',
+        r'(<span style="display:block !important;font-size:17px !important;color:#555555 !important;text-align:left !important;margin-top:4px !important;">[^<]{2,200}?)(?=<br|</p>)',
         lambda u: u.group(1) + '</span>', html)
 
     return html
