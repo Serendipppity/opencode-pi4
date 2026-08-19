@@ -1,0 +1,14 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "plugin": [
+    "opencode-mem"
+  ],
+  "permission": {
+    "bash": {
+      "sudo *": "deny",
+      "rm -rf *": "deny",
+      "*": "allow"
+    },
+    "edit": "allow"
+  }
+}

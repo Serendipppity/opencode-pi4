@@ -10,6 +10,13 @@ SRC = [
     (f'{HOME}/.config/opencode/skills', 'skills'),
     (f'{HOME}/.config/opencode/AGENTS.md', 'AGENTS.md'),
     (f'{HOME}/.config/opencode/agents', 'agents'),
+    # opencode 配置文件（无明文机密，可安全备份）
+    (f'{HOME}/.config/opencode/opencode.json', 'opencode.json'),
+    (f'{HOME}/.config/opencode/opencode.jsonc', 'opencode.jsonc'),
+    (f'{HOME}/.config/opencode/opencode-mem.jsonc', 'opencode-mem.jsonc'),
+    (f'{HOME}/.config/opencode/tui.json', 'tui.json'),
+    # discord token（git-crypt 自动加密后入库）
+    (f'{HOME}/.config/opencode/discord-channel.json', 'discord-channel.json'),
 ]
 SOUL_FILES = ['SOUL.md', 'IDENTITY.md', 'MEMORY.md', 'USER.md', 'HEARTBEAT.md']
 SKIP_WE = ['config.json', '__pycache__', '.git']
@@ -40,10 +47,18 @@ if os.path.isfile(cfg):
 # git
 if not os.path.isdir(f'{BK}/.git'):
     subprocess.run(['git', 'init'], cwd=BK, capture_output=True)
+    subprocess.run(['git', 'remote', 'add', 'origin', 'git@github.com:Serendipppity/opencode-pi4.git'], cwd=BK, capture_output=True)
+# 确保远程指向 opencode-pi4（单仓库统一备份）
+remotes = subprocess.run(['git', 'remote', 'get-url', 'origin'], cwd=BK, capture_output=True, text=True).stdout.strip()
+if remotes != 'git@github.com:Serendipppity/opencode-pi4.git':
+    subprocess.run(['git', 'remote', 'set-url', 'origin', 'git@github.com:Serendipppity/opencode-pi4.git'], cwd=BK, capture_output=True)
 subprocess.run(['git', 'add', '-A'], cwd=BK, capture_output=True)
 r = subprocess.run(['git', 'commit', '-m', f'Auto-backup: {DATE}', '--allow-empty'], cwd=BK, capture_output=True, text=True)
 result = (r.stdout or r.stderr).strip()[:100]
 print('backup:', result)
+# 推送异地（git-crypt 加密文件随密文推送）
+push = subprocess.run(['git', 'push', 'origin', 'HEAD:main'], cwd=BK, capture_output=True, text=True)
+print('push:', (push.stdout or push.stderr).strip()[:80])
 
 # Discord 通知
 try:
