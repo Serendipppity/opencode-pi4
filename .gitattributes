@@ -1,1 +1,5 @@
 discord-channel.json filter=git-crypt diff=git-crypt
+/data/kimaki/discord-sessions.db filter=git-crypt diff=git-crypt
+/data/kimaki/opencode-config.json filter=git-crypt diff=git-crypt
+/data/opencode-db/*.db filter=git-crypt diff=git-crypt
+/data/opencode-mem/*.db filter=git-crypt diff=git-crypt
