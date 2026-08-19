@@ -1,0 +1,27 @@
+{
+  // 存储位置（默认值，可省略）
+  "storagePath": "~/.opencode-mem/data",
+  // 本地 embedding（首次使用从 HuggingFace 下载，已确认网络可达）
+  "embeddingModel": "Xenova/nomic-embed-text-v1",
+
+  // 自动记忆：会话闲置后由 google/gemini-3.5-flash-lite 摘要并存库
+  "autoCaptureEnabled": true,
+  "autoCaptureLanguage": "zh",
+  "opencodeProvider": "google",
+  "opencodeModel": "google/gemini-3.5-flash-lite",
+
+  // 新会话开头注入 3 条相关记忆
+  "chatMessage": {
+    "enabled": true,
+    "maxMemories": 3,
+    "injectOn": "first"
+  },
+
+  // Web UI 管理界面
+  "webServerEnabled": true,
+  "webServerPort": 4747,
+
+  "showAutoCaptureToasts": true,
+  "showUserProfileToasts": true,
+  "showErrorToasts": true
+}
