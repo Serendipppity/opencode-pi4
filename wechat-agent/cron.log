@@ -943,3 +943,60 @@ push: 0
 无过期文件
 无过期文件
 无过期文件
+backup: [master 4731f6d] Auto-backup: 2026-08-19
+ 13 files changed, 462 insertions(+), 481 deletions(-)
+ cre
+无过期文件
+无过期文件
+无过期文件
+无过期文件
+无过期文件
+无过期文件
+[!] RSSHub 已超 30s，跳过剩余源
+[+] 直连补抓财经源: 45 条 (Wallstreetcn API + RSSHub)
+MD_LEN: 9068
+format: OK
+HTML_LEN: 21380
+[+] 最终版留底: /home/pi/agent-workspace/outbox_obsidian/news_archives/brief_final_2026-08-19_0802_早.{md,html}
+news: {'errcode': 0, 'errmsg': 'send job submission success', 'msg_id': 1000000023, 'msg_data_id': 2247483691}
+push wechat: 0
+[+] 已推送去重记账: 12 条链接
+Part 1 失败: Expecting value: line 1 column 1 (char 0)
+Part 2 失败: Expecting value: line 1 column 1 (char 0)
+Part 3 失败: Expecting value: line 1 column 1 (char 0)
+Part 4 失败: Expecting value: line 1 column 1 (char 0)
+Part 5 失败: Expecting value: line 1 column 1 (char 0)
+Part 6 失败: Expecting value: line 1 column 1 (char 0)
+Part 7 失败: Expecting value: line 1 column 1 (char 0)
+Part 8: 1539424434232762388
+Part 9 失败: Expecting value: line 1 column 1 (char 0)
+Part 10 失败: Expecting value: line 1 column 1 (char 0)
+Part 11 失败: Expecting value: line 1 column 1 (char 0)
+Part 12 失败: Expecting value: line 1 column 1 (char 0)
+Part 13 失败: Expecting value: line 1 column 1 (char 0)
+[+] 已推送 13 条消息到 Discord
+push discord: 0
+清理 3 个旧文件
+无过期文件
+无过期文件
+无过期文件
+[!] RSSHub 已超 30s，跳过剩余源
+[+] 直连补抓财经源: 24 条 (Wallstreetcn API + RSSHub)
+MD_LEN: 6045
+format: OK
+HTML_LEN: 17404
+[+] 最终版留底: /home/pi/agent-workspace/outbox_obsidian/news_archives/brief_final_2026-08-19_1202_午.{md,html}
+news: {'errcode': 0, 'errmsg': 'send job submission success', 'msg_id': 1000000024, 'msg_data_id': 2247483693}
+push wechat: 0
+[+] 已推送去重记账: 11 条链接
+✅ Part 1/4
+✅ Part 2/4
+✅ Part 3/4
+✅ Part 4/4
+[+] 已推送 4/4 条消息到 Discord
+push discord: 0
+无过期文件
+无过期文件
+同步未完成，跳过清理
+无过期文件
+无过期文件

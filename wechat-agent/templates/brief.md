@@ -1,4 +1,4 @@
-# 📰 Daily Briefing | {date} {label}报
+# 📰 {date} {label}报
 
 ## 核心要闻
 

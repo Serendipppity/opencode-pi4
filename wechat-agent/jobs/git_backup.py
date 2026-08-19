@@ -1,6 +1,6 @@
 #!/home/pi/agent-venv/bin/python3
 """每日聚合备份：workspace + skills + 画像 + soul + wechat-agent（密钥排除）"""
-import subprocess, os, datetime, shutil, re
+import subprocess, os, datetime, shutil, re, sys
 
 HOME = '/home/pi'
 DATE = datetime.datetime.now().strftime('%Y-%m-%d')
@@ -42,4 +42,14 @@ if not os.path.isdir(f'{BK}/.git'):
     subprocess.run(['git', 'init'], cwd=BK, capture_output=True)
 subprocess.run(['git', 'add', '-A'], cwd=BK, capture_output=True)
 r = subprocess.run(['git', 'commit', '-m', f'Auto-backup: {DATE}', '--allow-empty'], cwd=BK, capture_output=True, text=True)
-print('backup:', (r.stdout or r.stderr).strip()[:100])
+result = (r.stdout or r.stderr).strip()[:100]
+print('backup:', result)
+
+# Discord 通知
+try:
+    sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+    from notify_discord import send_notification
+    short = subprocess.run(['git', '-C', BK, 'rev-parse', '--short', 'HEAD'], capture_output=True, text=True).stdout.strip()
+    send_notification(f'✅ 每日 Git 备份完成 {DATE} commit={short} ({result})')
+except Exception as e:
+    print('[!] Discord 通知失败:', e)

@@ -270,7 +270,7 @@ if dry:
 sys.path.insert(0, '/home/pi/wechat-agent')
 from push import push_mass_news
 r = push_mass_news(f'{date} {label}报', html, digest=f'{label}报 · {date}')
-print('push:', r)
+print('push wechat:', r)
 # 推送成功才记账（errcode 0 即 r==0），失败不记——补发时该批新闻仍可再推
 if r == 0:
     links = re.findall(r'https?://[^\s"<>)\]]+', html)
@@ -278,3 +278,11 @@ if r == 0:
     print(f'[+] 已推送去重记账: {len(links)} 条链接')
 else:
     print('[!] 推送失败，不记账，下次补发可重推')
+
+# 6. Discord 推送
+try:
+    from push_discord import push_to_discord as _discord_push
+    dr = _discord_push('/tmp/brief.md')
+    print('push discord:', dr)
+except Exception as e:
+    print(f'[!] Discord 推送异常: {e}')
