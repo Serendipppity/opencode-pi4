@@ -1,0 +1,54 @@
+Removing unused browser at /home/pi/.cache/ms-playwright/chromium-1217
+Removing unused browser at /home/pi/.cache/ms-playwright/chromium_headless_shell-1217
+Downloading Chrome for Testing 151.0.7922.34 (playwright chromium v1234)[2m from https://npmmirror.com/mirrors/playwright//builds/chromium/1234/chromium-linux-arm64.zip[22m
+|                                                                                |   0% of 195.2 MiB
+|■■■■■■■■                                                                        |  10% of 195.2 MiB
+|■■■■■■■■■■■■■■■■                                                                |  20% of 195.2 MiB
+|■■■■■■■■■■■■■■■■■■■■■■■■                                                        |  30% of 195.2 MiB
+|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                                |  40% of 195.2 MiB
+|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                        |  50% of 195.2 MiB
+|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                |  60% of 195.2 MiB
+|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                        |  70% of 195.2 MiB
+|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                |  80% of 195.2 MiB
+|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■        |  90% of 195.2 MiB
+|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■| 100% of 195.2 MiB
+Chrome for Testing 151.0.7922.34 (playwright chromium v1234) downloaded to /home/pi/.cache/ms-playwright/chromium-1234
+Downloading Chrome Headless Shell 151.0.7922.34 (playwright chromium-headless-shell v1234)[2m from https://npmmirror.com/mirrors/playwright//builds/chromium/1234/chromium-headless-shell-linux-arm64.zip[22m
+|                                                                                |   0% of 111 MiB
+|■■■■■■■■                                                                        |  10% of 111 MiB
+|■■■■■■■■■■■■■■■■                                                                |  20% of 111 MiB
+|■■■■■■■■■■■■■■■■■■■■■■■■                                                        |  30% of 111 MiB
+|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                                |  40% of 111 MiB
+|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                        |  50% of 111 MiB
+|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                |  60% of 111 MiB
+|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                        |  70% of 111 MiB
+|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                |  80% of 111 MiB
+|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■        |  90% of 111 MiB
+|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■| 100% of 111 MiB
+Chrome Headless Shell 151.0.7922.34 (playwright chromium-headless-shell v1234) downloaded to /home/pi/.cache/ms-playwright/chromium_headless_shell-1234
+Playwright Host validation warning: 
+╔══════════════════════════════════════════════════════╗
+║ Host system is missing dependencies to run browsers. ║
+║ Please install them with the following command:      ║
+║                                                      ║
+║     sudo playwright install-deps                     ║
+║                                                      ║
+║ Alternatively, use apt:                              ║
+║     sudo apt-get install libatk1.0-0t64\             ║
+║         libatk-bridge2.0-0t64\                       ║
+║         libcups2t64\                                 ║
+║         libasound2t64\                               ║
+║         libcairo2\                                   ║
+║         libpango-1.0-0\                              ║
+║         libxdamage1\                                 ║
+║         libatspi2.0-0t64                             ║
+║                                                      ║
+║ <3 Playwright Team                                   ║
+╚══════════════════════════════════════════════════════╝
+    at validateDependenciesLinux (/home/pi/.local/lib/python3.14/site-packages/playwright/driver/package/lib/coreBundle.js:31846:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async Registry._validateHostRequirements (/home/pi/.local/lib/python3.14/site-packages/playwright/driver/package/lib/coreBundle.js:33280:18)
+    at async Registry._validateHostRequirementsForExecutableIfNeeded (/home/pi/.local/lib/python3.14/site-packages/playwright/driver/package/lib/coreBundle.js:33402:11)
+    at async Registry.validateHostRequirementsForExecutablesIfNeeded (/home/pi/.local/lib/python3.14/site-packages/playwright/driver/package/lib/coreBundle.js:33391:11)
+    at async installBrowsers (/home/pi/.local/lib/python3.14/site-packages/playwright/driver/package/lib/coreBundle.js:69417:5)
+    at async _Command.<anonymous> (/home/pi/.local/lib/python3.14/site-packages/playwright/driver/package/lib/coreBundle.js:72930:7)

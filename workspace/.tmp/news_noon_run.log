@@ -1,0 +1,10 @@
+[!] RSSHub 已超 30s，跳过剩余源
+[+] 直连补抓财经源: 64 条 (Wallstreetcn API + RSSHub)
+MD_LEN: 7004
+format: OK
+HTML_LEN: 19320
+[+] 最终版留底: /home/pi/agent-workspace/outbox_obsidian/news_archives/brief_final_2026-08-22_1456_午.{md,html}
+news: {'errcode': 0, 'errmsg': 'send job submission success', 'msg_id': 1000000027, 'msg_data_id': 2247483699}
+push wechat: 0
+[+] 已推送去重记账: 12 条链接
+[!] Discord 推送异常: No module named 'requests'
