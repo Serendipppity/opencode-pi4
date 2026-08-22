@@ -8,7 +8,7 @@
   "autoCaptureEnabled": true,
   "autoCaptureLanguage": "zh",
   "opencodeProvider": "google",
-  "opencodeModel": "google/gemini-3.5-flash-lite",
+  "opencodeModel": "gemini-3.5-flash-lite",
 
   // 新会话开头注入 3 条相关记忆
   "chatMessage": {
