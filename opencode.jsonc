@@ -1,6 +1,6 @@
 {
   "$schema": "https://opencode.ai/config.json",
-  "model": "google/gemini-3.5-flash-lite",
+  "model": "opencode-go/ox-alpha-free",
   "provider": {
     "deepseek": {
       "options": {

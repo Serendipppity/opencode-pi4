@@ -1,7 +1,7 @@
 ---
 description: Caveman-compressed reviewer for diffs, branches, or files. Returns one-line findings only, no architecture opinions. Use when you want a terse bug audit. Trigger: "spawn reviewer", "review the diff", "audit this".
 mode: subagent
-model: google/gemini-3.5-flash-lite
+model: opencode-go/ox-alpha-free
 tools:
   read: true
   grep: true
