@@ -60,11 +60,16 @@ print('backup:', result)
 push = subprocess.run(['git', 'push', 'origin', 'HEAD:main'], cwd=BK, capture_output=True, text=True)
 print('push:', (push.stdout or push.stderr).strip()[:80])
 
-# Discord 通知
-try:
-    sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-    from notify_discord import send_notification
-    short = subprocess.run(['git', '-C', BK, 'rev-parse', '--short', 'HEAD'], capture_output=True, text=True).stdout.strip()
-    send_notification(f'✅ 每日 Git 备份完成 {DATE} commit={short} ({result})')
-except Exception as e:
-    print('[!] Discord 通知失败:', e)
+# 状态落盘（Discord 合并通知由 03:00 数据快照任务统一发送，见 backup_notify.py）
+import json
+push_ok = push.returncode == 0
+status_dir = os.path.expanduser('~/.cache/backup_status')
+os.makedirs(status_dir, exist_ok=True)
+short = subprocess.run(['git', '-C', BK, 'rev-parse', '--short', 'HEAD'], capture_output=True, text=True).stdout.strip()
+json.dump({
+    'date': DATE,
+    'commit': short,
+    'commit_msg': result,
+    'push_ok': push_ok,
+}, open(f'{status_dir}/git_backup.json', 'w'), ensure_ascii=False)
+print('status saved:', f'{status_dir}/git_backup.json')

@@ -1,7 +1,7 @@
 ---
 description: 新闻简报生成器，只读不执行
 mode: all
-model: opencode-go/ox-alpha-free
+model: google/gemini-3.5-flash
 fallback: opencode-go/deepseek-v4-flash
 tools:
   read: true

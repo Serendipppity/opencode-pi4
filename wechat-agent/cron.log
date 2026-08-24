@@ -1277,3 +1277,74 @@ push discord: 0
 无过期文件
 无过期文件
 无过期文件
+backup: [master c25415f] Auto-backup: 2026-08-24
+ 30 files changed, 1183 insertions(+), 1828 deletions(-)
+ d
+push: To github.com:Serendipppity/opencode-pi4.git
+   0d14571..c25415f  HEAD -> main
+无过期文件
+无过期文件
+无过期文件
+无过期文件
+无过期文件
+无过期文件
+[+] 直连补抓财经源: 14 条 (Wallstreetcn API + RSSHub)
+MD_LEN: 6975
+format: OK
+HTML_LEN: 19140
+[+] 最终版留底: /home/pi/agent-workspace/outbox_obsidian/news_archives/brief_final_2026-08-24_0807_早.{md,html}
+news: {'errcode': 0, 'errmsg': 'send job submission success', 'msg_id': 1000000032, 'msg_data_id': 2247483709}
+push wechat: 0
+[+] 已推送去重记账: 12 条链接
+✅ Part 1/5
+✅ Part 2/5
+✅ Part 3/5
+✅ Part 4/5
+✅ Part 5/5
+[+] 已推送 5/5 条消息到 Discord
+push discord: 0
+清理 3 个旧文件
+无过期文件
+无过期文件
+无过期文件
+[+] RAW RSS 底稿: /home/pi/agent-workspace/outbox_obsidian/news_archives/raw_rss_2026-08-24_1200.md | LLM 材料 42563 字符
+[!] 自检未通过: 缺分区 ## 核心要闻; 缺分区 ## 国际风云; 缺分区 ## 财经速递; 缺分区 ## 科技前沿; 缺分区 ## 国内要闻 → 重试一次
+[!] 重试后仍有问题: 缺分区 ## 核心要闻; 缺分区 ## 国际风云; 缺分区 ## 财经速递; 缺分区 ## 科技前沿; 缺分区 ## 国内要闻
+MD_LEN: 10
+format: OK
+HTML_LEN: 133
+[+] 最终版留底: /home/pi/agent-workspace/outbox_obsidian/news_archives/brief_final_2026-08-24_1205_午.{md,html}
+news: {'errcode': 0, 'errmsg': 'send job submission success', 'msg_id': 1000000033, 'msg_data_id': 2247483711}
+push wechat: 0
+[+] 已推送去重记账: 0 条链接
+✅ Part 1/1
+[+] 已推送 1/1 条消息到 Discord
+push discord: 0
+清理 3 个旧文件
+无过期文件
+无过期文件
+无过期文件
+无过期文件
+无过期文件
+无过期文件
+无过期文件
+[+] RAW RSS 底稿: /home/pi/agent-workspace/outbox_obsidian/news_archives/raw_rss_2026-08-24_2030.md | LLM 材料 44878 字符
+MD_LEN: 6242 GEN_OK: True
+format: OK
+HTML_LEN: 18550
+[+] 最终版留底: /home/pi/agent-workspace/outbox_obsidian/news_archives/brief_final_2026-08-24_2032_晚.{md,html}
+news: {'errcode': 0, 'errmsg': 'send job submission success', 'msg_id': 1000000035, 'msg_data_id': 2247483715}
+push wechat: 0
+[+] 已推送去重记账: 12 条链接
+✅ Part 1/4
+✅ Part 2/4
+✅ Part 3/4
+✅ Part 4/4
+[+] 已推送 4/4 条消息到 Discord
+push discord: 0
+清理 3 个旧文件
+无过期文件
+无过期文件
+无过期文件
+无过期文件
+无过期文件

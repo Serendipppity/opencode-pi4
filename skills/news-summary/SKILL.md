@@ -39,8 +39,9 @@ python3 /home/pi/.config/opencode/skills/news-summary/scripts/parse_rss.py
 
 ```
 news_brief.py
- ├─ parse_rss.py         抓 8 源 RSS（BBC/NPR/AlJazeera + 华尔街见闻 API + RSSHub）
- ├─ fetch_extra_sources  直连补抓财经源（Wallstreetcn API + RSSHub 三实例容灾）
+ ├─ parse_rss.py         统一抓 8 源（官方 RSS + WSJ API + RSSHub 3 镜像容灾）
+ │                        全量留底 raw_rss_*.md，每条带 STATUS 标记（⭐focus/ok/🚫ignored/↺pushed），只标记不删除
+ ├─ 读底稿硬过滤          剔除 🚫ignored/↺pushed 条目，⭐focus 加权进 LLM 材料
  ├─ opencode run --agent brief   LLM 按模板生成双语 Markdown
  ├─ format.py            微信排版（xiaohu-wechat-format skill，主题 wjbrief）
  ├─ clean_brief.py       后处理清洗（URL 13px / 英文副标题 17px / 去字面标记）

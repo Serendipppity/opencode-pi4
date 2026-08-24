@@ -1,4 +1,12 @@
 #!/usr/bin/env python3
+"""RSS 统一抓料器：8 源导入 → 偏好标记（ignore/⭐/去重）→ 全量留底 raw_rss_*.md → stdout 输出可推送材料
+
+底稿 STATUS 标记说明（只标记不删除，全量留痕）：
+  ⭐focus          命中 user_prefs focus_keywords
+  ok              常规可推送
+  🚫ignored(词)    命中 ignore_keywords
+  ↺pushed         链接已推送过（seen_links.json）
+"""
 import sys
 import json
 import time
@@ -15,31 +23,31 @@ ARCHIVE_DIR = os.path.join(WORKSPACE_DIR, "outbox_obsidian/news_archives")
 PREFS_FILE = os.path.join(WORKSPACE_DIR, "user_prefs.json")
 SEEN_FILE = os.path.join(WORKSPACE_DIR, "seen_links.json")
 
-def load_seen_links():
-    """已推送成功的链接集合（跨天累积）。推送成功后由 news_brief.py 写入。"""
-    try:
-        with open(SEEN_FILE, 'r', encoding='utf-8') as f:
-            data = json.load(f)
-        seen = set()
-        for links in data.values():
-            for l in links:
-                seen.add(l.strip())
-        return seen
-    except Exception:
-        return set()
-
+# 直连官方 RSS 源
 RSS_FEEDS = {
     "BBC": "https://feeds.bbci.co.uk/news/world/rss.xml",
-    "Bloomberg": "https://rsshub.cups.moe/bloomberg/bbiz",
-    "Zaobao China": "https://rsshub.cups.moe/zaobao/realtime/china",
-    "Zaobao World": "https://rsshub.cups.moe/zaobao/znews/world",
-    "Caixin China": "https://rsshub.cups.moe/caixin/latest",
-    "Wallstreetcn": "https://rsshub.cups.moe/wallstreetcn/live/global/2",
     "NPR US": "https://feeds.npr.org/1001/rss.xml",
-    "Al Jazeera": "https://www.aljazeera.com/xml/rss/all.xml"
+    "Al Jazeera": "https://www.aljazeera.com/xml/rss/all.xml",
 }
-# 已被 fetch_extra_sources() 覆盖的源（直连 API + 3 镜像），parse_rss 可跳过
-SKIP_SOURCES = {"Bloomberg", "Zaobao China", "Zaobao World", "Caixin China", "Wallstreetcn"}
+
+# RSSHub 源：3 镜像依序容灾，任一实例有内容即采用
+RSSHUB_INSTANCES = [
+    "https://rsshub.cups.moe",
+    "https://rsshub.rssforever.com",
+    "https://rsshub.woodland.cafe",
+]
+RSSHUB_FEEDS = [
+    ("Bloomberg", "/bloomberg"),
+    ("Zaobao China", "/zaobao/realtime/china"),
+    ("Zaobao World", "/zaobao/realtime/world"),
+    ("Caixin China", "/caixin/latest"),
+]
+
+# 华尔街见闻走官方 JSON API（不走 RSS）
+WALLSTCN_API = "https://api-one.wallstcn.com/apiv1/content/lives?channel=global-channel&limit=20"
+
+STATUS_FOCUS = "⭐focus"
+STATUS_OK = "ok"
 
 os.makedirs(ARCHIVE_DIR, exist_ok=True)
 
@@ -47,111 +55,157 @@ def load_prefs():
     try:
         with open(PREFS_FILE, 'r', encoding='utf-8') as f:
             return json.load(f)
-    except:
+    except Exception:
         return {"focus_keywords": [], "ignore_keywords": []}
 
-def fetch_feed(url):
-    # RSSHub等服务有时响应较慢，设置了 15 秒超时
+def load_seen_links():
+    """已推送成功的链接集合（跨天累积）。推送成功后由 news_brief.py 写入。"""
+    try:
+        with open(SEEN_FILE, 'r', encoding='utf-8') as f:
+            data = json.load(f)
+        return {l.strip() for links in data.values() for l in links}
+    except Exception:
+        return set()
+
+def fetch_url(url, timeout=15):
     req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0'})
     try:
-        with urllib.request.urlopen(req, timeout=15) as response:
-            return response.read().decode('utf-8')
-    except Exception as e:
+        with urllib.request.urlopen(req, timeout=timeout) as response:
+            return response.read().decode('utf-8', 'ignore')
+    except Exception:
         return ""
 
+def parse_xml(xml_content):
+    if not xml_content:
+        return None
+    try:
+        return ET.fromstring(xml_content.lstrip('\ufeff'))
+    except Exception:
+        return None
+
+def fetch_rsshub(path):
+    """RSSHub 多镜像依序容灾"""
+    for inst in RSSHUB_INSTANCES:
+        root = parse_xml(fetch_url(inst + path))
+        if root is not None and len(root.findall('.//item')) > 0:
+            return root
+    return None
+
 def clean_html(raw_html):
-    clean = html.unescape(raw_html)
+    clean = html.unescape(raw_html or "")
     return re.sub(r'<[^>]+>', '', clean).strip()
 
-def process_feeds(skip=None):
+def one_line(text):
+    """压平为单行，保证底稿条目块结构稳定可解析"""
+    return re.sub(r'\s+', ' ', text).strip()
+
+def extract_items(root, limit=15):
+    items = []
+    for item in root.findall('.//item')[:limit]:
+        title_node = item.find('title')
+        link_node = item.find('link')
+        desc_node = item.find('description')
+        title = one_line(title_node.text) if title_node is not None and title_node.text else "无标题"
+        link = link_node.text.strip() if link_node is not None and link_node.text else ""
+        desc = one_line(clean_html(desc_node.text)) if desc_node is not None else ""
+        items.append((title, desc, link))
+    return items
+
+def fetch_wallstreetcn(limit=15):
+    """华尔街见闻官方 JSON API → (title, desc, link) 列表"""
+    items = []
+    try:
+        js = json.loads(fetch_url(WALLSTCN_API))
+        for item in js.get('data', {}).get('items', [])[:limit]:
+            title = one_line(item.get('title') or '')
+            content = one_line(clean_html(item.get('content_text') or item.get('content') or ''))
+            link = item.get('uri') or ''
+            if link and not link.startswith('http'):
+                link = 'https://wallstreetcn.com' + link
+            if title:
+                items.append((title, content, link))
+    except Exception:
+        pass
+    return items
+
+def collect_source(kind, locator):
+    """按通道抓取单个源，返回 (title, desc, link) 列表"""
+    if kind == 'rss':
+        root = parse_xml(fetch_url(locator))
+        return extract_items(root) if root is not None else []
+    if kind == 'rsshub':
+        root = fetch_rsshub(locator)
+        return extract_items(root) if root is not None else []
+    if kind == 'api':
+        return fetch_wallstreetcn()
+    return []
+
+def classify(content_str, link, ignore_words, focus_words, seen_links):
+    """返回 (是否进 LLM 材料, STATUS 标记)。只标记不删除，底稿全量留痕。"""
+    hit_ignore = next((w for w in ignore_words if w in content_str), None)
+    if hit_ignore:
+        return False, f"🚫ignored({hit_ignore})"
+    if link and link in seen_links:
+        return False, "↺pushed"
+    if any(w in content_str for w in focus_words):
+        return True, STATUS_FOCUS
+    return True, STATUS_OK
+
+def process_feeds(archive_path, stamp):
     prefs = load_prefs()
     focus_words = prefs.get("focus_keywords", [])
     ignore_words = prefs.get("ignore_keywords", [])
     seen_links = load_seen_links()
-    
-    today_str = datetime.now().strftime("%Y-%m-%d_%H%M")
-    archive_path = os.path.join(ARCHIVE_DIR, f"raw_rss_{today_str}.md")
-    
-    final_output_for_llm = []
-    feeds_to_fetch = {k: v for k, v in RSS_FEEDS.items() if not skip or k not in skip}
-    total_feeds = len(feeds_to_fetch)
-    current_feed = 0
-    
+
+    sources = [(name, 'rss', url) for name, url in RSS_FEEDS.items()]
+    sources += [(name, 'rsshub', path) for name, path in RSSHUB_FEEDS]
+    sources += [("Wallstreetcn", 'api', WALLSTCN_API)]
+
+    total = len(sources)
+    llm_material = []
+
     with open(archive_path, 'w', encoding='utf-8') as archive_file:
-        archive_file.write(f"# RSS 全量底稿 - {today_str}\n\n")
-        
-        for source_name, url in feeds_to_fetch.items():
-            current_feed += 1
-            # 增加进度提示，并立刻刷新输出缓冲 (flush=True)
-            print(f"[{current_feed}/{total_feeds}] 🔄 正在抓取: {source_name} ...", flush=True)
-            
+        archive_file.write(f"# RSS 全量底稿 - {stamp}\n")
+
+        for current_feed, (source_name, kind, locator) in enumerate(sources, 1):
+            print(f"[{current_feed}/{total}] 🔄 正在抓取: {source_name} ...", flush=True)
             archive_file.write(f"\n## Source: {source_name}\n")
-            xml_content = fetch_feed(url)
-            
-            if not xml_content:
+
+            entries = collect_source(kind, locator)
+            if not entries:
                 print(f"  ❌ {source_name} 抓取失败或超时跳过。", flush=True)
                 continue
-                
-            try:
-                root = ET.fromstring(xml_content.lstrip('\ufeff'))
-                items = root.findall('.//item')[:15]     #每个源最多提取15条记录
-                
-                for item in items:
-                    title_node = item.find('title')
-                    link_node = item.find('link')
-                    desc_node = item.find('description')
-                    
-                    title = title_node.text if title_node is not None and title_node.text else "无标题"
-                    link = link_node.text if link_node is not None else ""
-                    desc = clean_html(desc_node.text or "") if desc_node is not None else ""
-                    
-                    # 1. 全量写入底稿
-                    archive_file.write(f"### {title}\n{desc}\n🔗 {link}\n\n")
-                    
-                    # 2. 过滤逻辑：忽略词 + 已推送去重
-                    content_str = title + desc
-                    if any(w in content_str for w in ignore_words):
-                        continue 
-                    if link and link.strip() in seen_links:
-                        print(f"  ↺ 跳过已推送: {title[:40]}", flush=True)
-                        continue
-                        
-                    is_focus = any(w in content_str for w in focus_words)
-                    prefix = "[⭐高相关] " if is_focus else ""
-                    
-                    final_output_for_llm.append(f"[{source_name}] {prefix}{title}\n描述: {desc}\n链接: {link}\n")
-                
-                print(f"  ✅ {source_name} 提取了 {len(items)} 条内容。", flush=True)
-            except Exception as e:
-                archive_file.write(f"解析失败: {e}\n")
-                print(f"  ⚠️ {source_name} 解析失败: {e}", flush=True)
-                
-            # 休眠逻辑优化：最后一个源抓完就不需要休眠了
-            if current_feed < total_feeds:
+
+            kept = 0
+            for title, desc, link in entries:
+                keep, status = classify(title + desc, link.strip(), ignore_words, focus_words, seen_links)
+                archive_file.write(f"### {title}\n{desc}\n🔗 {link}\nSTATUS: {status}\n\n")
+                if keep:
+                    prefix = "[⭐高相关] " if status == STATUS_FOCUS else ""
+                    llm_material.append(f"[{source_name}] {prefix}{title}\n描述: {desc}\n链接: {link}\n")
+                    kept += 1
+
+            print(f"  ✅ {source_name} 共 {len(entries)} 条，入材料 {kept} 条。", flush=True)
+            if current_feed < total:
                 print(f"  ⏳ 等待 1秒...\n", flush=True)
                 time.sleep(1)
 
-    print("\n" + "="*40)
+    print("\n" + "=" * 40)
     print(f"🎉 今日简报材料提取完毕！底稿已存至: \n{archive_path}")
-    print("="*40 + "\n")
-    
-    # 最后将需要给 LLM 的正文打印出来
+    print("=" * 40 + "\n")
+    print("[ARCHIVE] " + archive_path)
     print("--- 请基于以下内容生成简报，重点关注带 [⭐高相关] 标记的新闻 ---\n")
-    print("\n".join(final_output_for_llm))
+    print("\n".join(llm_material))
 
 if __name__ == "__main__":
-    # 为了保证终端输出无延迟
     sys.stdout.reconfigure(line_buffering=True)
-    # 支持 --skip-sources Bloomberg,Zaobao 跳过已被 fetch_extra_sources() 覆盖的源
-    skip = set()
-    for arg in sys.argv[1:]:
-        if arg.startswith('--skip-sources'):
-            if '=' in arg:
-                skip = {s.strip() for s in arg.split('=', 1)[1].split(',') if s.strip()}
-            elif '--skip-sources' in sys.argv:
-                idx = sys.argv.index('--skip-sources')
-                if idx + 1 < len(sys.argv) and not sys.argv[idx + 1].startswith('-'):
-                    skip = {s.strip() for s in sys.argv[idx + 1].split(',') if s.strip()}
-    if skip:
-        print(f'[+] 跳过已覆盖源: {", ".join(sorted(skip))}', flush=True)
-    process_feeds(skip=skip)
+    args = sys.argv[1:]
+    out_path = None
+    if '--out' in args:
+        idx = args.index('--out')
+        if idx + 1 < len(args):
+            out_path = args[idx + 1]
+    if not out_path:
+        out_path = os.path.join(ARCHIVE_DIR, f"raw_rss_{datetime.now().strftime('%Y-%m-%d_%H%M')}.md")
+    os.makedirs(os.path.dirname(out_path), exist_ok=True)
+    process_feeds(out_path, datetime.now().strftime("%Y-%m-%d_%H%M"))

@@ -1,7 +1,6 @@
 #!/home/pi/agent-venv/bin/python3
-"""新闻简报 v4：RSS(capture) + 直连财经源 → opencode brief agent → xiaohu format.py → 图文推送"""
-import subprocess, sys, os, datetime, re, json, urllib.request, urllib.parse, html as _html, time
-import xml.etree.ElementTree as ET
+"""新闻简报 v6：parse_rss 统一抓 8 源全量留底 → 读底稿硬过滤 → opencode brief agent（主模型+退避+fallback）→ xiaohu format.py → 图文推送"""
+import subprocess, sys, os, datetime, re, json, time
 
 label = sys.argv[1] if len(sys.argv) > 1 else '早'
 dry = '--dry' in sys.argv
@@ -15,7 +14,6 @@ for line in open('/home/pi/.bashrc'):
 
 date = datetime.datetime.now().strftime('%Y-%m-%d')
 SKILL_DIR = '/home/pi/.config/opencode/skills/xiaohu-wechat-format'
-PREFS = '/home/pi/agent-workspace/user_prefs.json'
 SEEN_FILE = '/home/pi/agent-workspace/seen_links.json'
 
 def _load_seen():
@@ -48,107 +46,55 @@ def _save_seen(new_links, date):
         pass
     json.dump(data, open(SEEN_FILE, 'w'), ensure_ascii=False, indent=1)
 
-import socket as _socket
-_ORIG_GETADDRINFO = _socket.getaddrinfo
+RAW_ARCHIVE_DIR = '/home/pi/agent-workspace/outbox_obsidian/news_archives'
 
-def _ipv4_only(host, port, *a, **k):
-    k.pop('family', None)
+def read_raw_material(path):
+    """解析 raw_rss 底稿：剔除 🚫ignored/↺pushed 条目（底稿留痕不删），其余拼成 LLM 材料"""
     try:
-        return _ORIG_GETADDRINFO(host, port, _socket.AF_INET, *a, **k)
-    except _socket.gaierror:
-        return _ORIG_GETADDRINFO(host, port, *a, **k)
-
-def _fetch(url, timeout=5):
-    _socket.setdefaulttimeout(timeout)
-    _socket.getaddrinfo = _ipv4_only
-    req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 Chrome/126.0 Safari/537.36'})
-    try:
-        with urllib.request.urlopen(req, timeout=timeout) as r:
-            return r.read().decode('utf-8', 'ignore')
+        with open(path, encoding='utf-8') as f:
+            lines = f.read().splitlines()
     except Exception:
         return ''
+    material = []
+    src = ''
+    i = 0
+    while i < len(lines):
+        line = lines[i]
+        if line.startswith('## Source: '):
+            src = line[len('## Source: '):].strip()
+            i += 1
+        elif line.startswith('### '):
+            title = line[4:].strip()
+            desc = lines[i + 1].strip() if i + 1 < len(lines) else ''
+            link, status = '', ''
+            j = i + 2
+            while j < min(i + 6, len(lines)):
+                s = lines[j].strip()
+                if s.startswith('🔗'):
+                    link = s[1:].strip()
+                elif s.startswith('STATUS:'):
+                    status = s[len('STATUS:'):].strip()
+                    break
+                j += 1
+            if title and not status.startswith(('🚫', '↺')):
+                prefix = '[⭐高相关] ' if status.startswith('⭐') else ''
+                material.append(f"[{src}] {prefix}{title}\n描述: {desc}\n链接: {link}\n")
+            i = j + 1
+        else:
+            i += 1
+    return '\n'.join(material)
 
-def _clean(raw):
-    return re.sub(r'<[^>]+>', '', _html.unescape(raw or '')).strip()
-
-def fetch_extra_sources():
-    """直连补抓财经源：Wallstreetcn API + RSSHub。返回与 parse_rss 同格式文本"""
-    focus, ignore = [], []
-    try:
-        prefs = json.load(open(PREFS))
-        focus = prefs.get('focus_keywords', [])
-        ignore = prefs.get('ignore_keywords', [])
-    except Exception:
-        pass
-    entries = []
-
-    # a. 华尔街见闻 官方 JSON API
-    try:
-        js = json.loads(_fetch('https://api-one.wallstcn.com/apiv1/content/lives?channel=global-channel&limit=20'))
-        for item in js.get('data', {}).get('items', []):
-            title = item.get('title') or ''
-            content = _clean(item.get('content_text') or item.get('content') or '')
-            link = item.get('uri') or ''
-            if link and not link.startswith('http'):
-                link = 'https://wallstreetcn.com' + link
-            if title:
-                entries.append(('Wallstreetcn', title, content, link))
-    except Exception:
-        pass
-
-    # b. RSSHub 直连 4 源（cups.moe 主，rssforever/woodland 备）—— 全局 30s 超时兜底
-    _RH = ['https://rsshub.cups.moe', 'https://rsshub.rssforever.com', 'https://rsshub.woodland.cafe']
-    rssites = [
-        ('Bloomberg', '/bloomberg'),
-        ('Zaobao China', '/zaobao/realtime/china'),
-        ('Zaobao World', '/zaobao/realtime/world'),
-        ('Caixin China', '/caixin/latest'),
-    ]
-    _rss_start = time.time()
-    for name, path in rssites:
-        if time.time() - _rss_start > 30:
-            print(f'[!] RSSHub 已超 30s，跳过剩余源')
-            break
-        for inst in _RH:
-            root = None
-            try:
-                root = ET.fromstring(_fetch(inst + path).lstrip('\ufeff'))
-            except Exception:
-                root = None
-            if root is not None and len(root.findall('.//item')) > 0:
-                for item in root.findall('.//item')[:15]:
-                    t = item.find('title'); l = item.find('link'); d = item.find('description')
-                    title = t.text if t is not None and t.text else '无标题'
-                    link = l.text if l is not None else ''
-                    desc = _clean(d.text) if d is not None else ''
-                    entries.append((name, title, desc, link))
-                break  # 该源成功即换下一个
-
-    lines = []
-    seen_links = _load_seen()
-    for name, title, desc, link in entries:
-        cs = title + desc
-        if any(w in cs for w in ignore):
-            continue
-        if link and link.strip() in seen_links:
-            continue
-        is_focus = any(w in cs for w in focus)
-        prefix = '[⭐高相关] ' if is_focus else ''
-        lines.append(f'[{name}] {prefix}{title}\n描述: {desc}\n链接: {link}\n')
-    return '\n'.join(lines), len(entries)
-
-# 1. 直连补抓财经源（Wallstreetcn API + RSSHub 3 镜像，快且有 fallback）
-extra, extra_n = fetch_extra_sources()
-if extra:
-    print(f'[+] 直连补抓财经源: {extra_n} 条 (Wallstreetcn API + RSSHub)')
-
-# 2. 抓 RSS（capture 材料）—— 跳过已由 fetch_extra_sources 覆盖的源
+# 1. 抓料：parse_rss 统一抓 8 源并全量留底，随后读底稿硬过滤出可推送材料
+stamp = datetime.datetime.now().strftime('%Y-%m-%d_%H%M')
+raw_path = f'{RAW_ARCHIVE_DIR}/raw_rss_{stamp}.md'
 p1 = subprocess.run(['python3', os.path.join(os.path.dirname(os.path.abspath(__file__)), 'parse_rss.py'),
-    '--skip-sources', 'Bloomberg,Zaobao China,Zaobao World,Caixin China,Wallstreetcn'],
-    cwd='/home/pi/agent-workspace', capture_output=True, text=True, timeout=120, env=env)
-material = (p1.stdout or '')
-if extra:
-    material += '\n' + extra
+    '--out', raw_path],
+    cwd='/home/pi/agent-workspace', capture_output=True, text=True, timeout=240, env=env)
+material = read_raw_material(raw_path)
+if not material:
+    print('[!] 材料为空，parse_rss 输出尾部:', ((p1.stderr or '') + (p1.stdout or ''))[-600:])
+else:
+    print(f'[+] RAW RSS 底稿: {raw_path} | LLM 材料 {len(material)} 字符')
 
 # 2. opencode 生成 Markdown（SKILL 标准格式）
 TPL = '/home/pi/wechat-agent/templates/brief.md'
@@ -175,12 +121,21 @@ def _build_prompt(extra_feedback=''):
     prompt += f'\n\n--- 以下为今日新闻材料 ---\n{material}'
     return prompt
 
-def _run_brief(prompt_text):
+def _run_brief(prompt_text, model=None):
+    """调用 opencode brief agent 生成简报；model=None 用 brief.md 默认主模型"""
     # prompt 按 30KB 分块传 argv（aarch64 单参数上限 32KB，超限报 Argument list too long）
     _parts = [prompt_text[i:i+30000] for i in range(0, len(prompt_text), 30000)] if len(prompt_text) > 30000 else [prompt_text]
-    p = subprocess.run(['/home/pi/.opencode/bin/opencode', 'run', '--agent', 'brief', *_parts],
+    cmd = ['/home/pi/.opencode/bin/opencode', 'run']
+    if model:
+        cmd += ['--model', model]
+    cmd += ['--agent', 'brief', *_parts]
+    p = subprocess.run(cmd,
         cwd='/home/pi/agent-workspace', capture_output=True, text=True, timeout=600, env=env)
     md = (p.stdout or '').strip()
+    # 诊断日志：失败可回溯（此前 stdout 为空无任何线索）
+    if p.returncode != 0 or len(md) < 100:
+        err_tail = (p.stderr or '')[-300:].replace('\n', ' ')
+        print(f'[!] opencode 诊断: model={model or "默认(brief.md)"} returncode={p.returncode} stdout_len={len(md)} stderr尾: {err_tail}', flush=True)
     # 清洗：剥代码块标记 + 结尾话术
     if md.startswith('```'):
         md = md.strip('`').strip()
@@ -214,18 +169,39 @@ def _check_brief(md):
                 problems.append('某条副标题非英文')
     return problems
 
-md = _run_brief(_build_prompt())
-problems = _check_brief(md)
-if problems:
-    print('[!] 自检未通过:', '; '.join(problems), '→ 重试一次')
-    md = _run_brief(_build_prompt('；'.join(problems)))
+# 2. LLM 生成（三段式：主模型 → 30s 退避同模型重试 → 显式 fallback 模型）
+FALLBACK_MODEL = 'opencode-go/deepseek-v4-flash'
+md, problems = '', []
+feedback = ''
+for attempt, model in enumerate([None, None, FALLBACK_MODEL], 1):
+    if attempt == 2:
+        print('[!] 30s 退避后重试', flush=True)
+        time.sleep(30)
+    if attempt == 3:
+        print('[!] 切换 fallback 模型:', FALLBACK_MODEL, flush=True)
+    md = _run_brief(_build_prompt(feedback), model=model)
     problems = _check_brief(md)
-    if problems:
-        print('[!] 重试后仍有问题:', '; '.join(problems))
-if len(md) < 100:
+    if len(md) >= 100 and not problems:
+        break
+    feedback = '；'.join(problems) or '输出为空或过短'
+    print(f'[!] 第{attempt}次尝试未通过: {feedback[:200]}', flush=True)
+
+gen_ok = len(md) >= 100 and not problems
+if not gen_ok:
     md = f'# {label}报生成失败\n\n{md[:300]}'
 open('/tmp/brief.md', 'w').write(md)
-print('MD_LEN:', len(md))
+print('MD_LEN:', len(md), 'GEN_OK:', gen_ok)
+
+# 生成失败：留底 + Discord 告警，严禁把失败页推给公众号
+if not gen_ok and not dry:
+    try:
+        sys.path.insert(0, '/home/pi/wechat-agent/jobs')
+        from notify_discord import send_notification
+        send_notification(f'❌ {label}报生成失败 {date}（3 次尝试含 fallback 均未通过），已跳过公众号推送，原因详见 cron.log')
+    except Exception as e:
+        print('[!] 告警发送失败:', e)
+    print('=== 生成失败，已告警并跳过推送 ===')
+    sys.exit(1)
 
 # 3. xiaohu format.py 转微信 HTML
 outdir = '/tmp/xhwf_out'
