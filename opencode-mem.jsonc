@@ -4,8 +4,10 @@
   // 本地 embedding（首次使用从 HuggingFace 下载，已确认网络可达）
   "embeddingModel": "Xenova/nomic-embed-text-v1",
 
-  // 自动记忆：会话闲置后由 google/gemini-3.5-flash-lite 摘要并存库
-  "autoCaptureEnabled": true,
+  // 自动记忆已关闭：此前每次会话闲置都会后台开临时 session 摘要，导致
+  // kimaki external sync 在频道里刷出一堆 "Sync: opencode-mem capture" 子区。
+  // 需要记忆时用 memory 工具手动存。
+  "autoCaptureEnabled": false,
   "autoCaptureLanguage": "zh",
   "opencodeProvider": "google",
   "opencodeModel": "gemini-3.5-flash-lite",
