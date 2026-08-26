@@ -1523,3 +1523,48 @@ push discord: 0
 - ✅ gemini-3.5-flash-lite 连通 1751ms
 push discord summary: 0
 push discord alert: 0
+无过期文件
+无过期文件
+无过期文件
+[+] RAW RSS 底稿: /home/pi/agent-workspace/outbox_obsidian/news_archives/raw_rss_2026-08-26_1200.md | LLM 材料 44664 字符
+MD_LEN: 5865 GEN_OK: True
+format: OK
+HTML_LEN: 17158
+[+] 最终版留底: /home/pi/agent-workspace/outbox_obsidian/news_archives/brief_final_2026-08-26_1202_午.{md,html}
+news: {'errcode': 0, 'errmsg': 'send job submission success', 'msg_id': 1000000040, 'msg_data_id': 2247483725}
+push wechat: 0
+[+] 已推送去重记账: 11 条链接
+✅ Part 1/4
+✅ Part 2/4
+✅ Part 3/4
+✅ Part 4/4
+[+] 已推送 4/4 条消息到 Discord
+push discord: 0
+清理 3 个旧文件
+无过期文件
+无过期文件
+无过期文件
+无过期文件
+无过期文件
+无过期文件
+无过期文件
+[+] RAW RSS 底稿: /home/pi/agent-workspace/outbox_obsidian/news_archives/raw_rss_2026-08-26_2030.md | LLM 材料 48103 字符
+MD_LEN: 6575 GEN_OK: True
+format: OK
+HTML_LEN: 18891
+[+] 最终版留底: /home/pi/agent-workspace/outbox_obsidian/news_archives/brief_final_2026-08-26_2032_晚.{md,html}
+news: {'errcode': 0, 'errmsg': 'send job submission success', 'msg_id': 1000000041, 'msg_data_id': 2247483727}
+push wechat: 0
+[+] 已推送去重记账: 12 条链接
+✅ Part 1/4
+✅ Part 2/4
+✅ Part 3/4
+✅ Part 4/4
+[+] 已推送 4/4 条消息到 Discord
+push discord: 0
+清理 3 个旧文件
+无过期文件
+无过期文件
+无过期文件
+无过期文件
+无过期文件

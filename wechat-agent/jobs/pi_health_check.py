@@ -12,6 +12,9 @@ import shutil
 import socket
 import ssl
 import subprocess
+
+# cron 环境无 XDG_RUNTIME_DIR，补上才能查询 systemd --user 单元（否则 syncthing 误报）
+os.environ.setdefault('XDG_RUNTIME_DIR', f'/run/user/{os.getuid()}')
 import sys
 import time
 import urllib.request
