@@ -1460,3 +1460,66 @@ push discord: 0
 无过期文件
 无过期文件
 无过期文件
+backup: [master 4ec23a0] Auto-backup: 2026-08-26
+ 35 files changed, 2476 insertions(+), 4492 deletions(-)
+ c
+push: To github.com:Serendipppity/opencode-pi4.git
+ ! [rejected]        HEAD -> main (
+status saved: /home/pi/.cache/backup_status/git_backup.json
+无过期文件
+无过期文件
+无过期文件
+无过期文件
+无过期文件
+无过期文件
+[+] RAW RSS 底稿: /home/pi/agent-workspace/outbox_obsidian/news_archives/raw_rss_2026-08-26_0800.md | LLM 材料 29512 字符
+MD_LEN: 6719 GEN_OK: True
+format: OK
+HTML_LEN: 19027
+[+] 最终版留底: /home/pi/agent-workspace/outbox_obsidian/news_archives/brief_final_2026-08-26_0803_早.{md,html}
+news: {'errcode': 0, 'errmsg': 'send job submission success', 'msg_id': 1000000039, 'msg_data_id': 2247483723}
+push wechat: 0
+[+] 已推送去重记账: 12 条链接
+✅ Part 1/4
+✅ Part 2/4
+✅ Part 3/4
+✅ Part 4/4
+[+] 已推送 4/4 条消息到 Discord
+push discord: 0
+清理 3 个旧文件
+🖥️ **Pi 健康巡检** 2026-08-26 09:00
+
+❌ **Git**
+- ❌ 昨夜文件备份: push 失败 (2026-08-26)
+- ❌ 未提交变更: 1 | 领先远程: 3
+
+❌ **Syncthing**
+- ❌ systemd --user 服务: 
+- ✅ folder[pi-outbox]: state=idle 待同步文件=0
+
+✅ **系统**
+- ✅ 温度: 50.1°C
+- ✅ 内存可用: 3620MB
+- ✅ 磁盘: 16.1%
+- ✅ load15: 0.49
+- ℹ️ uptime: 4天10h28m
+
+❌ **服务存活**
+- ❌ syncthing
+- ✅ kimaki
+- ✅ cron
+
+✅ **模型清单**
+- providers: google, opencode-go | 默认模型: mimo-v2.5-free
+- - **brief**: `gemini-3.5-flash` → fb: `deepseek-v4-flash`
+- - **cavecrew-builder、cavecrew-investigator、cavecrew-reviewer、xiabao、xiatiao**: `ox-alpha-free`
+
+✅ **网络**
+- ✅ 内网网关(192.168.1.100): 平均 0.5ms
+- ✅ 国内公网(baidu.com): DNS+TLS 1439ms
+- ✅ 墙外(google 204): 975ms
+
+✅ **Gemini API**
+- ✅ gemini-3.5-flash-lite 连通 1751ms
+push discord summary: 0
+push discord alert: 0

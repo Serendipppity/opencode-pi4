@@ -1,8 +1,8 @@
 {
   "kindle_email": "writetowjw_QXMfhS@kindle.com",
   "account": "woeragent@gmail.com",
-  "local_dirs": ["~/Downloads", "~/Documents", "~/agent-workspace"],
+  "local_dirs": ["~/Downloads", "~/Documents"],
   "keyring_password": "wjw050607",
-  "max_size_mb": 25,
+  "max_size_mb": 35,
   "allowed_ext": [".epub", ".pdf"]
 }

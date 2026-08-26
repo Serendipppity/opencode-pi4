@@ -104,3 +104,6 @@ hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 ❌ Git 文件备份(02:00): commit=4ec23a0 push 失败
 ✅ 数据快照(03:00): commit=6f8a294, ❌push 失败
 [2026-08-26 03:00:01] ==== opencode data backup done ====
+[2026-08-26 09:18:29] ==== opencode data snapshot start ====
+[2026-08-26 09:18:29] data snapshots refreshed (local only, not in git)
+[2026-08-26 09:18:29] ==== opencode data snapshot done ====
