@@ -1640,3 +1640,125 @@ push discord: 0
 无过期文件
 无过期文件
 无过期文件
+backup: [master b360ded] Auto-backup: 2026-08-28
+ 21 files changed, 2234 insertions(+), 2078 deletions(-)
+ d
+push: To github.com:Serendipppity/opencode-pi4.git
+   4307610..b360ded  HEAD -> main
+status saved: /home/pi/.cache/backup_status/git_backup.json
+无过期文件
+无过期文件
+无过期文件
+无过期文件
+🖥️ **Pi 健康巡检** 2026-08-28 06:00
+
+✅ **Git**
+- ✅ 昨夜文件备份: push OK (2026-08-28)
+- ✅ 未提交变更: 1 | 领先远程: 0
+
+✅ **Syncthing**
+- ✅ systemd --user 服务: active
+- ✅ folder[pi-outbox]: state=idle 待同步文件=0
+
+✅ **系统**
+- ✅ 温度: 45.3°C
+- ✅ 内存可用: 4096MB
+- ✅ 磁盘: 15.9%
+- ✅ load15: 0.47
+- ℹ️ uptime: 6天7h28m
+
+✅ **服务存活**
+- ✅ syncthing
+- ✅ kimaki
+- ✅ cron
+
+✅ **模型清单**
+- providers: google, opencode-go | 默认模型: mimo-v2.5-free
+- - **brief**: `gemini-3.5-flash` → fb: `deepseek-v4-flash`
+- - **cavecrew-builder、cavecrew-investigator、cavecrew-reviewer、xiabao、xiatiao**: `ox-alpha-free`
+
+✅ **网络**
+- ✅ 内网网关(192.168.1.100): 平均 0.5ms
+- ✅ 国内公网(baidu.com): DNS+TLS 100ms
+- ✅ 墙外(google 204): 934ms
+
+❌ **Gemini API**
+- ❌ gemini-3.5-flash-lite HTTP 400 (1016ms)
+push discord summary: 0
+push discord alert: 0
+无过期文件
+无过期文件
+[+] RAW RSS 底稿: /home/pi/agent-workspace/outbox_obsidian/news_archives/raw_rss_2026-08-28_0800.md | LLM 材料 45338 字符
+[!] opencode 诊断: model=默认(brief.md) returncode=1 stdout_len=0 stderr尾: [0m > brief · gemini-3.5-flash [0m [91m[1mError: [0mUser location is not supported for the API use. 
+[!] 第1次尝试未通过: 缺分区 ## 核心要闻；缺分区 ## 国际风云；缺分区 ## 财经速递；缺分区 ## 科技前沿；缺分区 ## 国内要闻
+[!] 30s 退避后重试
+[!] opencode 诊断: model=默认(brief.md) returncode=1 stdout_len=0 stderr尾: [0m > brief · gemini-3.5-flash [0m [91m[1mError: [0mUser location is not supported for the API use. 
+[!] 第2次尝试未通过: 缺分区 ## 核心要闻；缺分区 ## 国际风云；缺分区 ## 财经速递；缺分区 ## 科技前沿；缺分区 ## 国内要闻
+[!] 切换 fallback 模型: opencode-go/deepseek-v4-flash
+MD_LEN: 7346 GEN_OK: True
+format: OK
+HTML_LEN: 19654
+[+] 最终版留底: /home/pi/agent-workspace/outbox_obsidian/news_archives/brief_final_2026-08-28_0810_早.{md,html}
+news: {'errcode': 0, 'errmsg': 'send job submission success', 'msg_id': 1000000045, 'msg_data_id': 2247483735}
+push wechat: 0
+[+] 已推送去重记账: 12 条链接
+✅ Part 1/5
+✅ Part 2/5
+✅ Part 3/5
+✅ Part 4/5
+✅ Part 5/5
+[+] 已推送 5/5 条消息到 Discord
+push discord: 0
+清理 3 个旧文件
+无过期文件
+无过期文件
+无过期文件
+[+] RAW RSS 底稿: /home/pi/agent-workspace/outbox_obsidian/news_archives/raw_rss_2026-08-28_1200.md | LLM 材料 40203 字符
+[!] opencode 诊断: model=默认(brief.md) returncode=1 stdout_len=0 stderr尾: [0m > brief · gemini-3.5-flash [0m [91m[1mError: [0mUser location is not supported for the API use. 
+[!] 第1次尝试未通过: 缺分区 ## 核心要闻；缺分区 ## 国际风云；缺分区 ## 财经速递；缺分区 ## 科技前沿；缺分区 ## 国内要闻
+[!] 30s 退避后重试
+[!] opencode 诊断: model=默认(brief.md) returncode=1 stdout_len=0 stderr尾: [0m > brief · gemini-3.5-flash [0m [91m[1mError: [0mThis model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later. 
+[!] 第2次尝试未通过: 缺分区 ## 核心要闻；缺分区 ## 国际风云；缺分区 ## 财经速递；缺分区 ## 科技前沿；缺分区 ## 国内要闻
+[!] 切换 fallback 模型: opencode-go/deepseek-v4-flash
+MD_LEN: 6311 GEN_OK: True
+format: OK
+HTML_LEN: 18484
+[+] 最终版留底: /home/pi/agent-workspace/outbox_obsidian/news_archives/brief_final_2026-08-28_1209_午.{md,html}
+news: {'errcode': 0, 'errmsg': 'send job submission success', 'msg_id': 1000000046, 'msg_data_id': 2247483737}
+push wechat: 0
+[+] 已推送去重记账: 12 条链接
+✅ Part 1/4
+✅ Part 2/4
+✅ Part 3/4
+✅ Part 4/4
+[+] 已推送 4/4 条消息到 Discord
+push discord: 0
+清理 3 个旧文件
+无过期文件
+无过期文件
+无过期文件
+无过期文件
+无过期文件
+无过期文件
+无过期文件
+[+] RAW RSS 底稿: /home/pi/agent-workspace/outbox_obsidian/news_archives/raw_rss_2026-08-28_2030.md | LLM 材料 46643 字符
+MD_LEN: 8088 GEN_OK: True
+format: OK
+HTML_LEN: 20396
+[+] 最终版留底: /home/pi/agent-workspace/outbox_obsidian/news_archives/brief_final_2026-08-28_2033_晚.{md,html}
+news: {'errcode': 0, 'errmsg': 'send job submission success', 'msg_id': 1000000047, 'msg_data_id': 2247483739}
+push wechat: 0
+[+] 已推送去重记账: 12 条链接
+✅ Part 1/5
+✅ Part 2/5
+✅ Part 3/5
+✅ Part 4/5
+✅ Part 5/5
+[+] 已推送 5/5 条消息到 Discord
+push discord: 0
+清理 3 个旧文件
+无过期文件
+无过期文件
+无过期文件
+无过期文件
+无过期文件
