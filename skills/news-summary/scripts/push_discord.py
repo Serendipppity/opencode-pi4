@@ -9,7 +9,6 @@ from requests.adapters import HTTPAdapter
 from urllib3.util.retry import Retry
 import os
 
-CHANNEL_ID = "1484060949903048778"
 CONFIG_PATH = os.path.expanduser("~/.config/opencode/discord-channel.json")
 
 
@@ -20,6 +19,10 @@ def load_config():
     except Exception as e:
         print(f"读取配置失败: {e}")
         return None
+
+
+def get_channel_id(config):
+    return config.get("defaultChannelId", "1483731735131848747")
 
 
 def create_session():
@@ -36,8 +39,8 @@ def create_session():
     return session
 
 
-def send_message(session, token, content):
-    url = f"https://discord.com/api/v10/channels/{CHANNEL_ID}/messages"
+def send_message(session, token, content, channel_id):
+    url = f"https://discord.com/api/v10/channels/{channel_id}/messages"
     headers = {
         "Authorization": f"Bot {token}",
         "Content-Type": "application/json",

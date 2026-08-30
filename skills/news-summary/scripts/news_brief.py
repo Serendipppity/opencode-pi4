@@ -171,8 +171,10 @@ def _check_brief(md):
 
 # 2. LLM 生成（三段式：主模型 → 30s 退避同模型重试 → 显式 fallback 模型）
 FALLBACK_MODEL = 'opencode-go/deepseek-v4-flash'
+DEFAULT_MODEL = 'google/gemini-3.5-flash'  # 与 brief.md 的 model 保持一致，用于 Discord 标注
 md, problems = '', []
 feedback = ''
+used_model = None
 for attempt, model in enumerate([None, None, FALLBACK_MODEL], 1):
     if attempt == 2:
         print('[!] 30s 退避后重试', flush=True)
@@ -182,15 +184,18 @@ for attempt, model in enumerate([None, None, FALLBACK_MODEL], 1):
     md = _run_brief(_build_prompt(feedback), model=model)
     problems = _check_brief(md)
     if len(md) >= 100 and not problems:
+        used_model = model or DEFAULT_MODEL
         break
     feedback = '；'.join(problems) or '输出为空或过短'
     print(f'[!] 第{attempt}次尝试未通过: {feedback[:200]}', flush=True)
+    # 记录最后一次尝试的模型（失败场景也用于告警上下文）
+    used_model = model or DEFAULT_MODEL
 
 gen_ok = len(md) >= 100 and not problems
 if not gen_ok:
     md = f'# {label}报生成失败\n\n{md[:300]}'
 open('/tmp/brief.md', 'w').write(md)
-print('MD_LEN:', len(md), 'GEN_OK:', gen_ok)
+print('MD_LEN:', len(md), 'GEN_OK:', gen_ok, 'MODEL:', used_model)
 
 # 生成失败：留底 + Discord 告警，严禁把失败页推给公众号
 if not gen_ok and not dry:
@@ -255,10 +260,20 @@ if r == 0:
 else:
     print('[!] 推送失败，不记账，下次补发可重推')
 
-# 6. Discord 推送
+# 6. Discord 推送（仅 Discord 末尾追加模型标注，公众号/留底不受影响）
 try:
+    # 追加模型标注到 Discord 专用副本
+    discord_md_path = '/tmp/brief_discord.md'
+    try:
+        short = (used_model or DEFAULT_MODEL).split('/')[-1]
+        # 标注只给 Discord，不写入 /tmp/brief.md / html / 归档
+        discord_footer = f"\n\n---\n*Model: {short}*"
+        open(discord_md_path, 'w', encoding='utf-8').write(md.rstrip() + discord_footer + "\n")
+    except Exception as e:
+        print(f'[!] 生成 Discord 标注失败: {e}')
+        discord_md_path = '/tmp/brief.md'
     from push_discord import push_to_discord as _discord_push
-    dr = _discord_push('/tmp/brief.md')
-    print('push discord:', dr)
+    dr = _discord_push(discord_md_path)
+    print('push discord:', dr, 'model:', used_model)
 except Exception as e:
     print(f'[!] Discord 推送异常: {e}')
