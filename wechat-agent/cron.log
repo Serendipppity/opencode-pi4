@@ -2518,3 +2518,123 @@ push discord: 0 model: google/gemini-3.5-flash
 无过期文件
 无过期文件
 无过期文件
+backup: [master 16c8a3f] Auto-backup: 2026-09-05
+ 21 files changed, 2043 insertions(+), 2218 deletions(-)
+ d
+push: To github.com:Serendipppity/opencode-pi4.git
+   267b6e6..16c8a3f  HEAD -> main
+status saved: /home/pi/.cache/backup_status/git_backup.json
+无过期文件
+无过期文件
+无过期文件
+无过期文件
+🖥️ **Pi 健康巡检** 2026-09-05 06:00
+
+✅ **Git**
+- ✅ 昨夜文件备份: push OK (2026-09-05)
+- ✅ 未提交变更: 1 | 领先远程: 0
+
+✅ **Syncthing**
+- ✅ systemd --user 服务: active
+- ✅ folder[pi-outbox]: state=idle 待同步文件=0
+
+✅ **系统**
+- ✅ 温度: 45.8°C
+- ✅ 内存可用: 4619MB
+- ✅ 磁盘: 16.0%
+- ✅ load15: 0.95
+- ℹ️ uptime: 14天7h28m
+
+✅ **服务存活**
+- ✅ syncthing
+- ✅ kimaki
+- ✅ cron
+
+✅ **模型清单**
+- providers: google, opencode-go | 默认模型: mimo-v2.5-free
+- - **brief**: `gemini-3.5-flash` → fb: `deepseek-v4-flash`
+- - **cavecrew-builder、cavecrew-investigator、cavecrew-reviewer、xiabao、xiatiao**: `ox-alpha-free`
+
+✅ **网络**
+- ✅ 内网网关(192.168.1.100): 平均 0.5ms
+- ✅ 国内公网(baidu.com): DNS+TLS 75ms
+- ✅ 墙外(google 204): 1022ms
+
+✅ **Gemini API**
+- ✅ gemini-3.5-flash-lite 连通 1486ms
+push discord summary: 0
+无过期文件
+无过期文件
+[+] RAW RSS 底稿: /home/pi/agent-workspace/outbox_obsidian/news_archives/raw_rss_2026-09-05_0800.md | LLM 材料 49068 字符
+MD_LEN: 8566 GEN_OK: True MODEL: google/gemini-3.5-flash
+format: OK
+HTML_LEN: 20878
+[+] 最终版留底: /home/pi/agent-workspace/outbox_obsidian/news_archives/brief_final_2026-09-05_0801_早.{md,html}
+news: {'errcode': 0, 'errmsg': 'send job submission success', 'msg_id': 1000000068, 'msg_data_id': 2247483781}
+push wechat: 0
+[+] 已推送去重记账: 12 条链接
+✅ Part 1/6
+✅ Part 2/6
+✅ Part 3/6
+✅ Part 4/6
+✅ Part 5/6
+✅ Part 6/6
+[+] 已推送 6/6 条消息到 Discord
+push discord: 0 model: google/gemini-3.5-flash
+清理 3 个旧文件
+无过期文件
+无过期文件
+无过期文件
+[+] RAW RSS 底稿: /home/pi/agent-workspace/outbox_obsidian/news_archives/raw_rss_2026-09-05_1200.md | LLM 材料 39956 字符
+[!] opencode 诊断: model=默认(brief.md) returncode=1 stdout_len=0 stderr尾: [0m > brief · gemini-3.5-flash [0m [91m[1mError: [0mUser location is not supported for the API use. 
+[!] 第1次尝试未通过: 缺分区 ## 核心要闻；缺分区 ## 国际风云；缺分区 ## 财经速递；缺分区 ## 科技前沿；缺分区 ## 国内要闻
+[!] 30s 退避后重试
+MD_LEN: 7351 GEN_OK: True MODEL: google/gemini-3.5-flash
+format: OK
+HTML_LEN: 19659
+[+] 最终版留底: /home/pi/agent-workspace/outbox_obsidian/news_archives/brief_final_2026-09-05_1205_午.{md,html}
+news: {'errcode': 0, 'errmsg': 'send job submission success', 'msg_id': 1000000069, 'msg_data_id': 2247483783}
+push wechat: 0
+[+] 已推送去重记账: 12 条链接
+✅ Part 1/5
+✅ Part 2/5
+✅ Part 3/5
+✅ Part 4/5
+✅ Part 5/5
+[+] 已推送 5/5 条消息到 Discord
+push discord: 0 model: google/gemini-3.5-flash
+清理 3 个旧文件
+无过期文件
+无过期文件
+无过期文件
+无过期文件
+无过期文件
+无过期文件
+无过期文件
+[+] RAW RSS 底稿: /home/pi/agent-workspace/outbox_obsidian/news_archives/raw_rss_2026-09-05_2030.md | LLM 材料 46561 字符
+[!] opencode 诊断: model=默认(brief.md) returncode=1 stdout_len=0 stderr尾: [0m > brief · gemini-3.5-flash [0m [91m[1mError: [0mThis model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later. 
+[!] 第1次尝试未通过: 缺分区 ## 核心要闻；缺分区 ## 国际风云；缺分区 ## 财经速递；缺分区 ## 科技前沿；缺分区 ## 国内要闻
+[!] 30s 退避后重试
+[!] opencode 诊断: model=默认(brief.md) returncode=1 stdout_len=0 stderr尾: [0m > brief · gemini-3.5-flash [0m [91m[1mError: [0mUser location is not supported for the API use. 
+[!] 第2次尝试未通过: 缺分区 ## 核心要闻；缺分区 ## 国际风云；缺分区 ## 财经速递；缺分区 ## 科技前沿；缺分区 ## 国内要闻
+[!] 切换 fallback 模型: opencode-go/deepseek-v4-flash
+MD_LEN: 7557 GEN_OK: True MODEL: opencode-go/deepseek-v4-flash
+format: OK
+HTML_LEN: 19865
+[+] 最终版留底: /home/pi/agent-workspace/outbox_obsidian/news_archives/brief_final_2026-09-05_2044_晚.{md,html}
+news: {'errcode': 0, 'errmsg': 'send job submission success', 'msg_id': 1000000070, 'msg_data_id': 2247483785}
+push wechat: 0
+[+] 已推送去重记账: 12 条链接
+✅ Part 1/5
+✅ Part 2/5
+✅ Part 3/5
+✅ Part 4/5
+✅ Part 5/5
+[+] 已推送 5/5 条消息到 Discord
+push discord: 0 model: opencode-go/deepseek-v4-flash
+清理 3 个旧文件
+无过期文件
+无过期文件
+无过期文件
+无过期文件
+无过期文件
