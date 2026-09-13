@@ -3390,3 +3390,120 @@ push discord: 0 model: google/gemini-3.5-flash
 无过期文件
 无过期文件
 无过期文件
+backup: [master 82897d7] Auto-backup: 2026-09-13
+ 21 files changed, 2334 insertions(+), 2116 deletions(-)
+ d
+push: To github.com:Serendipppity/opencode-pi4.git
+   b274225..82897d7  HEAD -> main
+status saved: /home/pi/.cache/backup_status/git_backup.json
+无过期文件
+无过期文件
+无过期文件
+无过期文件
+🖥️ **Pi 健康巡检** 2026-09-13 06:00
+
+✅ **Git**
+- ✅ 昨夜文件备份: push OK (2026-09-13)
+- ✅ 未提交变更: 1 | 领先远程: 0
+
+✅ **Syncthing**
+- ✅ systemd --user 服务: active
+- ✅ folder[pi-outbox]: state=idle 待同步文件=0
+
+✅ **系统**
+- ✅ 温度: 50.6°C
+- ✅ 内存可用: 6089MB
+- ✅ 磁盘: 16.2%
+- ✅ load15: 0.74
+- ℹ️ uptime: 5天13h23m
+
+✅ **服务存活**
+- ✅ syncthing
+- ✅ kimaki
+- ✅ cron
+
+✅ **模型清单**
+- providers: google, opencode-go | 默认模型: mimo-v2.5-free
+- - **brief**: `gemini-3.5-flash` → fb: `deepseek-v4-flash`
+- - **cavecrew-builder、cavecrew-investigator、cavecrew-reviewer、xiabao、xiatiao**: `ox-alpha-free`
+
+❌ **网络**
+- ✅ 内网网关(192.168.1.100): 平均 0.7ms
+- ✅ 国内公网(baidu.com): DNS+TLS 70ms
+- ❌ 墙外(google 204): HTTP 超时 (6021ms)
+
+❌ **Gemini API**
+- ❌ gemini-3.5-flash-lite HTTP 超时 (7962ms)
+[Network Error] (1/5): HTTPSConnectionPool(host='discord.com', port=443): Max retries exceeded with url: /api/v10/channels/1483731735131848747/messages (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1081)')))
+[Network Error] (2/5): HTTPSConnectionPool(host='discord.com', port=443): Max retries exceeded with url: /api/v10/channels/1483731735131848747/messages (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1081)')))
+[Network Error] (3/5): HTTPSConnectionPool(host='discord.com', port=443): Max retries exceeded with url: /api/v10/channels/1483731735131848747/messages (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1081)')))
+[Network Error] (4/5): HTTPSConnectionPool(host='discord.com', port=443): Max retries exceeded with url: /api/v10/channels/1483731735131848747/messages (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1081)')))
+[Network Error] (5/5): HTTPSConnectionPool(host='discord.com', port=443): Max retries exceeded with url: /api/v10/channels/1483731735131848747/messages (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1081)')))
+通知发送失败
+push discord summary: 1
+[Network Error] (1/5): HTTPSConnectionPool(host='discord.com', port=443): Max retries exceeded with url: /api/v10/channels/1483731735131848747/messages (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1081)')))
+[Network Error] (2/5): HTTPSConnectionPool(host='discord.com', port=443): Max retries exceeded with url: /api/v10/channels/1483731735131848747/messages (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1081)')))
+[Network Error] (3/5): HTTPSConnectionPool(host='discord.com', port=443): Max retries exceeded with url: /api/v10/channels/1483731735131848747/messages (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1081)')))
+[Network Error] (4/5): HTTPSConnectionPool(host='discord.com', port=443): Max retries exceeded with url: /api/v10/channels/1483731735131848747/messages (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1081)')))
+[Network Error] (5/5): HTTPSConnectionPool(host='discord.com', port=443): Max retries exceeded with url: /api/v10/channels/1483731735131848747/messages (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1081)')))
+通知发送失败
+push discord alert: 1
+无过期文件
+无过期文件
+[+] RAW RSS 底稿: /home/pi/agent-workspace/outbox_obsidian/news_archives/raw_rss_2026-09-13_0800.md | LLM 材料 33422 字符
+MD_LEN: 5848 GEN_OK: True MODEL: google/gemini-3.5-flash
+format: OK
+HTML_LEN: 18160
+[+] 最终版留底: /home/pi/agent-workspace/outbox_obsidian/news_archives/brief_final_2026-09-13_0802_早.{md,html}
+news: {'errcode': 0, 'errmsg': 'send job submission success', 'msg_id': 1000000092, 'msg_data_id': 2247483829}
+push wechat: 0
+[+] 已推送去重记账: 12 条链接
+✅ Part 1/4
+✅ Part 2/4
+✅ Part 3/4
+✅ Part 4/4
+[+] 已推送 4/4 条消息到 Discord
+push discord: 0 model: google/gemini-3.5-flash
+清理 3 个旧文件
+无过期文件
+无过期文件
+无过期文件
+[+] RAW RSS 底稿: /home/pi/agent-workspace/outbox_obsidian/news_archives/raw_rss_2026-09-13_1200.md | LLM 材料 41927 字符
+MD_LEN: 6145 GEN_OK: True MODEL: google/gemini-3.5-flash
+format: OK
+HTML_LEN: 18457
+[+] 最终版留底: /home/pi/agent-workspace/outbox_obsidian/news_archives/brief_final_2026-09-13_1201_午.{md,html}
+news: {'errcode': 0, 'errmsg': 'send job submission success', 'msg_id': 1000000093, 'msg_data_id': 2247483831}
+push wechat: 0
+[+] 已推送去重记账: 12 条链接
+✅ Part 1/4
+✅ Part 2/4
+✅ Part 3/4
+✅ Part 4/4
+[+] 已推送 4/4 条消息到 Discord
+push discord: 0 model: google/gemini-3.5-flash
+清理 3 个旧文件
+无过期文件
+无过期文件
+无过期文件
+无过期文件
+无过期文件
+无过期文件
+无过期文件
+[+] RAW RSS 底稿: /home/pi/agent-workspace/outbox_obsidian/news_archives/raw_rss_2026-09-13_2030.md | LLM 材料 47170 字符
+[!] opencode 诊断: model=默认(brief.md) returncode=1 stdout_len=0 stderr尾: [0m > brief · gemini-3.5-flash [0m [91m[1mError: [0mUser location is not supported for the API use. 
+[!] 第1次尝试未通过: 缺分区 ## 核心要闻；缺分区 ## 国际风云；缺分区 ## 财经速递；缺分区 ## 科技前沿；缺分区 ## 国内要闻
+[!] 30s 退避后重试
+[!] opencode 诊断: model=默认(brief.md) returncode=1 stdout_len=0 stderr尾: [0m > brief · gemini-3.5-flash [0m [91m[1mError: [0mThis model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later. 
+[!] 第2次尝试未通过: 缺分区 ## 核心要闻；缺分区 ## 国际风云；缺分区 ## 财经速递；缺分区 ## 科技前沿；缺分区 ## 国内要闻
+[!] 切换 fallback 模型: opencode-go/deepseek-v4-flash
+[!] opencode 诊断: model=opencode-go/deepseek-v4-flash returncode=1 stdout_len=0 stderr尾: [0m > brief · deepseek-v4-flash [0m [91m[1mError: [0mInsufficient balance. Manage your billing here: https://opencode.ai/workspace/wrk_01KZJK620CQV2ZV2JGY5XFSDG4/billing 
+[!] 第3次尝试未通过: 缺分区 ## 核心要闻；缺分区 ## 国际风云；缺分区 ## 财经速递；缺分区 ## 科技前沿；缺分区 ## 国内要闻
+MD_LEN: 10 GEN_OK: False MODEL: opencode-go/deepseek-v4-flash
+=== 生成失败，已告警并跳过推送 ===
+清理 3 个旧文件
+无过期文件
+无过期文件
+无过期文件
+无过期文件
+无过期文件
