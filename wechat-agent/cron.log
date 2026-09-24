@@ -4596,3 +4596,101 @@ push discord: 0 model: google/gemini-3.5-flash
 无过期文件
 无过期文件
 无过期文件
+backup: [master 0814a4c] Auto-backup: 2026-09-24
+ 18 files changed, 2218 insertions(+), 1972 deletions(-)
+ d
+push: To github.com:Serendipppity/opencode-pi4.git
+   65a4ddf..0814a4c  HEAD -> main
+status saved: /home/pi/.cache/backup_status/git_backup.json
+无过期文件
+无过期文件
+无过期文件
+无过期文件
+🖥️ **Pi 健康巡检** 2026-09-24 06:00
+
+✅ **Git**
+- ✅ 昨夜文件备份: push OK (2026-09-24)
+- ✅ 未提交变更: 1 | 领先远程: 0
+
+✅ **Syncthing**
+- ✅ systemd --user 服务: active
+- ✅ folder[pi-outbox]: state=idle 待同步文件=0
+
+✅ **系统**
+- ✅ 温度: 50.6°C
+- ✅ 内存可用: 3141MB
+- ✅ 磁盘: 16.5%
+- ✅ load15: 0.45
+- ℹ️ uptime: 16天13h23m
+
+✅ **服务存活**
+- ✅ syncthing
+- ✅ kimaki
+- ✅ cron
+
+✅ **模型清单**
+- providers: google, opencode-go | 默认模型: mimo-v2.5-free
+- - **brief**: `gemini-3.5-flash` → fb: `deepseek-v4-flash`
+- - **cavecrew-builder、cavecrew-investigator、cavecrew-reviewer、xiabao、xiatiao**: `ox-alpha-free`
+
+✅ **网络**
+- ✅ 内网网关(192.168.1.100): 平均 0.5ms
+- ✅ 国内公网(baidu.com): DNS+TLS 79ms
+- ✅ 墙外(google 204): 824ms
+
+✅ **Gemini API**
+- ✅ gemini-3.5-flash-lite 连通 1955ms
+push discord summary: 0
+无过期文件
+无过期文件
+[+] RAW RSS 底稿: /home/pi/agent-workspace/outbox_obsidian/news_archives/raw_rss_2026-09-24_0800.md | LLM 材料 53231 字符
+[!] opencode 诊断: model=默认(brief.md) returncode=1 stdout_len=0 stderr尾: [0m > brief · gemini-3.5-flash [0m [91m[1mError: [0mThis model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later. 
+[!] 第1次尝试未通过: 缺分区 ## 核心要闻；缺分区 ## 国际风云；缺分区 ## 财经速递；缺分区 ## 科技前沿；缺分区 ## 国内要闻
+[!] 30s 退避后重试
+[!] opencode 诊断: model=默认(brief.md) returncode=1 stdout_len=0 stderr尾: [0m > brief · gemini-3.5-flash [0m [91m[1mError: [0mThis model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later. 
+[!] 第2次尝试未通过: 缺分区 ## 核心要闻；缺分区 ## 国际风云；缺分区 ## 财经速递；缺分区 ## 科技前沿；缺分区 ## 国内要闻
+[!] 切换 fallback 模型: opencode-go/deepseek-v4-flash
+[!] opencode 诊断: model=opencode-go/deepseek-v4-flash returncode=1 stdout_len=0 stderr尾: [0m > brief · deepseek-v4-flash [0m [91m[1mError: [0mUpstream request failed: An active OpenCode Go subscription is required to use Go models. 
+[!] 第3次尝试未通过: 缺分区 ## 核心要闻；缺分区 ## 国际风云；缺分区 ## 财经速递；缺分区 ## 科技前沿；缺分区 ## 国内要闻
+MD_LEN: 10 GEN_OK: False MODEL: opencode-go/deepseek-v4-flash
+=== 生成失败，已告警并跳过推送 ===
+清理 3 个旧文件
+无过期文件
+无过期文件
+无过期文件
+[+] RAW RSS 底稿: /home/pi/agent-workspace/outbox_obsidian/news_archives/raw_rss_2026-09-24_1200.md | LLM 材料 46583 字符
+[!] opencode 诊断: model=默认(brief.md) returncode=1 stdout_len=0 stderr尾: [0m > brief · gemini-3.5-flash [0m [91m[1mError: [0mThis model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later. 
+[!] 第1次尝试未通过: 缺分区 ## 核心要闻；缺分区 ## 国际风云；缺分区 ## 财经速递；缺分区 ## 科技前沿；缺分区 ## 国内要闻
+[!] 30s 退避后重试
+[!] opencode 诊断: model=默认(brief.md) returncode=1 stdout_len=0 stderr尾: rror, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit.  * Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.5-flash Please retry in 25.453276572s. 
+[!] 第2次尝试未通过: 缺分区 ## 核心要闻；缺分区 ## 国际风云；缺分区 ## 财经速递；缺分区 ## 科技前沿；缺分区 ## 国内要闻
+[!] 切换 fallback 模型: opencode-go/deepseek-v4-flash
+[!] opencode 诊断: model=opencode-go/deepseek-v4-flash returncode=1 stdout_len=0 stderr尾: [0m > brief · deepseek-v4-flash [0m [91m[1mError: [0mUpstream request failed: An active OpenCode Go subscription is required to use Go models. 
+[!] 第3次尝试未通过: 缺分区 ## 核心要闻；缺分区 ## 国际风云；缺分区 ## 财经速递；缺分区 ## 科技前沿；缺分区 ## 国内要闻
+MD_LEN: 10 GEN_OK: False MODEL: opencode-go/deepseek-v4-flash
+=== 生成失败，已告警并跳过推送 ===
+清理 3 个旧文件
+无过期文件
+无过期文件
+无过期文件
+无过期文件
+无过期文件
+无过期文件
+无过期文件
+[+] RAW RSS 底稿: /home/pi/agent-workspace/outbox_obsidian/news_archives/raw_rss_2026-09-24_2030.md | LLM 材料 48418 字符
+[!] opencode 诊断: model=默认(brief.md) returncode=1 stdout_len=0 stderr尾: [0m > brief · gemini-3.5-flash [0m [91m[1mError: [0mThis model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later. 
+[!] 第1次尝试未通过: 缺分区 ## 核心要闻；缺分区 ## 国际风云；缺分区 ## 财经速递；缺分区 ## 科技前沿；缺分区 ## 国内要闻
+[!] 30s 退避后重试
+[!] opencode 诊断: model=默认(brief.md) returncode=1 stdout_len=0 stderr尾: [0m > brief · gemini-3.5-flash [0m [91m[1mError: [0mThis model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later. 
+[!] 第2次尝试未通过: 缺分区 ## 核心要闻；缺分区 ## 国际风云；缺分区 ## 财经速递；缺分区 ## 科技前沿；缺分区 ## 国内要闻
+[!] 切换 fallback 模型: opencode-go/deepseek-v4-flash
+[!] opencode 诊断: model=opencode-go/deepseek-v4-flash returncode=1 stdout_len=0 stderr尾: [0m > brief · deepseek-v4-flash [0m [91m[1mError: [0mUpstream request failed: An active OpenCode Go subscription is required to use Go models. 
+[!] 第3次尝试未通过: 缺分区 ## 核心要闻；缺分区 ## 国际风云；缺分区 ## 财经速递；缺分区 ## 科技前沿；缺分区 ## 国内要闻
+MD_LEN: 10 GEN_OK: False MODEL: opencode-go/deepseek-v4-flash
+=== 生成失败，已告警并跳过推送 ===
+清理 3 个旧文件
+无过期文件
+无过期文件
+无过期文件
+无过期文件
+无过期文件
