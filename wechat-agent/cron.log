@@ -4694,3 +4694,115 @@ MD_LEN: 10 GEN_OK: False MODEL: opencode-go/deepseek-v4-flash
 无过期文件
 无过期文件
 无过期文件
+backup: [master 6f96890] Auto-backup: 2026-09-25
+ 14 files changed, 1757 insertions(+), 2104 deletions(-)
+ d
+push: To github.com:Serendipppity/opencode-pi4.git
+   0814a4c..6f96890  HEAD -> main
+status saved: /home/pi/.cache/backup_status/git_backup.json
+无过期文件
+无过期文件
+无过期文件
+无过期文件
+🖥️ **Pi 健康巡检** 2026-09-25 06:00
+
+✅ **Git**
+- ✅ 昨夜文件备份: push OK (2026-09-25)
+- ✅ 未提交变更: 1 | 领先远程: 0
+
+✅ **Syncthing**
+- ✅ systemd --user 服务: active
+- ✅ folder[pi-outbox]: state=idle 待同步文件=0
+
+✅ **系统**
+- ✅ 温度: 50.1°C
+- ✅ 内存可用: 4759MB
+- ✅ 磁盘: 16.6%
+- ✅ load15: 0.15
+- ℹ️ uptime: 17天13h23m
+
+✅ **服务存活**
+- ✅ syncthing
+- ✅ kimaki
+- ✅ cron
+
+✅ **模型清单**
+- providers: google, opencode-go | 默认模型: mimo-v2.5-free
+- - **brief**: `gemini-3.5-flash` → fb: `deepseek-v4-flash`
+- - **cavecrew-builder、cavecrew-investigator、cavecrew-reviewer、xiabao、xiatiao**: `ox-alpha-free`
+
+✅ **网络**
+- ✅ 内网网关(192.168.1.100): 平均 0.5ms
+- ✅ 国内公网(baidu.com): DNS+TLS 1498ms
+- ✅ 墙外(google 204): 859ms
+
+✅ **Gemini API**
+- ✅ gemini-3.5-flash-lite 连通 1515ms
+push discord summary: 0
+无过期文件
+无过期文件
+[+] RAW RSS 底稿: /home/pi/agent-workspace/outbox_obsidian/news_archives/raw_rss_2026-09-25_0800.md | LLM 材料 52231 字符
+MD_LEN: 8143 GEN_OK: True MODEL: google/gemini-3.5-flash
+format: OK
+HTML_LEN: 20455
+[+] 最终版留底: /home/pi/agent-workspace/outbox_obsidian/news_archives/brief_final_2026-09-25_0801_早.{md,html}
+token fail
+push wechat: 1
+[!] 推送失败，不记账，下次补发可重推
+✅ Part 1/6
+✅ Part 2/6
+✅ Part 3/6
+✅ Part 4/6
+✅ Part 5/6
+✅ Part 6/6
+[+] 已推送 6/6 条消息到 Discord
+push discord: 0 model: google/gemini-3.5-flash
+清理 1 个旧文件
+无过期文件
+无过期文件
+无过期文件
+[+] RAW RSS 底稿: /home/pi/agent-workspace/outbox_obsidian/news_archives/raw_rss_2026-09-25_1200.md | LLM 材料 48403 字符
+MD_LEN: 5743 GEN_OK: True MODEL: google/gemini-3.5-flash
+format: OK
+HTML_LEN: 18055
+[+] 最终版留底: /home/pi/agent-workspace/outbox_obsidian/news_archives/brief_final_2026-09-25_1202_午.{md,html}
+token fail
+push wechat: 1
+[!] 推送失败，不记账，下次补发可重推
+✅ Part 1/4
+✅ Part 2/4
+✅ Part 3/4
+✅ Part 4/4
+[+] 已推送 4/4 条消息到 Discord
+push discord: 0 model: google/gemini-3.5-flash
+清理 1 个旧文件
+无过期文件
+无过期文件
+无过期文件
+无过期文件
+无过期文件
+无过期文件
+无过期文件
+[+] RAW RSS 底稿: /home/pi/agent-workspace/outbox_obsidian/news_archives/raw_rss_2026-09-25_2030.md | LLM 材料 45403 字符
+[!] opencode 诊断: model=默认(brief.md) returncode=1 stdout_len=0 stderr尾: [0m > brief · gemini-3.5-flash [0m [91m[1mError: [0mThis model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later. 
+[!] 第1次尝试未通过: 缺分区 ## 核心要闻；缺分区 ## 国际风云；缺分区 ## 财经速递；缺分区 ## 科技前沿；缺分区 ## 国内要闻
+[!] 30s 退避后重试
+MD_LEN: 6407 GEN_OK: True MODEL: google/gemini-3.5-flash
+format: OK
+HTML_LEN: 18719
+[+] 最终版留底: /home/pi/agent-workspace/outbox_obsidian/news_archives/brief_final_2026-09-25_2038_晚.{md,html}
+token fail
+push wechat: 1
+[!] 推送失败，不记账，下次补发可重推
+✅ Part 1/4
+✅ Part 2/4
+✅ Part 3/4
+✅ Part 4/4
+[+] 已推送 4/4 条消息到 Discord
+push discord: 0 model: google/gemini-3.5-flash
+清理 1 个旧文件
+无过期文件
+无过期文件
+无过期文件
+无过期文件
+无过期文件
