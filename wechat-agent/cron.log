@@ -5342,3 +5342,107 @@ MD_LEN: 10 GEN_OK: False MODEL: opencode-go/deepseek-v4-flash
 无过期文件
 无过期文件
 无过期文件
+backup: [master d9bdb3b] Auto-backup: 2026-10-01
+ 14 files changed, 1841 insertions(+), 1916 deletions(-)
+ d
+push: To github.com:Serendipppity/opencode-pi4.git
+   37f45b4..d9bdb3b  HEAD -> main
+status saved: /home/pi/.cache/backup_status/git_backup.json
+无过期文件
+无过期文件
+无过期文件
+无过期文件
+🖥️ **Pi 健康巡检** 2026-10-01 06:00
+
+✅ **Git**
+- ✅ 昨夜文件备份: push OK (2026-10-01)
+- ✅ 未提交变更: 1 | 领先远程: 0
+
+✅ **Syncthing**
+- ✅ systemd --user 服务: active
+- ✅ folder[pi-outbox]: state=idle 待同步文件=0
+
+✅ **系统**
+- ✅ 温度: 49.2°C
+- ✅ 内存可用: 4632MB
+- ✅ 磁盘: 16.7%
+- ✅ load15: 1.58
+- ℹ️ uptime: 23天13h23m
+
+✅ **服务存活**
+- ✅ syncthing
+- ✅ kimaki
+- ✅ cron
+
+✅ **模型清单**
+- providers: google, opencode-go | 默认模型: mimo-v2.5-free
+- - **brief**: `gemini-3.5-flash` → fb: `deepseek-v4-flash`
+- - **cavecrew-builder、cavecrew-investigator、cavecrew-reviewer、xiabao、xiatiao**: `ox-alpha-free`
+
+✅ **网络**
+- ✅ 内网网关(192.168.1.100): 平均 0.5ms
+- ✅ 国内公网(baidu.com): DNS+TLS 653ms
+- ✅ 墙外(google 204): 484ms
+
+✅ **Gemini API**
+- ✅ gemini-3.5-flash-lite 连通 1202ms
+push discord summary: 0
+无过期文件
+无过期文件
+[+] RAW RSS 底稿: /home/pi/agent-workspace/outbox_obsidian/news_archives/raw_rss_2026-10-01_0800.md | LLM 材料 56160 字符
+[!] opencode 诊断: model=默认(brief.md) returncode=1 stdout_len=0 stderr尾: [0m > brief · gemini-3.5-flash [0m [91m[1mError: [0mThis model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later. 
+[!] 第1次尝试未通过: 缺分区 ## 核心要闻；缺分区 ## 国际风云；缺分区 ## 财经速递；缺分区 ## 科技前沿；缺分区 ## 国内要闻
+[!] 30s 退避后重试
+[!] opencode 诊断: model=默认(brief.md) returncode=1 stdout_len=0 stderr尾: rror, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit.  * Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.5-flash Please retry in 19.635371213s. 
+[!] 第2次尝试未通过: 缺分区 ## 核心要闻；缺分区 ## 国际风云；缺分区 ## 财经速递；缺分区 ## 科技前沿；缺分区 ## 国内要闻
+[!] 切换 fallback 模型: opencode-go/deepseek-v4-flash
+[!] opencode 诊断: model=opencode-go/deepseek-v4-flash returncode=1 stdout_len=0 stderr尾: [0m > brief · deepseek-v4-flash [0m [91m[1mError: [0mUpstream request failed: An active OpenCode Go subscription is required to use Go models. 
+[!] 第3次尝试未通过: 缺分区 ## 核心要闻；缺分区 ## 国际风云；缺分区 ## 财经速递；缺分区 ## 科技前沿；缺分区 ## 国内要闻
+MD_LEN: 10 GEN_OK: False MODEL: opencode-go/deepseek-v4-flash
+=== 生成失败，已告警并跳过推送 ===
+清理 3 个旧文件
+无过期文件
+无过期文件
+无过期文件
+[+] RAW RSS 底稿: /home/pi/agent-workspace/outbox_obsidian/news_archives/raw_rss_2026-10-01_1200.md | LLM 材料 51536 字符
+MD_LEN: 6604 GEN_OK: True MODEL: google/gemini-3.5-flash
+format: OK
+HTML_LEN: 18916
+[+] 最终版留底: /home/pi/agent-workspace/outbox_obsidian/news_archives/brief_final_2026-10-01_1203_午.{md,html}
+token fail
+push wechat: 1
+[!] 推送失败，不记账，下次补发可重推
+✅ Part 1/4
+✅ Part 2/4
+✅ Part 3/4
+✅ Part 4/4
+[+] 已推送 4/4 条消息到 Discord
+push discord: 0 model: google/gemini-3.5-flash
+清理 1 个旧文件
+无过期文件
+无过期文件
+无过期文件
+无过期文件
+无过期文件
+无过期文件
+无过期文件
+[+] RAW RSS 底稿: /home/pi/agent-workspace/outbox_obsidian/news_archives/raw_rss_2026-10-01_2030.md | LLM 材料 47693 字符
+MD_LEN: 6252 GEN_OK: True MODEL: google/gemini-3.5-flash
+format: OK
+HTML_LEN: 17611
+[+] 最终版留底: /home/pi/agent-workspace/outbox_obsidian/news_archives/brief_final_2026-10-01_2033_晚.{md,html}
+token fail
+push wechat: 1
+[!] 推送失败，不记账，下次补发可重推
+✅ Part 1/4
+✅ Part 2/4
+✅ Part 3/4
+✅ Part 4/4
+[+] 已推送 4/4 条消息到 Discord
+push discord: 0 model: google/gemini-3.5-flash
+清理 1 个旧文件
+无过期文件
+无过期文件
+无过期文件
+无过期文件
+无过期文件
