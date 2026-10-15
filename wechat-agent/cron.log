@@ -6853,3 +6853,110 @@ MD_LEN: 10 GEN_OK: False MODEL: opencode/mimo-v2.6-flash-free
 无过期文件
 无过期文件
 无过期文件
+backup: [master 768c09b] Auto-backup: 2026-10-15
+ 13 files changed, 1765 insertions(+), 1773 deletions(-)
+ c
+push: To github.com:Serendipppity/opencode-pi4.git
+   d0cff63..768c09b  HEAD -> main
+status saved: /home/pi/.cache/backup_status/git_backup.json
+无过期文件
+无过期文件
+无过期文件
+无过期文件
+🖥️ **Pi 健康巡检** 2026-10-15 06:00
+
+✅ **Git**
+- ✅ 昨夜文件备份: push OK (2026-10-15)
+- ✅ 未提交变更: 1 | 领先远程: 0
+
+✅ **Syncthing**
+- ✅ systemd --user 服务: active
+- ✅ folder[pi-outbox]: state=idle 待同步文件=0
+
+✅ **系统**
+- ✅ 温度: 46.7°C
+- ✅ 内存可用: 4585MB
+- ✅ 磁盘: 17.0%
+- ✅ load15: 0.40
+- ℹ️ uptime: 37天13h23m
+
+✅ **服务存活**
+- ✅ syncthing
+- ✅ kimaki
+- ✅ cron
+
+✅ **模型清单**
+- providers: google, opencode-go | 默认模型: mimo-v2.5-free
+- - **brief**: `gemini-3.5-flash` → fb: `mimo-v2.6-flash-free`
+- - **cavecrew-builder、cavecrew-investigator、cavecrew-reviewer、xiabao、xiatiao**: `ox-alpha-free`
+
+✅ **网络**
+- ✅ 内网网关(192.168.1.100): 平均 0.5ms
+- ✅ 国内公网(baidu.com): DNS+TLS 754ms
+- ✅ 墙外(google 204): 513ms
+
+✅ **Gemini API**
+- ✅ gemini-3.5-flash-lite 连通 1100ms
+push discord summary: 0
+无过期文件
+无过期文件
+[+] RAW RSS 底稿: /home/pi/agent-workspace/outbox_obsidian/news_archives/raw_rss_2026-10-15_0800.md | LLM 材料 46851 字符
+[!] opencode 诊断: model=默认(brief.md) returncode=1 stdout_len=0 stderr尾: [0m > brief · gemini-3.5-flash [0m [91m[1mError: [0mRequests ending with a model turn are not supported. 
+[!] 第1次尝试未通过: 缺分区 ## 核心要闻；缺分区 ## 国际风云；缺分区 ## 财经速递；缺分区 ## 科技前沿；缺分区 ## 国内要闻
+[!] 30s 退避后重试
+[!] opencode 诊断: model=默认(brief.md) returncode=1 stdout_len=0 stderr尾: [0m > brief · gemini-3.5-flash [0m [91m[1mError: [0mRequests ending with a model turn are not supported. 
+[!] 第2次尝试未通过: 缺分区 ## 核心要闻；缺分区 ## 国际风云；缺分区 ## 财经速递；缺分区 ## 科技前沿；缺分区 ## 国内要闻
+[!] 切换 fallback 模型: opencode/mimo-v2.6-flash-free
+[!] opencode 诊断: model=opencode/mimo-v2.6-flash-free returncode=1 stdout_len=0 stderr尾: [0m > brief · mimo-v2.6-flash-free [0m [91m[1mError: [0mOpenCode's free tier can only be used from within OpenCode. Download it at https://opencode.ai and keep building. 
+[!] 第3次尝试未通过: 缺分区 ## 核心要闻；缺分区 ## 国际风云；缺分区 ## 财经速递；缺分区 ## 科技前沿；缺分区 ## 国内要闻
+MD_LEN: 10 GEN_OK: False MODEL: opencode/mimo-v2.6-flash-free
+=== 生成失败，已告警并跳过推送 ===
+清理 1 个旧文件
+无过期文件
+无过期文件
+无过期文件
+[+] RAW RSS 底稿: /home/pi/agent-workspace/outbox_obsidian/news_archives/raw_rss_2026-10-15_1200.md | LLM 材料 47724 字符
+MD_LEN: 6749 GEN_OK: True MODEL: google/gemini-3.5-flash-lite
+format: OK
+HTML_LEN: 20971
+[+] 最终版留底: /home/pi/agent-workspace/outbox_obsidian/news_archives/brief_final_2026-10-15_1202_午.{md,html}
+token fail
+push wechat: 1
+[!] 推送失败，不记账，下次补发可重推
+✅ Part 1/4
+✅ Part 2/4
+✅ Part 3/4
+✅ Part 4/4
+[+] 已推送 4/4 条消息到 Discord
+push discord: 0 model: google/gemini-3.5-flash-lite
+清理 1 个旧文件
+无过期文件
+无过期文件
+无过期文件
+Traceback (most recent call last):
+  File "/home/pi/wechat-agent/jobs/wealth_daily.py", line 12, in <module>
+    from portfolio_manager import PortfolioManager
+ModuleNotFoundError: No module named 'portfolio_manager'
+无过期文件
+无过期文件
+无过期文件
+无过期文件
+[+] RAW RSS 底稿: /home/pi/agent-workspace/outbox_obsidian/news_archives/raw_rss_2026-10-15_2030.md | LLM 材料 48971 字符
+MD_LEN: 4986 GEN_OK: True MODEL: google/gemini-3.5-flash-lite
+format: OK
+HTML_LEN: 17294
+[+] 最终版留底: /home/pi/agent-workspace/outbox_obsidian/news_archives/brief_final_2026-10-15_2032_晚.{md,html}
+token fail
+push wechat: 1
+[!] 推送失败，不记账，下次补发可重推
+✅ Part 1/3
+✅ Part 2/3
+✅ Part 3/3
+[+] 已推送 3/3 条消息到 Discord
+push discord: 0 model: google/gemini-3.5-flash-lite
+清理 1 个旧文件
+无过期文件
+无过期文件
+无过期文件
+无过期文件
+无过期文件

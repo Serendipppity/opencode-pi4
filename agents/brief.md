@@ -1,8 +1,8 @@
 ---
 description: 新闻简报生成器，只读不执行
 mode: all
-model: google/gemini-3.5-flash
-fallback: opencode/mimo-v2.6-flash-free
+model: google/gemini-3.5-flash-lite
+fallback: google/gemini-2.5-flash
 tools:
   read: true
   glob: true

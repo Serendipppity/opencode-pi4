@@ -170,8 +170,8 @@ def _check_brief(md):
     return problems
 
 # 2. LLM 生成（三段式：主模型 → 30s 退避同模型重试 → 显式 fallback 模型）
-FALLBACK_MODEL = 'opencode/mimo-v2.6-flash-free'
-DEFAULT_MODEL = 'google/gemini-3.5-flash'  # 与 brief.md 的 model 保持一致，用于 Discord 标注
+FALLBACK_MODEL = 'google/gemini-2.5-flash'
+DEFAULT_MODEL = 'google/gemini-3.5-flash-lite'  # 与 brief.md 的 model 保持一致，用于 Discord 标注
 md, problems = '', []
 feedback = ''
 used_model = None
