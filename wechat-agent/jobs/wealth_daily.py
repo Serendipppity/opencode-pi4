@@ -8,7 +8,7 @@ import time
 
 import requests
 
-sys.path.insert(0, "/home/pi/agent-backup/skills/银行理财产品每日查询")
+sys.path.insert(0, "/home/pi/.config/opencode/skills/wealth-daily")
 from portfolio_manager import PortfolioManager
 
 CONFIG_PATH = os.path.expanduser("~/.config/opencode/discord-channel.json")
