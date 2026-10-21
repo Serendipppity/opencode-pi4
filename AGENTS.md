@@ -50,3 +50,19 @@
 ## 全局语言规则
 - 所有输出（包括 compaction 总结、子任务 prompt、agent 回复、日志）必须使用中文
 - 技术术语/命令/代码保留英文，其余全部中文
+
+## 中金点睛 研报归档（cron 每日 08:30 / 20:30）
+- 脚本：`/home/pi/wechat-agent/jobs/fetch_cicc_reports.py`（纯 Python，零 LLM 调用）
+- 数据源：`https://wechat2rss.bestblogs.dev/feed/5d4eef298108dd63ce77f40257436e0585bab425.xml`（Wechat2RSS 实例，窗口只留最近 10 篇）
+- 产出目录：`~/agent-workspace/outbox_obsidian/reports_中金/`（articles/ + images/ + .state/）
+- 状态：`.state/keywords.txt`（关键词表）、`.state/seen_ids.txt`（去重）、`.state/last_list.json`（上次推送清单）
+- 每次 cron 会把窗口内全部文章的清单（序号/标题/链接/字数/图数）推到 Discord **research 频道**（1484391479479898122），并按标题关键词自动归档
+- **用户在 Discord 回复清单消息时，按下列命令直接执行脚本**（不要自己实现下载逻辑）：
+  - `下载 3` → `fetch_cicc_reports.py dl 3`（序号 = 清单里的序号）
+  - `下载 资金流` → `fetch_cicc_reports.py dl 资金流`（按标题关键词）
+  - `加南向` / `减港股` → `fetch_cicc_reports.py kw +南向` / `kw -港股`
+  - `清单` → `fetch_cicc_reports.py list`
+  - 查看词表 → `fetch_cicc_reports.py kw`
+- 日志：`/home/pi/cicc_fetch.log`；跑完用 `tail` 看结果，回复用户时给出最终文件路径
+- 词表默认：资金流、EPFR、外资、港股、筹码、南向（改 `.state/keywords.txt` 即时生效）
+
