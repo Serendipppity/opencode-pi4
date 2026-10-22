@@ -1,0 +1,24 @@
+{
+  "2501251663": {
+    "code": "2501251663",
+    "name": "天添利现金宝97号G",
+    "unit_nav": "1.0000",
+    "accumulated_nav": "1.0000",
+    "ten_thousand_income": "0.2317",
+    "seven_day_yield": "0.8476%",
+    "daily_growth": null,
+    "date": "2026-10-21",
+    "channel": "中国银行代销专区"
+  },
+  "668312D": {
+    "code": "668312D",
+    "name": "招银理财招睿金鼎180天持有期5号固定收益类理财计划",
+    "unit_nav": "1.0356",
+    "accumulated_nav": "1.0356",
+    "ten_thousand_income": "0.0000",
+    "seven_day_yield": null,
+    "daily_growth": "0.0193",
+    "date": "2026-10-20",
+    "channel": "中国银行代销专区"
+  }
+}
