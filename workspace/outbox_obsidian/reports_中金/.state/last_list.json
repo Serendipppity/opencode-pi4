@@ -1,10 +1,50 @@
 {
-  "saved_at": "2026-10-22T20:30:08+08:00",
-  "last_build_date": "Thu, 22 Oct 2026 07:38:51 +0800",
+  "saved_at": "2026-10-23T20:30:07+08:00",
+  "last_build_date": "Fri, 23 Oct 2026 07:35:51 +0800",
   "feed_title": "中金点睛",
   "articles": [
     {
       "no": 1,
+      "title": "中金 • 全球研究 | 日本地方银行风险化解",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzI3MDMzMjg0MA==&mid=2247866943&idx=1&sn=667ed66fd35617013346c1efb24f5825",
+      "date": "2026-10-23 07:35",
+      "chars": 10805,
+      "img_count": 11,
+      "hit": [],
+      "id": "2247866943_1"
+    },
+    {
+      "no": 2,
+      "title": "中金 | AMC转型追踪1：化险健体，价值重构",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzI3MDMzMjg0MA==&mid=2247866943&idx=2&sn=dd79743c72a51b542ed528f8d3df2e1d",
+      "date": "2026-10-23 07:35",
+      "chars": 13123,
+      "img_count": 13,
+      "hit": [],
+      "id": "2247866943_2"
+    },
+    {
+      "no": 3,
+      "title": "中金：博彩业基本面转弱，市场一致预期或将继续下修",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzI3MDMzMjg0MA==&mid=2247866943&idx=3&sn=dede1d97cefa44eb0a158f202813e4d3",
+      "date": "2026-10-23 07:35",
+      "chars": 11640,
+      "img_count": 20,
+      "hit": [],
+      "id": "2247866943_3"
+    },
+    {
+      "no": 4,
+      "title": "中金：市场波动下理财机构行为与资产配置追踪",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzI3MDMzMjg0MA==&mid=2247866943&idx=4&sn=ee009ebb0fd1e26a745565d2cb72b4ec",
+      "date": "2026-10-23 07:35",
+      "chars": 7452,
+      "img_count": 17,
+      "hit": [],
+      "id": "2247866943_4"
+    },
+    {
+      "no": 5,
       "title": "中金｜资产配置：如何对冲AI风险？",
       "url": "https://mp.weixin.qq.com/s?__biz=MzI3MDMzMjg0MA==&mid=2247866513&idx=1&sn=2210487399a6f4d2e9bd63c257deaf1c",
       "date": "2026-10-22 07:38",
@@ -14,7 +54,7 @@
       "id": "2247866513_1"
     },
     {
-      "no": 2,
+      "no": 6,
       "title": "中金｜宠物保险：小荷露尖角，“四两或可拨千斤”",
       "url": "https://mp.weixin.qq.com/s?__biz=MzI3MDMzMjg0MA==&mid=2247866513&idx=2&sn=1fd48212292ded552fd2286e95b33f15",
       "date": "2026-10-22 07:38",
@@ -24,7 +64,7 @@
       "id": "2247866513_2"
     },
     {
-      "no": 3,
+      "no": 7,
       "title": "中金 | AI制药：AI4S重塑新药研发智能范式，数据驱动下的赋能与突破",
       "url": "https://mp.weixin.qq.com/s?__biz=MzI3MDMzMjg0MA==&mid=2247866513&idx=3&sn=dcb58f0da5561520d74ba850a853c0b7",
       "date": "2026-10-22 07:38",
@@ -34,7 +74,7 @@
       "id": "2247866513_3"
     },
     {
-      "no": 4,
+      "no": 8,
       "title": "中金 • 全球研究 | 拉美数字经济：规模增长、渗透提升与信贷机遇",
       "url": "https://mp.weixin.qq.com/s?__biz=MzI3MDMzMjg0MA==&mid=2247865661&idx=1&sn=dccdf90e88dce159eb230c1852a1e18e",
       "date": "2026-10-21 07:30",
@@ -44,7 +84,7 @@
       "id": "2247865661_1"
     },
     {
-      "no": 5,
+      "no": 9,
       "title": "中金 | 机器学习系列（6）：基于强化学习PPO模型的周频风格轮动框架",
       "url": "https://mp.weixin.qq.com/s?__biz=MzI3MDMzMjg0MA==&mid=2247865661&idx=2&sn=2c6b03f3b1a33ab7dbe2650751c711d8",
       "date": "2026-10-21 07:30",
@@ -54,7 +94,7 @@
       "id": "2247865661_2"
     },
     {
-      "no": 6,
+      "no": 10,
       "title": "中金热点解读｜9月经济数据",
       "url": "https://mp.weixin.qq.com/s?__biz=MzI3MDMzMjg0MA==&mid=2247865660&idx=1&sn=7bbb6e3cb78f6d6d0b712a1eb72eb06b",
       "date": "2026-10-20 15:25",
@@ -62,46 +102,6 @@
       "img_count": 1,
       "hit": [],
       "id": "2247865660_1"
-    },
-    {
-      "no": 7,
-      "title": "中金热点解读 | 金融街论坛·政策信号全景图",
-      "url": "https://mp.weixin.qq.com/s?__biz=MzI3MDMzMjg0MA==&mid=2247865632&idx=1&sn=48077951d27007311cb43191340eb355",
-      "date": "2026-10-20 11:42",
-      "chars": 835,
-      "img_count": 1,
-      "hit": [],
-      "id": "2247865632_1"
-    },
-    {
-      "no": 8,
-      "title": "中金：联合解读金融街论坛年会",
-      "url": "https://mp.weixin.qq.com/s?__biz=MzI3MDMzMjg0MA==&mid=2247865343&idx=1&sn=0db6719efaa193c65d765697e53b9796",
-      "date": "2026-10-20 08:18",
-      "chars": 20985,
-      "img_count": 11,
-      "hit": [],
-      "id": "2247865343_1"
-    },
-    {
-      "no": 9,
-      "title": "中金10月数说资产",
-      "url": "https://mp.weixin.qq.com/s?__biz=MzI3MDMzMjg0MA==&mid=2247865343&idx=2&sn=d749ae047c3f732c45fdf1412ca860a2",
-      "date": "2026-10-20 08:18",
-      "chars": 14999,
-      "img_count": 4,
-      "hit": [],
-      "id": "2247865343_2"
-    },
-    {
-      "no": 10,
-      "title": "中金 | 餐饮换挡，速冻提速：速冻行业结构性增长新机遇",
-      "url": "https://mp.weixin.qq.com/s?__biz=MzI3MDMzMjg0MA==&mid=2247865343&idx=3&sn=45c45ec8953e36a779879028bb269208",
-      "date": "2026-10-20 08:18",
-      "chars": 11508,
-      "img_count": 19,
-      "hit": [],
-      "id": "2247865343_3"
     }
   ]
 }
