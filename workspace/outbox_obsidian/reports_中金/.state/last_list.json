@@ -1,10 +1,20 @@
 {
-  "saved_at": "2026-10-24T20:30:08+08:00",
-  "last_build_date": "Sat, 24 Oct 2026 10:00:47 +0800",
+  "saved_at": "2026-10-25T20:30:08+08:00",
+  "last_build_date": "Sun, 25 Oct 2026 10:01:11 +0800",
   "feed_title": "中金点睛",
   "articles": [
     {
       "no": 1,
+      "title": "中金分析师Skill如何炼成？投研蒸馏器Skill开源啦！",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzI3MDMzMjg0MA==&mid=2247867117&idx=1&sn=703b1950403cbac54337fe466c40d05d",
+      "date": "2026-10-25 10:00",
+      "chars": 2931,
+      "img_count": 6,
+      "hit": [],
+      "id": "2247867117_1"
+    },
+    {
+      "no": 2,
       "title": "一图读懂 | 玻璃基板",
       "url": "https://mp.weixin.qq.com/s?__biz=MzI3MDMzMjg0MA==&mid=2247866937&idx=1&sn=13c7e2607915f7575b5530d5d21e2128",
       "date": "2026-10-24 10:00",
@@ -14,7 +24,7 @@
       "id": "2247866937_1"
     },
     {
-      "no": 2,
+      "no": 3,
       "title": "中金 • 全球研究 | 日本地方银行风险化解",
       "url": "https://mp.weixin.qq.com/s?__biz=MzI3MDMzMjg0MA==&mid=2247866943&idx=1&sn=667ed66fd35617013346c1efb24f5825",
       "date": "2026-10-23 07:35",
@@ -24,7 +34,7 @@
       "id": "2247866943_1"
     },
     {
-      "no": 3,
+      "no": 4,
       "title": "中金 | AMC转型追踪1：化险健体，价值重构",
       "url": "https://mp.weixin.qq.com/s?__biz=MzI3MDMzMjg0MA==&mid=2247866943&idx=2&sn=dd79743c72a51b542ed528f8d3df2e1d",
       "date": "2026-10-23 07:35",
@@ -34,7 +44,7 @@
       "id": "2247866943_2"
     },
     {
-      "no": 4,
+      "no": 5,
       "title": "中金：博彩业基本面转弱，市场一致预期或将继续下修",
       "url": "https://mp.weixin.qq.com/s?__biz=MzI3MDMzMjg0MA==&mid=2247866943&idx=3&sn=dede1d97cefa44eb0a158f202813e4d3",
       "date": "2026-10-23 07:35",
@@ -44,27 +54,31 @@
       "id": "2247866943_3"
     },
     {
-      "no": 5,
+      "no": 6,
       "title": "中金：市场波动下理财机构行为与资产配置追踪",
       "url": "https://mp.weixin.qq.com/s?__biz=MzI3MDMzMjg0MA==&mid=2247866943&idx=4&sn=ee009ebb0fd1e26a745565d2cb72b4ec",
       "date": "2026-10-23 07:35",
       "chars": 7452,
       "img_count": 17,
-      "hit": [],
+      "hit": [
+        "资产配置"
+      ],
       "id": "2247866943_4"
     },
     {
-      "no": 6,
+      "no": 7,
       "title": "中金｜资产配置：如何对冲AI风险？",
       "url": "https://mp.weixin.qq.com/s?__biz=MzI3MDMzMjg0MA==&mid=2247866513&idx=1&sn=2210487399a6f4d2e9bd63c257deaf1c",
       "date": "2026-10-22 07:38",
       "chars": 9007,
       "img_count": 15,
-      "hit": [],
+      "hit": [
+        "资产配置"
+      ],
       "id": "2247866513_1"
     },
     {
-      "no": 7,
+      "no": 8,
       "title": "中金｜宠物保险：小荷露尖角，“四两或可拨千斤”",
       "url": "https://mp.weixin.qq.com/s?__biz=MzI3MDMzMjg0MA==&mid=2247866513&idx=2&sn=1fd48212292ded552fd2286e95b33f15",
       "date": "2026-10-22 07:38",
@@ -74,7 +88,7 @@
       "id": "2247866513_2"
     },
     {
-      "no": 8,
+      "no": 9,
       "title": "中金 | AI制药：AI4S重塑新药研发智能范式，数据驱动下的赋能与突破",
       "url": "https://mp.weixin.qq.com/s?__biz=MzI3MDMzMjg0MA==&mid=2247866513&idx=3&sn=dcb58f0da5561520d74ba850a853c0b7",
       "date": "2026-10-22 07:38",
@@ -84,7 +98,7 @@
       "id": "2247866513_3"
     },
     {
-      "no": 9,
+      "no": 10,
       "title": "中金 • 全球研究 | 拉美数字经济：规模增长、渗透提升与信贷机遇",
       "url": "https://mp.weixin.qq.com/s?__biz=MzI3MDMzMjg0MA==&mid=2247865661&idx=1&sn=dccdf90e88dce159eb230c1852a1e18e",
       "date": "2026-10-21 07:30",
@@ -92,16 +106,6 @@
       "img_count": 25,
       "hit": [],
       "id": "2247865661_1"
-    },
-    {
-      "no": 10,
-      "title": "中金 | 机器学习系列（6）：基于强化学习PPO模型的周频风格轮动框架",
-      "url": "https://mp.weixin.qq.com/s?__biz=MzI3MDMzMjg0MA==&mid=2247865661&idx=2&sn=2c6b03f3b1a33ab7dbe2650751c711d8",
-      "date": "2026-10-21 07:30",
-      "chars": 15400,
-      "img_count": 20,
-      "hit": [],
-      "id": "2247865661_2"
     }
   ]
 }
