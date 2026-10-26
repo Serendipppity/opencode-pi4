@@ -103,8 +103,15 @@ def check_syncthing():
             s = json.loads(body2)
             state = s.get('state', '?')
             need = s.get('needFiles', 0)
-            healthy = state in ('idle',) and need == 0
-            lines.append(f"{_ok(healthy)} folder[{fid}]: state={state} 待同步文件={need}")
+            ftype = f.get('type', 'sendreceive')
+            errs = s.get('errors', 0) + s.get('pullErrors', 0)
+            if ftype == 'sendonly':
+                # 只发送目录：本机不拉取对端修改，need>0 属设计预期，只查自身报错
+                healthy = state in ('idle', 'sync-waiting', 'scanning') and errs == 0
+                lines.append(f"{_ok(healthy)} folder[{fid}]: state={state} (sendonly，待同步 {need} 项忽略)")
+            else:
+                healthy = state in ('idle',) and need == 0
+                lines.append(f"{_ok(healthy)} folder[{fid}]: state={state} 待同步文件={need}")
             bad |= not healthy
     except Exception as e:
         lines.append(f'❌ REST API 异常: {e}')
