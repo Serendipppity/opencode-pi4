@@ -1,10 +1,60 @@
 {
-  "saved_at": "2026-10-28T20:30:09+08:00",
-  "last_build_date": "Wed, 28 Oct 2026 12:01:12 +0800",
+  "saved_at": "2026-10-29T23:40:42+08:00",
+  "last_build_date": "Thu, 29 Oct 2026 12:02:38 +0800",
   "feed_title": "中金点睛",
   "articles": [
     {
       "no": 1,
+      "title": "中金热点解读 | Anthropic的算力账",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzI3MDMzMjg0MA==&mid=2247867983&idx=1&sn=a6c43d330c3b5998cf68707a46cd6f4e",
+      "date": "2026-10-29 12:00",
+      "chars": 822,
+      "img_count": 1,
+      "hit": [],
+      "id": "2247867983_1"
+    },
+    {
+      "no": 2,
+      "title": "中金：美联储加息未结束，但不必急于行动",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzI3MDMzMjg0MA==&mid=2247867981&idx=1&sn=0ba21167c23ce8694ccb8ff9916067bb",
+      "date": "2026-10-29 07:38",
+      "chars": 5162,
+      "img_count": 6,
+      "hit": [],
+      "id": "2247867981_1"
+    },
+    {
+      "no": 3,
+      "title": "中金：美国能承受多高的利率？",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzI3MDMzMjg0MA==&mid=2247867981&idx=2&sn=4c388a888ac0f4b40ab011c43bfadb88",
+      "date": "2026-10-29 07:38",
+      "chars": 10780,
+      "img_count": 19,
+      "hit": [],
+      "id": "2247867981_2"
+    },
+    {
+      "no": 4,
+      "title": "中金 | 公募三季报回顾：加仓红利，减仓科技",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzI3MDMzMjg0MA==&mid=2247867981&idx=3&sn=dbae0323ba0a7e653699f5e5966d9d30",
+      "date": "2026-10-29 07:38",
+      "chars": 14066,
+      "img_count": 33,
+      "hit": [],
+      "id": "2247867981_3"
+    },
+    {
+      "no": 5,
+      "title": "中金：26Q3没有明显赎回——公募固收+26Q3季报点评",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzI3MDMzMjg0MA==&mid=2247867981&idx=4&sn=01a0ea7b15430dbaf782d39a66029eeb",
+      "date": "2026-10-29 07:38",
+      "chars": 14692,
+      "img_count": 24,
+      "hit": [],
+      "id": "2247867981_4"
+    },
+    {
+      "no": 6,
       "title": "中金热点解读 | 美国中期选举三大博弈主线",
       "url": "https://mp.weixin.qq.com/s?__biz=MzI3MDMzMjg0MA==&mid=2247867780&idx=1&sn=78d56a1121d926c2ea8d5832574deeff",
       "date": "2026-10-28 12:00",
@@ -14,7 +64,7 @@
       "id": "2247867780_1"
     },
     {
-      "no": 2,
+      "no": 7,
       "title": "中金图说中国：2026年四季度",
       "url": "https://mp.weixin.qq.com/s?__biz=MzI3MDMzMjg0MA==&mid=2247867646&idx=1&sn=f859cb05d2825d111a752e4ebff0092e",
       "date": "2026-10-28 07:31",
@@ -24,7 +74,7 @@
       "id": "2247867646_1"
     },
     {
-      "no": 3,
+      "no": 8,
       "title": "中金 • 全球研究 | 巴西大选：短期波动不改基本面",
       "url": "https://mp.weixin.qq.com/s?__biz=MzI3MDMzMjg0MA==&mid=2247867646&idx=2&sn=963e6674192d959d4404bf558d52efb1",
       "date": "2026-10-28 07:31",
@@ -34,7 +84,7 @@
       "id": "2247867646_2"
     },
     {
-      "no": 4,
+      "no": 9,
       "title": "CGI宏观视点 | AI并非美国就业“去初级化”的主因",
       "url": "https://mp.weixin.qq.com/s?__biz=MzI3MDMzMjg0MA==&mid=2247867646&idx=3&sn=eb1426e2ba2cb85758f742bb1ee49e8b",
       "date": "2026-10-28 07:31",
@@ -44,7 +94,7 @@
       "id": "2247867646_3"
     },
     {
-      "no": 5,
+      "no": 10,
       "title": "中金：美国中期选举的潜在影响",
       "url": "https://mp.weixin.qq.com/s?__biz=MzI3MDMzMjg0MA==&mid=2247867374&idx=1&sn=bf137776c1f5d61d9552d32206f03a89",
       "date": "2026-10-27 07:26",
@@ -52,56 +102,6 @@
       "img_count": 7,
       "hit": [],
       "id": "2247867374_1"
-    },
-    {
-      "no": 6,
-      "title": "中金 | AI十年展望（三十）：AI+办公，打开下一个万亿级市场",
-      "url": "https://mp.weixin.qq.com/s?__biz=MzI3MDMzMjg0MA==&mid=2247867374&idx=2&sn=3096cc3808a9dfa77bf3b9bd5bfee310",
-      "date": "2026-10-27 07:26",
-      "chars": 19017,
-      "img_count": 25,
-      "hit": [],
-      "id": "2247867374_2"
-    },
-    {
-      "no": 7,
-      "title": "中金 • 全球研究 | 越南4Q26展望：经济增速创新高，市场估值待修复",
-      "url": "https://mp.weixin.qq.com/s?__biz=MzI3MDMzMjg0MA==&mid=2247867374&idx=3&sn=eeb88738db2a39d18e922938d36fd9dc",
-      "date": "2026-10-27 07:26",
-      "chars": 13614,
-      "img_count": 21,
-      "hit": [],
-      "id": "2247867374_3"
-    },
-    {
-      "no": 8,
-      "title": "中金：AI从传统需求的“朋友”到“敌人”？",
-      "url": "https://mp.weixin.qq.com/s?__biz=MzI3MDMzMjg0MA==&mid=2247867369&idx=1&sn=f9270368bd6502c8dac4b374ea8c7b44",
-      "date": "2026-10-26 07:34",
-      "chars": 18086,
-      "img_count": 32,
-      "hit": [],
-      "id": "2247867369_1"
-    },
-    {
-      "no": 9,
-      "title": "中金：估值调到哪了？",
-      "url": "https://mp.weixin.qq.com/s?__biz=MzI3MDMzMjg0MA==&mid=2247867369&idx=2&sn=3050a2780a216f69058ec80a2fabe6f2",
-      "date": "2026-10-26 07:34",
-      "chars": 12998,
-      "img_count": 30,
-      "hit": [],
-      "id": "2247867369_2"
-    },
-    {
-      "no": 10,
-      "title": "中金：从贸易方式看AI出口对增长的拉动",
-      "url": "https://mp.weixin.qq.com/s?__biz=MzI3MDMzMjg0MA==&mid=2247867369&idx=3&sn=58ef01cc399cf72b787bf2576c159c60",
-      "date": "2026-10-26 07:34",
-      "chars": 8229,
-      "img_count": 12,
-      "hit": [],
-      "id": "2247867369_3"
     }
   ]
 }
