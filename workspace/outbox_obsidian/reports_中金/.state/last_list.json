@@ -1,10 +1,50 @@
 {
-  "saved_at": "2026-10-29T23:40:42+08:00",
-  "last_build_date": "Thu, 29 Oct 2026 12:02:38 +0800",
+  "saved_at": "2026-10-30T20:30:09+08:00",
+  "last_build_date": "Fri, 30 Oct 2026 07:31:01 +0800",
   "feed_title": "中金点睛",
   "articles": [
     {
       "no": 1,
+      "title": "中金：AI“次贷”的金融裂缝",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzI3MDMzMjg0MA==&mid=2247868297&idx=1&sn=ac36800c4748e2c77404823de130b8da",
+      "date": "2026-10-30 07:31",
+      "chars": 15441,
+      "img_count": 23,
+      "hit": [],
+      "id": "2247868297_1"
+    },
+    {
+      "no": 2,
+      "title": "中金：美国经济增长提速，投资保持强劲",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzI3MDMzMjg0MA==&mid=2247868297&idx=2&sn=07e80f5993de7ca5607d5762d5edc1a2",
+      "date": "2026-10-30 07:31",
+      "chars": 6520,
+      "img_count": 11,
+      "hit": [],
+      "id": "2247868297_2"
+    },
+    {
+      "no": 3,
+      "title": "中金 | 谁在买“固收+”：短线资金接棒，长线资金退潮",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzI3MDMzMjg0MA==&mid=2247868297&idx=3&sn=5f661f301343594463f30017dd73d651",
+      "date": "2026-10-30 07:31",
+      "chars": 15001,
+      "img_count": 25,
+      "hit": [],
+      "id": "2247868297_3"
+    },
+    {
+      "no": 4,
+      "title": "中金：浪潮之上，主动ETF的发展之路",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzI3MDMzMjg0MA==&mid=2247868297&idx=4&sn=6f1382c8d39df8e944e509f1125fd382",
+      "date": "2026-10-30 07:31",
+      "chars": 15004,
+      "img_count": 25,
+      "hit": [],
+      "id": "2247868297_4"
+    },
+    {
+      "no": 5,
       "title": "中金热点解读 | Anthropic的算力账",
       "url": "https://mp.weixin.qq.com/s?__biz=MzI3MDMzMjg0MA==&mid=2247867983&idx=1&sn=a6c43d330c3b5998cf68707a46cd6f4e",
       "date": "2026-10-29 12:00",
@@ -14,7 +54,7 @@
       "id": "2247867983_1"
     },
     {
-      "no": 2,
+      "no": 6,
       "title": "中金：美联储加息未结束，但不必急于行动",
       "url": "https://mp.weixin.qq.com/s?__biz=MzI3MDMzMjg0MA==&mid=2247867981&idx=1&sn=0ba21167c23ce8694ccb8ff9916067bb",
       "date": "2026-10-29 07:38",
@@ -24,7 +64,7 @@
       "id": "2247867981_1"
     },
     {
-      "no": 3,
+      "no": 7,
       "title": "中金：美国能承受多高的利率？",
       "url": "https://mp.weixin.qq.com/s?__biz=MzI3MDMzMjg0MA==&mid=2247867981&idx=2&sn=4c388a888ac0f4b40ab011c43bfadb88",
       "date": "2026-10-29 07:38",
@@ -34,7 +74,7 @@
       "id": "2247867981_2"
     },
     {
-      "no": 4,
+      "no": 8,
       "title": "中金 | 公募三季报回顾：加仓红利，减仓科技",
       "url": "https://mp.weixin.qq.com/s?__biz=MzI3MDMzMjg0MA==&mid=2247867981&idx=3&sn=dbae0323ba0a7e653699f5e5966d9d30",
       "date": "2026-10-29 07:38",
@@ -44,7 +84,7 @@
       "id": "2247867981_3"
     },
     {
-      "no": 5,
+      "no": 9,
       "title": "中金：26Q3没有明显赎回——公募固收+26Q3季报点评",
       "url": "https://mp.weixin.qq.com/s?__biz=MzI3MDMzMjg0MA==&mid=2247867981&idx=4&sn=01a0ea7b15430dbaf782d39a66029eeb",
       "date": "2026-10-29 07:38",
@@ -54,7 +94,7 @@
       "id": "2247867981_4"
     },
     {
-      "no": 6,
+      "no": 10,
       "title": "中金热点解读 | 美国中期选举三大博弈主线",
       "url": "https://mp.weixin.qq.com/s?__biz=MzI3MDMzMjg0MA==&mid=2247867780&idx=1&sn=78d56a1121d926c2ea8d5832574deeff",
       "date": "2026-10-28 12:00",
@@ -62,46 +102,6 @@
       "img_count": 1,
       "hit": [],
       "id": "2247867780_1"
-    },
-    {
-      "no": 7,
-      "title": "中金图说中国：2026年四季度",
-      "url": "https://mp.weixin.qq.com/s?__biz=MzI3MDMzMjg0MA==&mid=2247867646&idx=1&sn=f859cb05d2825d111a752e4ebff0092e",
-      "date": "2026-10-28 07:31",
-      "chars": 32936,
-      "img_count": 120,
-      "hit": [],
-      "id": "2247867646_1"
-    },
-    {
-      "no": 8,
-      "title": "中金 • 全球研究 | 巴西大选：短期波动不改基本面",
-      "url": "https://mp.weixin.qq.com/s?__biz=MzI3MDMzMjg0MA==&mid=2247867646&idx=2&sn=963e6674192d959d4404bf558d52efb1",
-      "date": "2026-10-28 07:31",
-      "chars": 6389,
-      "img_count": 8,
-      "hit": [],
-      "id": "2247867646_2"
-    },
-    {
-      "no": 9,
-      "title": "CGI宏观视点 | AI并非美国就业“去初级化”的主因",
-      "url": "https://mp.weixin.qq.com/s?__biz=MzI3MDMzMjg0MA==&mid=2247867646&idx=3&sn=eb1426e2ba2cb85758f742bb1ee49e8b",
-      "date": "2026-10-28 07:31",
-      "chars": 19754,
-      "img_count": 12,
-      "hit": [],
-      "id": "2247867646_3"
-    },
-    {
-      "no": 10,
-      "title": "中金：美国中期选举的潜在影响",
-      "url": "https://mp.weixin.qq.com/s?__biz=MzI3MDMzMjg0MA==&mid=2247867374&idx=1&sn=bf137776c1f5d61d9552d32206f03a89",
-      "date": "2026-10-27 07:26",
-      "chars": 8909,
-      "img_count": 7,
-      "hit": [],
-      "id": "2247867374_1"
     }
   ]
 }
