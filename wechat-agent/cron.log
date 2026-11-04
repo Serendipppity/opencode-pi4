@@ -9020,3 +9020,121 @@ push discord: 0 model: google/gemini-3.5-flash-lite
 同步未完成，跳过清理
 同步未完成，跳过清理
 同步未完成，跳过清理
+backup: [master c3f1f9e] Auto-backup: 2026-11-04
+ 207 files changed, 3094 insertions(+), 29 deletions(-)
+ cr
+push: To github.com:Serendipppity/opencode-pi4.git
+   202e54f..c3f1f9e  HEAD -> main
+status saved: /home/pi/.cache/backup_status/git_backup.json
+同步未完成，跳过清理
+同步未完成，跳过清理
+同步未完成，跳过清理
+同步未完成，跳过清理
+🖥️ **Pi 健康巡检** 2026-11-04 06:00
+
+✅ **Git**
+- ✅ 昨夜文件备份: push OK (2026-11-04)
+- ✅ 未提交变更: 1 | 领先远程: 0
+
+✅ **Syncthing**
+- ✅ systemd --user 服务: active
+- ✅ folder[pi-outbox]: state=idle (sendonly，待同步 13 项忽略)
+
+✅ **系统**
+- ✅ 温度: 47.2°C
+- ✅ 内存可用: 2672MB
+- ✅ 磁盘: 17.7%
+- ✅ load15: 0.44
+- ℹ️ uptime: 57天13h23m
+
+✅ **服务存活**
+- ✅ syncthing
+- ✅ kimaki
+- ✅ cron
+
+✅ **模型清单**
+- providers: google, opencode-go | 默认模型: gemini-flash-lite-latest
+- - **brief**: `gemini-3.5-flash-lite` → fb: `gemini-2.5-flash`
+- - **cavecrew-builder、cavecrew-investigator、cavecrew-reviewer、xiabao、xiatiao**: `ox-alpha-free`
+
+✅ **网络**
+- ✅ 内网网关(192.168.1.100): 平均 0.6ms
+- ✅ 国内公网(baidu.com): DNS+TLS 83ms
+- ✅ 墙外(google 204): 499ms
+
+✅ **Gemini API**
+- ✅ gemini-3.5-flash-lite 连通 980ms
+push discord summary: 0
+同步未完成，跳过清理
+同步未完成，跳过清理
+[+] RAW RSS 底稿: /home/pi/agent-workspace/outbox_obsidian/news_archives/raw_rss_2026-11-04_0800.md | LLM 材料 1812 字符
+[!] opencode 诊断: model=默认(brief.md) returncode=1 stdout_len=0 stderr尾: [0m > brief · gemini-3.5-flash-lite [0m [91m[1mError: [0munknown certificate verification error 
+[!] 第1次尝试未通过: 缺分区 ## 核心要闻；缺分区 ## 国际风云；缺分区 ## 财经速递；缺分区 ## 科技前沿；缺分区 ## 国内要闻
+[!] 30s 退避后重试
+[!] opencode 诊断: model=默认(brief.md) returncode=1 stdout_len=0 stderr尾: [0m > brief · gemini-3.5-flash-lite [0m [91m[1mError: [0munknown certificate verification error 
+[!] 第2次尝试未通过: 缺分区 ## 核心要闻；缺分区 ## 国际风云；缺分区 ## 财经速递；缺分区 ## 科技前沿；缺分区 ## 国内要闻
+[!] 切换 fallback 模型: google/gemini-2.5-flash
+[!] opencode 诊断: model=google/gemini-2.5-flash returncode=1 stdout_len=0 stderr尾: [0m > brief · gemini-2.5-flash [0m [91m[1mError: [0munknown certificate verification error 
+[!] 第3次尝试未通过: 缺分区 ## 核心要闻；缺分区 ## 国际风云；缺分区 ## 财经速递；缺分区 ## 科技前沿；缺分区 ## 国内要闻
+MD_LEN: 10 GEN_OK: False MODEL: google/gemini-2.5-flash
+[Network Error] (1/5): HTTPSConnectionPool(host='discord.com', port=443): Max retries exceeded with url: /api/v10/channels/1483731735131848747/messages (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1081)')))
+[Network Error] (2/5): HTTPSConnectionPool(host='discord.com', port=443): Max retries exceeded with url: /api/v10/channels/1483731735131848747/messages (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1081)')))
+[Network Error] (3/5): HTTPSConnectionPool(host='discord.com', port=443): Max retries exceeded with url: /api/v10/channels/1483731735131848747/messages (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1081)')))
+[Network Error] (4/5): HTTPSConnectionPool(host='discord.com', port=443): Max retries exceeded with url: /api/v10/channels/1483731735131848747/messages (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1081)')))
+[Network Error] (5/5): HTTPSConnectionPool(host='discord.com', port=443): Max retries exceeded with url: /api/v10/channels/1483731735131848747/messages (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1081)')))
+通知发送失败
+=== 生成失败，已告警并跳过推送 ===
+同步未完成，跳过清理
+同步未完成，跳过清理
+同步未完成，跳过清理
+同步未完成，跳过清理
+[+] RAW RSS 底稿: /home/pi/agent-workspace/outbox_obsidian/news_archives/raw_rss_2026-11-04_1200.md | LLM 材料 42742 字符
+MD_LEN: 7198 GEN_OK: True MODEL: google/gemini-3.5-flash-lite
+format: OK
+HTML_LEN: 19499
+[+] 最终版留底: /home/pi/agent-workspace/outbox_obsidian/news_archives/brief_final_2026-11-04_1201_午.{md,html}
+token fail
+push wechat: 1
+[!] 推送失败，不记账，下次补发可重推
+✅ Part 1/5
+✅ Part 2/5
+✅ Part 3/5
+✅ Part 4/5
+✅ Part 5/5
+[+] 已推送 5/5 条消息到 Discord
+push discord: 0 model: google/gemini-3.5-flash-lite
+同步未完成，跳过清理
+同步未完成，跳过清理
+同步未完成，跳过清理
+同步未完成，跳过清理
+正在拉取最新持仓与净值数据...
+[Network Error] (1/5): HTTPSConnectionPool(host='discord.com', port=443): Max retries exceeded with url: /api/v10/channels/1559879696257253436/messages (Caused by ConnectTimeoutError(<HTTPSConnection(host='discord.com', port=443) at 0xffff5fdffed0>, 'Connection to discord.com timed out. (connect timeout=20)'))
+[Network Error] (2/5): HTTPSConnectionPool(host='discord.com', port=443): Max retries exceeded with url: /api/v10/channels/1559879696257253436/messages (Caused by ConnectTimeoutError(<HTTPSConnection(host='discord.com', port=443) at 0xffffa1ccdbd0>, 'Connection to discord.com timed out. (connect timeout=20)'))
+[Network Error] (3/5): HTTPSConnectionPool(host='discord.com', port=443): Max retries exceeded with url: /api/v10/channels/1559879696257253436/messages (Caused by ConnectTimeoutError(<HTTPSConnection(host='discord.com', port=443) at 0xffffa1ccdd10>, 'Connection to discord.com timed out. (connect timeout=20)'))
+[Network Error] (4/5): HTTPSConnectionPool(host='discord.com', port=443): Max retries exceeded with url: /api/v10/channels/1559879696257253436/messages (Caused by ConnectTimeoutError(<HTTPSConnection(host='discord.com', port=443) at 0xffffa150aad0>, 'Connection to discord.com timed out. (connect timeout=20)'))
+[Network Error] (5/5): HTTPSConnectionPool(host='discord.com', port=443): Max retries exceeded with url: /api/v10/channels/1559879696257253436/messages (Caused by ConnectTimeoutError(<HTTPSConnection(host='discord.com', port=443) at 0xffffa1509310>, 'Connection to discord.com timed out. (connect timeout=20)'))
+❌ 推送失败
+同步未完成，跳过清理
+同步未完成，跳过清理
+同步未完成，跳过清理
+同步未完成，跳过清理
+[+] RAW RSS 底稿: /home/pi/agent-workspace/outbox_obsidian/news_archives/raw_rss_2026-11-04_2030.md | LLM 材料 39796 字符
+MD_LEN: 6799 GEN_OK: True MODEL: google/gemini-3.5-flash-lite
+format: OK
+HTML_LEN: 21005
+[+] 最终版留底: /home/pi/agent-workspace/outbox_obsidian/news_archives/brief_final_2026-11-04_2032_晚.{md,html}
+token fail
+push wechat: 1
+[!] 推送失败，不记账，下次补发可重推
+✅ Part 1/4
+✅ Part 2/4
+✅ Part 3/4
+✅ Part 4/4
+[+] 已推送 4/4 条消息到 Discord
+push discord: 0 model: google/gemini-3.5-flash-lite
+同步未完成，跳过清理
+同步未完成，跳过清理
+同步未完成，跳过清理
+同步未完成，跳过清理
+同步未完成，跳过清理
+同步未完成，跳过清理
