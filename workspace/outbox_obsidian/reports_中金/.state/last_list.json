@@ -1,10 +1,30 @@
 {
-  "saved_at": "2026-11-04T23:09:37+08:00",
-  "last_build_date": "Wed, 04 Nov 2026 08:25:04 +0800",
+  "saved_at": "2026-11-05T20:30:37+08:00",
+  "last_build_date": "Thu, 05 Nov 2026 08:20:32 +0800",
   "feed_title": "中金点睛",
   "articles": [
     {
       "no": 1,
+      "title": "中金：民主党“横扫”的资产含义",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzI3MDMzMjg0MA==&mid=2247868722&idx=1&sn=a5aca3ddaaed4895d564275b73eb9f3e",
+      "date": "2026-11-05 08:20",
+      "chars": 28064,
+      "img_count": 71,
+      "hit": [],
+      "id": "2247868722_1"
+    },
+    {
+      "no": 2,
+      "title": "中金：反弹能延续吗？",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzI3MDMzMjg0MA==&mid=2247868722&idx=2&sn=4b614bc8064e352e801524ef2c11a9ee",
+      "date": "2026-11-05 08:20",
+      "chars": 5584,
+      "img_count": 5,
+      "hit": [],
+      "id": "2247868722_2"
+    },
+    {
+      "no": 3,
       "title": "中金 | AI十年展望（三十一）：Personal Agent——消费级AI的破晓时分",
       "url": "https://mp.weixin.qq.com/s?__biz=MzI3MDMzMjg0MA==&mid=2247868616&idx=1&sn=8f111dd11fcbc887a1dd3fc43ee66bed",
       "date": "2026-11-04 08:25",
@@ -14,7 +34,7 @@
       "id": "2247868616_1"
     },
     {
-      "no": 2,
+      "no": 4,
       "title": "中金：释放稳汇率信号——央行上调外汇存款准备金率点评",
       "url": "https://mp.weixin.qq.com/s?__biz=MzI3MDMzMjg0MA==&mid=2247868616&idx=2&sn=d933a947e5149ab638467f9989c81cc2",
       "date": "2026-11-04 08:25",
@@ -24,7 +44,7 @@
       "id": "2247868616_2"
     },
     {
-      "no": 3,
+      "no": 5,
       "title": "中金 | REITs三季报点评：稳中择优，弱中寻变",
       "url": "https://mp.weixin.qq.com/s?__biz=MzI3MDMzMjg0MA==&mid=2247868467&idx=1&sn=944d53d953cfe120f59fcef5bbdc2dc9",
       "date": "2026-11-03 07:04",
@@ -34,7 +54,7 @@
       "id": "2247868467_1"
     },
     {
-      "no": 4,
+      "no": 6,
       "title": "中金 | AI应用参考（4）：从PC产业史看AI Agents发展路径 生产力先行，消费级随后",
       "url": "https://mp.weixin.qq.com/s?__biz=MzI3MDMzMjg0MA==&mid=2247868467&idx=2&sn=38ccdb6ced99ade63790c89cf6a5e6c8",
       "date": "2026-11-03 07:04",
@@ -44,7 +64,7 @@
       "id": "2247868467_2"
     },
     {
-      "no": 5,
+      "no": 7,
       "title": "中金：市场如何见底？",
       "url": "https://mp.weixin.qq.com/s?__biz=MzI3MDMzMjg0MA==&mid=2247868403&idx=1&sn=a523d2716c597b497b2afd0e48c73ed9",
       "date": "2026-11-02 08:14",
@@ -54,7 +74,7 @@
       "id": "2247868403_1"
     },
     {
-      "no": 6,
+      "no": 8,
       "title": "中金 | 三季报业绩回顾：关注结构亮点，AI及能源景气延续",
       "url": "https://mp.weixin.qq.com/s?__biz=MzI3MDMzMjg0MA==&mid=2247868403&idx=2&sn=6f033bc01292d350c117fcecd8188784",
       "date": "2026-11-02 08:14",
@@ -64,7 +84,7 @@
       "id": "2247868403_2"
     },
     {
-      "no": 7,
+      "no": 9,
       "title": "中金 | 中剧专题：从试验田到商业化突破",
       "url": "https://mp.weixin.qq.com/s?__biz=MzI3MDMzMjg0MA==&mid=2247868403&idx=3&sn=bbfddd7473c39667a308570594346de1",
       "date": "2026-11-02 08:14",
@@ -74,7 +94,7 @@
       "id": "2247868403_3"
     },
     {
-      "no": 8,
+      "no": 10,
       "title": "中金：AI“次贷”的金融裂缝",
       "url": "https://mp.weixin.qq.com/s?__biz=MzI3MDMzMjg0MA==&mid=2247868297&idx=1&sn=ac36800c4748e2c77404823de130b8da",
       "date": "2026-10-30 07:31",
@@ -82,26 +102,6 @@
       "img_count": 23,
       "hit": [],
       "id": "2247868297_1"
-    },
-    {
-      "no": 9,
-      "title": "中金：美国经济增长提速，投资保持强劲",
-      "url": "https://mp.weixin.qq.com/s?__biz=MzI3MDMzMjg0MA==&mid=2247868297&idx=2&sn=07e80f5993de7ca5607d5762d5edc1a2",
-      "date": "2026-10-30 07:31",
-      "chars": 6520,
-      "img_count": 11,
-      "hit": [],
-      "id": "2247868297_2"
-    },
-    {
-      "no": 10,
-      "title": "中金 | 谁在买“固收+”：短线资金接棒，长线资金退潮",
-      "url": "https://mp.weixin.qq.com/s?__biz=MzI3MDMzMjg0MA==&mid=2247868297&idx=3&sn=5f661f301343594463f30017dd73d651",
-      "date": "2026-10-30 07:31",
-      "chars": 15001,
-      "img_count": 25,
-      "hit": [],
-      "id": "2247868297_3"
     }
   ]
 }
