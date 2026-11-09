@@ -1,10 +1,50 @@
 {
-  "saved_at": "2026-11-08T20:30:08+08:00",
-  "last_build_date": null,
+  "saved_at": "2026-11-09T20:30:06+08:00",
+  "last_build_date": "Mon, 09 Nov 2026 07:47:56 +0800",
   "feed_title": "中金点睛",
   "articles": [
     {
       "no": 1,
+      "title": "中金：美股跌到位了吗？",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzI3MDMzMjg0MA==&mid=2247868879&idx=1&sn=cff5ab5e8a8524a82c9f5ce457ff4c1e",
+      "date": "2026-11-09 07:47",
+      "chars": 20739,
+      "img_count": 53,
+      "hit": [],
+      "id": "2247868879_1"
+    },
+    {
+      "no": 2,
+      "title": "中金｜美国10月非农：就业加速扩张，联储保持渐进加息",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzI3MDMzMjg0MA==&mid=2247868879&idx=2&sn=89e83cb313c21af4b315c3434d2c61cb",
+      "date": "2026-11-09 07:47",
+      "chars": 12541,
+      "img_count": 35,
+      "hit": [],
+      "id": "2247868879_2"
+    },
+    {
+      "no": 3,
+      "title": "中金：美国中期选举对A股产业影响全梳理",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzI3MDMzMjg0MA==&mid=2247868879&idx=3&sn=85224c8b1944f72bd8c31124010fc51d",
+      "date": "2026-11-09 07:47",
+      "chars": 16257,
+      "img_count": 30,
+      "hit": [],
+      "id": "2247868879_3"
+    },
+    {
+      "no": 4,
+      "title": "中金：优结构、提质效或仍是财政重点",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzI3MDMzMjg0MA==&mid=2247868879&idx=4&sn=3a275d59514772714524764c43b56755",
+      "date": "2026-11-09 07:47",
+      "chars": 11465,
+      "img_count": 29,
+      "hit": [],
+      "id": "2247868879_4"
+    },
+    {
+      "no": 5,
       "title": "一图读懂｜服务消费",
       "url": "https://mp.weixin.qq.com/s?__biz=MzI3MDMzMjg0MA==&mid=2247868779&idx=1&sn=5b320f6a162403d4c96e34f7529f3753",
       "date": "2026-11-07 10:00",
@@ -14,7 +54,7 @@
       "id": "2247868779_1"
     },
     {
-      "no": 2,
+      "no": 6,
       "title": "中金 | 美国中期选举：资金轮动下，如何配置全球？",
       "url": "https://mp.weixin.qq.com/s?__biz=MzI3MDMzMjg0MA==&mid=2247868775&idx=1&sn=9561f14f19f1c82618791cdbd120af7c",
       "date": "2026-11-06 08:45",
@@ -24,7 +64,7 @@
       "id": "2247868775_1"
     },
     {
-      "no": 3,
+      "no": 7,
       "title": "CGI宏观视点 | 迎接科研工业化——从经济学视角读《科学：新黄金时代》",
       "url": "https://mp.weixin.qq.com/s?__biz=MzI3MDMzMjg0MA==&mid=2247868775&idx=2&sn=0c7ef57d53391312710bffc6f8684eba",
       "date": "2026-11-06 08:45",
@@ -34,7 +74,7 @@
       "id": "2247868775_2"
     },
     {
-      "no": 4,
+      "no": 8,
       "title": "中金：民主党“横扫”的资产含义",
       "url": "https://mp.weixin.qq.com/s?__biz=MzI3MDMzMjg0MA==&mid=2247868722&idx=1&sn=a5aca3ddaaed4895d564275b73eb9f3e",
       "date": "2026-11-05 08:20",
@@ -44,7 +84,7 @@
       "id": "2247868722_1"
     },
     {
-      "no": 5,
+      "no": 9,
       "title": "中金：反弹能延续吗？",
       "url": "https://mp.weixin.qq.com/s?__biz=MzI3MDMzMjg0MA==&mid=2247868722&idx=2&sn=4b614bc8064e352e801524ef2c11a9ee",
       "date": "2026-11-05 08:20",
@@ -54,7 +94,7 @@
       "id": "2247868722_2"
     },
     {
-      "no": 6,
+      "no": 10,
       "title": "中金 | AI十年展望（三十一）：Personal Agent——消费级AI的破晓时分",
       "url": "https://mp.weixin.qq.com/s?__biz=MzI3MDMzMjg0MA==&mid=2247868616&idx=1&sn=8f111dd11fcbc887a1dd3fc43ee66bed",
       "date": "2026-11-04 08:25",
@@ -62,46 +102,6 @@
       "img_count": 100,
       "hit": [],
       "id": "2247868616_1"
-    },
-    {
-      "no": 7,
-      "title": "中金：释放稳汇率信号——央行上调外汇存款准备金率点评",
-      "url": "https://mp.weixin.qq.com/s?__biz=MzI3MDMzMjg0MA==&mid=2247868616&idx=2&sn=d933a947e5149ab638467f9989c81cc2",
-      "date": "2026-11-04 08:25",
-      "chars": 12981,
-      "img_count": 23,
-      "hit": [],
-      "id": "2247868616_2"
-    },
-    {
-      "no": 8,
-      "title": "中金 | REITs三季报点评：稳中择优，弱中寻变",
-      "url": "https://mp.weixin.qq.com/s?__biz=MzI3MDMzMjg0MA==&mid=2247868467&idx=1&sn=944d53d953cfe120f59fcef5bbdc2dc9",
-      "date": "2026-11-03 07:04",
-      "chars": 40165,
-      "img_count": 97,
-      "hit": [],
-      "id": "2247868467_1"
-    },
-    {
-      "no": 9,
-      "title": "中金 | AI应用参考（4）：从PC产业史看AI Agents发展路径 生产力先行，消费级随后",
-      "url": "https://mp.weixin.qq.com/s?__biz=MzI3MDMzMjg0MA==&mid=2247868467&idx=2&sn=38ccdb6ced99ade63790c89cf6a5e6c8",
-      "date": "2026-11-03 07:04",
-      "chars": 24957,
-      "img_count": 55,
-      "hit": [],
-      "id": "2247868467_2"
-    },
-    {
-      "no": 10,
-      "title": "中金：市场如何见底？",
-      "url": "https://mp.weixin.qq.com/s?__biz=MzI3MDMzMjg0MA==&mid=2247868403&idx=1&sn=a523d2716c597b497b2afd0e48c73ed9",
-      "date": "2026-11-02 08:14",
-      "chars": 36603,
-      "img_count": 101,
-      "hit": [],
-      "id": "2247868403_1"
     }
   ]
 }

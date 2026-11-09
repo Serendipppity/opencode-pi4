@@ -9576,3 +9576,110 @@ push discord: 0 model: google/gemini-3.5-flash-lite
 同步未完成，跳过清理
 同步未完成，跳过清理
 同步未完成，跳过清理
+backup: [master b008f05] Auto-backup: 2026-11-09
+ 14 files changed, 2372 insertions(+), 2 deletions(-)
+ crea
+push: To github.com:Serendipppity/opencode-pi4.git
+   2e9ecfd..b008f05  HEAD -> main
+status saved: /home/pi/.cache/backup_status/git_backup.json
+同步未完成，跳过清理
+同步未完成，跳过清理
+同步未完成，跳过清理
+同步未完成，跳过清理
+🖥️ **Pi 健康巡检** 2026-11-09 06:00
+
+✅ **Git**
+- ✅ 昨夜文件备份: push OK (2026-11-09)
+- ✅ 未提交变更: 1 | 领先远程: 0
+
+✅ **Syncthing**
+- ✅ systemd --user 服务: active
+- ✅ folder[pi-outbox]: state=idle (sendonly，待同步 20 项忽略)
+
+✅ **系统**
+- ✅ 温度: 45.3°C
+- ✅ 内存可用: 4574MB
+- ✅ 磁盘: 17.9%
+- ✅ load15: 0.93
+- ℹ️ uptime: 62天13h23m
+
+✅ **服务存活**
+- ✅ syncthing
+- ✅ kimaki
+- ✅ cron
+
+✅ **模型清单**
+- providers: google, opencode-go | 默认模型: gemini-flash-lite-latest
+- - **brief**: `gemini-3.5-flash-lite` → fb: `gemini-2.5-flash`
+- - **cavecrew-builder、cavecrew-investigator、cavecrew-reviewer、xiabao、xiatiao**: `ox-alpha-free`
+
+❌ **网络**
+- ✅ 内网网关(192.168.1.100): 平均 0.5ms
+- ✅ 国内公网(baidu.com): DNS+TLS 79ms
+- ❌ 墙外(google 204): HTTP 超时 (870ms)
+
+✅ **Gemini API**
+- ✅ gemini-3.5-flash-lite 连通 1586ms
+push discord summary: 0
+push discord alert: 0
+同步未完成，跳过清理
+同步未完成，跳过清理
+[+] RAW RSS 底稿: /home/pi/agent-workspace/outbox_obsidian/news_archives/raw_rss_2026-11-09_0800.md | LLM 材料 35454 字符
+MD_LEN: 5039 GEN_OK: True MODEL: google/gemini-3.5-flash-lite
+format: OK
+HTML_LEN: 17351
+[+] 最终版留底: /home/pi/agent-workspace/outbox_obsidian/news_archives/brief_final_2026-11-09_0802_早.{md,html}
+token fail
+push wechat: 1
+[!] 推送失败，不记账，下次补发可重推
+✅ Part 1/3
+✅ Part 2/3
+✅ Part 3/3
+[+] 已推送 3/3 条消息到 Discord
+push discord: 0 model: google/gemini-3.5-flash-lite
+同步未完成，跳过清理
+同步未完成，跳过清理
+同步未完成，跳过清理
+同步未完成，跳过清理
+[+] RAW RSS 底稿: /home/pi/agent-workspace/outbox_obsidian/news_archives/raw_rss_2026-11-09_1200.md | LLM 材料 39774 字符
+MD_LEN: 5052 GEN_OK: True MODEL: google/gemini-3.5-flash-lite
+format: OK
+HTML_LEN: 17360
+[+] 最终版留底: /home/pi/agent-workspace/outbox_obsidian/news_archives/brief_final_2026-11-09_1201_午.{md,html}
+token fail
+push wechat: 1
+[!] 推送失败，不记账，下次补发可重推
+✅ Part 1/3
+✅ Part 2/3
+✅ Part 3/3
+[+] 已推送 3/3 条消息到 Discord
+push discord: 0 model: google/gemini-3.5-flash-lite
+同步未完成，跳过清理
+同步未完成，跳过清理
+同步未完成，跳过清理
+同步未完成，跳过清理
+正在拉取最新持仓与净值数据...
+✅ 理财日报已推送 money 频道（5 只产品）
+同步未完成，跳过清理
+同步未完成，跳过清理
+同步未完成，跳过清理
+同步未完成，跳过清理
+[+] RAW RSS 底稿: /home/pi/agent-workspace/outbox_obsidian/news_archives/raw_rss_2026-11-09_2030.md | LLM 材料 44730 字符
+MD_LEN: 5421 GEN_OK: True MODEL: google/gemini-3.5-flash-lite
+format: OK
+HTML_LEN: 17729
+[+] 最终版留底: /home/pi/agent-workspace/outbox_obsidian/news_archives/brief_final_2026-11-09_2032_晚.{md,html}
+token fail
+push wechat: 1
+[!] 推送失败，不记账，下次补发可重推
+✅ Part 1/3
+✅ Part 2/3
+✅ Part 3/3
+[+] 已推送 3/3 条消息到 Discord
+push discord: 0 model: google/gemini-3.5-flash-lite
+同步未完成，跳过清理
+同步未完成，跳过清理
+同步未完成，跳过清理
+同步未完成，跳过清理
+同步未完成，跳过清理
+同步未完成，跳过清理
