@@ -1,5 +1,5 @@
 #!/home/pi/agent-venv/bin/python3
-"""新闻简报 v6：parse_rss 统一抓 8 源全量留底 → 读底稿硬过滤 → opencode brief agent（主模型+退避+fallback）→ xiaohu format.py → 图文推送"""
+"""新闻简报 v6：parse_rss 统一抓 17 源全量留底 → 读底稿硬过滤 → opencode brief agent（主模型+退避+fallback）→ xiaohu format.py → 图文推送"""
 import subprocess, sys, os, datetime, re, json, time
 
 label = sys.argv[1] if len(sys.argv) > 1 else '早'
@@ -109,7 +109,7 @@ def _build_prompt(extra_feedback=''):
     prompt = (f'不要执行任何 bash 命令、不调用工具、不联网，材料已附在下方，直接按模板生成。\n'
               f'规则（必须全部满足）：\n'
               f'1. 完整保留模板里全部 5 个 ## 分区标题（## 核心要闻 / ## 国际风云 / ## 财经速递 / ## 科技前沿 / ## 国内要闻），顺序不变、文字不改，各新闻分入对应分区；\n'
-              f'2. 编号1-12全程连续共10-12条，跨分区不中断；`源标签`取材料中的来源名（早报/财新/华尔街见闻/BBC/NPR/联合早报/Al Jazeera）；\n'
+              f'2. 编号1-20全程连续共20条，跨分区不中断；分区配额：核心要闻3条、国际风云3条、财经速递5条、科技前沿5条、国内要闻4条；`源标签`取材料中的来源名（BBC/NPR/Al Jazeera/联合早报/财新/华尔街见闻/早报/财联社/央视财经/凤凰网财经/21世纪经济报道/投资界/晚点LatePost/晚点AI/虎嗅/半导体行业观察）；\n'
               f'3. 每条 = **编号. 中文标题** `源标签` + 副标题行 + > 引用块（🄲 中文摘要 / 🄴 English summary / URL 链接，无图标）；\n'
               f'4. 副标题行必须为纯英文（English），禁止写中文，禁止粘贴材料里的描述文字；\n'
               f'5. 引用块内 🄲 🄴 URL 三行缺一不可；标题和分区名不加任何 emoji 图标；\n'
@@ -154,6 +154,8 @@ def _check_brief(md):
             problems.append(f'缺分区 ## {sec}')
     title_re = re.compile(r'^\*{0,2}\d+\.\s+\S.*?\*{0,2}\s+`[^`]+`\s*$')
     lines = md.splitlines()
+    if sum(1 for l in lines if title_re.match(l.strip())) < 18:
+        problems.append('条数不足(需20条，少于18判失败)')
     for i, l in enumerate(lines):
         if title_re.match(l.strip()):
             j = i + 1

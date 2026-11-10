@@ -1,0 +1,82 @@
+# 研究源文章索引（新→旧）
+
+- 2026-11-10 | 中金点睛 | 中金：PPI同比拐点或已现——2026年10月物价数据点评 | https://mp.weixin.qq.com/s?__biz=MzI3MDMzMjg0MA==&mid=2247868920&idx=1&sn=c438119e304efe6679204e2bd17889e9
+- 2026-11-10 | 中金点睛 | 中金：卡位交互入口，Agent时代硬件迎创新机遇 | https://mp.weixin.qq.com/s?__biz=MzI3MDMzMjg0MA==&mid=2247868920&idx=2&sn=5d1134cf0cd63c9c5d9e13e739df843b
+- 2026-11-09 | 远川研究所 | 维密老了怎么办 | https://mp.weixin.qq.com/s?__biz=MzIwMDY2NTgwMA==&mid=2247528010&idx=1&sn=6793d632556a81161cddd3144156f7af
+- 2026-11-09 | 晚点再听LaterCast | 如何打造一家AI-Native服务公司丨Aakash Gupta | https://mp.weixin.qq.com/s?__biz=MzcxMDA5NTI0OA==&mid=2247489454&idx=1&sn=e6825db2987fa825f1f3c7358fb124bc
+- 2026-11-09 | 中国金融四十人论坛 | 2026外滩年会｜制度型开放：上海全球资管中心升级的关键一步 | https://mp.weixin.qq.com/s?__biz=MjM5NjgyNDk4NA==&mid=2686359051&idx=1&sn=96618b39e7d8fb3b75ab70f4c354237e
+- 2026-11-09 | 中国金融四十人论坛 | 锐评 | CPI与PPI之间的剪刀差进一步走阔 | https://mp.weixin.qq.com/s?__biz=MjM5NjgyNDk4NA==&mid=2686359051&idx=2&sn=29d752b7e555a6a56bf9af2a0d65626b
+- 2026-11-09 | 硅基观察Pro | 华大智造，盯上了AI制药最缺的东西 | https://mp.weixin.qq.com/s?__biz=MzkyNTY1MjE2OA==&mid=2247494659&idx=1&sn=5bbbcaa6ad0aed1fae2f33fddcb9e70c
+- 2026-11-09 | 中金点睛 | 中金：美股跌到位了吗？ | https://mp.weixin.qq.com/s?__biz=MzI3MDMzMjg0MA==&mid=2247868879&idx=1&sn=cff5ab5e8a8524a82c9f5ce457ff4c1e
+- 2026-11-09 | 中金点睛 | 中金｜美国10月非农：就业加速扩张，联储保持渐进加息 | https://mp.weixin.qq.com/s?__biz=MzI3MDMzMjg0MA==&mid=2247868879&idx=2&sn=89e83cb313c21af4b315c3434d2c61cb
+- 2026-11-09 | 中金点睛 | 中金：美国中期选举对A股产业影响全梳理 | https://mp.weixin.qq.com/s?__biz=MzI3MDMzMjg0MA==&mid=2247868879&idx=3&sn=85224c8b1944f72bd8c31124010fc51d
+- 2026-11-09 | 中金点睛 | 中金：优结构、提质效或仍是财政重点 | https://mp.weixin.qq.com/s?__biz=MzI3MDMzMjg0MA==&mid=2247868879&idx=4&sn=3a275d59514772714524764c43b56755
+- 2026-11-08 | 晚点再听LaterCast | 当人人都能做软件，懂业务的人有了什么新机会？丨Y Combinator | https://mp.weixin.qq.com/s?__biz=MzcxMDA5NTI0OA==&mid=2247489450&idx=1&sn=b370f992d1f9d7032b5365573704f2ef
+- 2026-11-08 | 中国金融四十人论坛 | CF40研究 | 本轮居民资产负债表修复还要多久？ | https://mp.weixin.qq.com/s?__biz=MjM5NjgyNDk4NA==&mid=2686359031&idx=1&sn=ac92c6bc2fc0ecd9903810d7cafb9be5
+- 2026-11-08 | 硅谷科技评论 | 军用无人机公司 Shield AI 融 25 亿美元，股权只占四成：国防 AI 大轮开始由银行配钱 | https://mp.weixin.qq.com/s?__biz=MzA3MDU4ODkyNg==&mid=2247513298&idx=1&sn=5fe3f98cf6df536a173b050b2f6e8c7a
+- 2026-11-07 | 晚点再听LaterCast | 一个让人少刷手机的App，怎么做到月收入40万美元？丨Starter Story | https://mp.weixin.qq.com/s?__biz=MzcxMDA5NTI0OA==&mid=2247489426&idx=1&sn=9dd8b3d4847debaf59e0f83c5d9e1314
+- 2026-11-07 | 中金点睛 | 一图读懂｜服务消费 | https://mp.weixin.qq.com/s?__biz=MzI3MDMzMjg0MA==&mid=2247868779&idx=1&sn=5b320f6a162403d4c96e34f7529f3753
+- 2026-11-06 | 晚点再听LaterCast | 如何为生活的方方面面构建 AI Agent？丨Dan Martell | https://mp.weixin.qq.com/s?__biz=MzcxMDA5NTI0OA==&mid=2247489419&idx=1&sn=f8858fe4175df3cd8d0ec1be83010c6e
+- 2026-11-06 | 中国金融四十人论坛 | 欧央行行长热门人选Klaas KNOT，外滩把脉非银行金融中介与AI融资风险 | https://mp.weixin.qq.com/s?__biz=MjM5NjgyNDk4NA==&mid=2686359022&idx=1&sn=a7f261b73c6c76a5c72730d68b5a5bca
+- 2026-11-06 | 硅谷科技评论 | 从 CES 发现，到硅谷成交 | https://mp.weixin.qq.com/s?__biz=MzA3MDU4ODkyNg==&mid=2247513292&idx=1&sn=ba7ff366889b4cc0ff64db5066a3caca
+- 2026-11-06 | 中金点睛 | 中金 | 美国中期选举：资金轮动下，如何配置全球？ | https://mp.weixin.qq.com/s?__biz=MzI3MDMzMjg0MA==&mid=2247868775&idx=1&sn=9561f14f19f1c82618791cdbd120af7c
+- 2026-11-06 | 中金点睛 | CGI宏观视点 | 迎接科研工业化——从经济学视角读《科学：新黄金时代》 | https://mp.weixin.qq.com/s?__biz=MzI3MDMzMjg0MA==&mid=2247868775&idx=2&sn=0c7ef57d53391312710bffc6f8684eba
+- 2026-11-05 | 晚点再听LaterCast | 想在AI时代赚到钱，先看看这些生意机会丨Greg Isenberg | https://mp.weixin.qq.com/s?__biz=MzcxMDA5NTI0OA==&mid=2247489414&idx=1&sn=0adfb776bb0644ed0b7964d1cb9ad8d2
+- 2026-11-05 | 远川研究所 | 买山下有松的人是什么阶级？ | https://mp.weixin.qq.com/s?__biz=MzIwMDY2NTgwMA==&mid=2247528008&idx=1&sn=931cd0965efeb22f682801f7750e4271
+- 2026-11-05 | 中国金融四十人论坛 | 四位财政操盘者：美债之困、法国之危，财政困局如何破？｜2026外滩年会 | https://mp.weixin.qq.com/s?__biz=MjM5NjgyNDk4NA==&mid=2686359016&idx=1&sn=abc0b217ff9ffb49c8c97f205191c4fb
+- 2026-11-05 | 饭统戴老板 | 人民怀念贾樟柯 | https://mp.weixin.qq.com/s?__biz=MzU4NDY2MDMzMA==&mid=2247494971&idx=1&sn=9b28459c7ef15fdaba274f84c43e7e9e
+- 2026-11-05 | 硅基观察Pro | ShopifyCEO最新判断：AI正在前移购物决策，传统广告模式可能玩不转了 | https://mp.weixin.qq.com/s?__biz=MzkyNTY1MjE2OA==&mid=2247494646&idx=1&sn=e448805c55da814af1727bc6f4a133c5
+- 2026-11-05 | 中金点睛 | 中金：民主党“横扫”的资产含义 | https://mp.weixin.qq.com/s?__biz=MzI3MDMzMjg0MA==&mid=2247868722&idx=1&sn=a5aca3ddaaed4895d564275b73eb9f3e
+- 2026-11-04 | 晚点再听LaterCast | 沃顿教授：真正的AI赚钱机会就在眼前丨Silicon Valley Girl | https://mp.weixin.qq.com/s?__biz=MzcxMDA5NTI0OA==&mid=2247489402&idx=1&sn=c5df8c8f59cf419f7060c8f8b1d76c95
+- 2026-11-04 | 中国金融四十人论坛 | 锐评 | 美国中期选举：民主党大胜意味着什么？ | https://mp.weixin.qq.com/s?__biz=MjM5NjgyNDk4NA==&mid=2686358998&idx=1&sn=c72a9a0dcaa41ae986b811209184cfdd
+- 2026-11-04 | 硅基观察Pro | 三年狂赚100亿美元！拆解Anthropic背后最牛VC的AI投资逻辑 | https://mp.weixin.qq.com/s?__biz=MzkyNTY1MjE2OA==&mid=2247494641&idx=1&sn=9adbae62674611c6bb77c9227695aba7
+- 2026-11-04 | 硅谷科技评论 | Thrive Holdings 用 20 亿美元买会计所：AI 应用的壁垒究竟是什么？ | https://mp.weixin.qq.com/s?__biz=MzA3MDU4ODkyNg==&mid=2247513284&idx=1&sn=62da8d9dd75f10075db0654bfdc74b9f
+- 2026-11-03 | 远川研究所 | 《影之刃零》是村里第几个大学生？ | https://mp.weixin.qq.com/s?__biz=MzIwMDY2NTgwMA==&mid=2247527951&idx=1&sn=50b8bedd82904ba807b72e2d7d256553
+- 2026-11-03 | 远川研究所 | 吉利的下一轮增长，从何而来？ | https://mp.weixin.qq.com/s?__biz=MzIwMDY2NTgwMA==&mid=2247527951&idx=2&sn=b2e5fd0eb3c308876b8bf86a9ae5df6f
+- 2026-11-03 | 晚点再听LaterCast | Broccoli创始人：6500亿美元的家居服务市场，AI从哪一步做进去丨YC | https://mp.weixin.qq.com/s?__biz=MzcxMDA5NTI0OA==&mid=2247489380&idx=1&sn=ea939c85064c2bb4e6c7ecc3157b933d
+- 2026-11-03 | 硅基观察Pro | 存储股，怎么就成了最先被抛弃的AI资产？ | https://mp.weixin.qq.com/s?__biz=MzkyNTY1MjE2OA==&mid=2247494636&idx=1&sn=5189c01dfb0d9261a89d25864ee71fc3
+- 2026-11-03 | 硅基观察Pro | 暖芯迦完成5亿元C+轮融资，跑出视觉脑机接口的中国速度 | https://mp.weixin.qq.com/s?__biz=MzkyNTY1MjE2OA==&mid=2247494636&idx=2&sn=94a18c659348b3e0972179f6f3885350
+- 2026-11-03 | 中国金融四十人论坛 | 2026外滩年会：关于人工智能的五个追问 | https://mp.weixin.qq.com/s?__biz=MjM5NjgyNDk4NA==&mid=2686358995&idx=1&sn=3e539bf01e796826f1ee4eccf9965e52
+- 2026-11-02 | 晚点再听LaterCast | Wispr Flow增长负责人：怎样让广告带来付费用户丨Lenny's Podcast | https://mp.weixin.qq.com/s?__biz=MzcxMDA5NTI0OA==&mid=2247489373&idx=1&sn=95a55ce92e344fd3f62e4b80bda40f7a
+- 2026-11-02 | 远川研究所 | 2026年了，怎么还有女装店在排队？ | https://mp.weixin.qq.com/s?__biz=MzIwMDY2NTgwMA==&mid=2247527920&idx=1&sn=7757bc793e65b46a9d87a0df52ffe9d0
+- 2026-11-02 | 中国金融四十人论坛 | CF40季度报告 | 破解供强需弱，仍需加大逆周期政策力度 | https://mp.weixin.qq.com/s?__biz=MjM5NjgyNDk4NA==&mid=2686358972&idx=1&sn=650ca6ae7fc84909870c29ad505d0e68
+- 2026-11-02 | 硅基观察Pro | 美国数据中心这张大饼，华尔街也吃不下了 | https://mp.weixin.qq.com/s?__biz=MzkyNTY1MjE2OA==&mid=2247494628&idx=1&sn=6bf051403b929fe36f2edfb6797f77a0
+- 2026-11-01 | 晚点再听LaterCast | 新型全栈设计师丨Y Combinator | https://mp.weixin.qq.com/s?__biz=MzcxMDA5NTI0OA==&mid=2247489366&idx=1&sn=b0fef531abb8543eb7a7f3bccb385cda
+- 2026-11-01 | 中国金融四十人论坛 | CF40研究 | 中美AI投入差距有多大 | https://mp.weixin.qq.com/s?__biz=MjM5NjgyNDk4NA==&mid=2686358939&idx=1&sn=f6175a43f9ec93d21e1a0a50699ba102
+- 2026-11-01 | 硅谷科技评论 | Modal 与无问芯穹同一周拿到大钱：美国按收入定价，中国在为国产芯片定价 | https://mp.weixin.qq.com/s?__biz=MzA3MDU4ODkyNg==&mid=2247513276&idx=1&sn=3f4eddbaa87eec84a9c22ea0ef677516
+- 2026-10-31 | 晚点再听LaterCast | 哈佛商学院教授：最容易受到AI冲击的人，可能和你想的不一样丨Silicon Valley Girl | https://mp.weixin.qq.com/s?__biz=MzcxMDA5NTI0OA==&mid=2247489359&idx=1&sn=8c38530d83ba65bdad5d17b156c5ac11
+- 2026-10-31 | 硅谷科技评论 | 21 家 VC 拒绝 Anthropic 之后，哪些投资人决定在早期下注？ | https://mp.weixin.qq.com/s?__biz=MzA3MDU4ODkyNg==&mid=2247513264&idx=1&sn=f11256b3e15125e10a4adcbffc32ccfa
+- 2026-10-30 | 中国金融四十人论坛 | 刘珺：金融AI治理的起点——先回答“是主体还是工具、责任由谁承担” | https://mp.weixin.qq.com/s?__biz=MjM5NjgyNDk4NA==&mid=2686358929&idx=1&sn=f5703f49c0c507c1449496e926024d0a
+- 2026-10-30 | 硅基观察Pro | 提前到来的盈利时刻，和被“错杀”的摩尔线程 | https://mp.weixin.qq.com/s?__biz=MzkyNTY1MjE2OA==&mid=2247494615&idx=1&sn=469de728c8ca9b5076d7744599ced650
+- 2026-10-29 | 远川研究所 | 和人生对线失败，我熟读薄肌圣经 | https://mp.weixin.qq.com/s?__biz=MzIwMDY2NTgwMA==&mid=2247527918&idx=1&sn=30ebdac074c0dfa9b1d1345d5d4e544b
+- 2026-10-28 | 远川研究所 | 打针的人越多，医美公司越难过 | https://mp.weixin.qq.com/s?__biz=MzIwMDY2NTgwMA==&mid=2247527882&idx=1&sn=bb9e78b51691450b858098563821b4b7
+- 2026-10-28 | 硅基观察Pro | 这届AI，开始跟着人类学干活了：豆包工作升级实测 | https://mp.weixin.qq.com/s?__biz=MzkyNTY1MjE2OA==&mid=2247494609&idx=1&sn=6bc56c12c76c15f6a6bc1b88e1e2536c
+- 2026-10-27 | 饭统戴老板 | 短剧的黄金时代，可能还在路上 | https://mp.weixin.qq.com/s?__biz=MzU4NDY2MDMzMA==&mid=2247494969&idx=1&sn=f4b13a14b040b98527dd9746a96e09a7
+- 2026-10-27 | 远川研究所 | 已严肃沉迷短剧 | https://mp.weixin.qq.com/s?__biz=MzIwMDY2NTgwMA==&mid=2247527852&idx=1&sn=0bbbda25bf15f5d83bfd7d8ab7b8067c
+- 2026-10-27 | 硅基观察Pro | 史上最疯狂的AI招股书：收入暴涨13倍，半年巨亏807亿美元 | https://mp.weixin.qq.com/s?__biz=MzkyNTY1MjE2OA==&mid=2247494588&idx=1&sn=37a6c0b18c65815e71e1ef0e1e129dec
+- 2026-10-26 | 远川研究所 | 苹果重走小米路 | https://mp.weixin.qq.com/s?__biz=MzIwMDY2NTgwMA==&mid=2247527843&idx=1&sn=c7fe1889ff4600d88c957272ba04f898
+- 2026-10-26 | 硅基观察Pro | 两倍做多海力士，今年最狠的韭菜收割机 | https://mp.weixin.qq.com/s?__biz=MzkyNTY1MjE2OA==&mid=2247494580&idx=1&sn=8eadab30c838b740b9fd7a068490e873
+- 2026-10-25 | 硅谷科技评论 | 对手变股东：机器人公司开始合伙投供应商 | https://mp.weixin.qq.com/s?__biz=MzA3MDU4ODkyNg==&mid=2247513260&idx=1&sn=92c5069a5080e2addec21b7dd2d86a14
+- 2026-10-24 | 硅谷科技评论 | 华裔物理学家叶军获沃尔夫奖：钱涌向量子计算，订单先落在原子钟上 | https://mp.weixin.qq.com/s?__biz=MzA3MDU4ODkyNg==&mid=2247513246&idx=1&sn=7a043b0caac1dc3e8d86551083910516
+- 2026-10-22 | 远川研究所 | 大厂抢滩AI短剧 | https://mp.weixin.qq.com/s?__biz=MzIwMDY2NTgwMA==&mid=2247527841&idx=1&sn=222bc3aab182c2e0763d32bdd4c67aef
+- 2026-10-19 | 硅谷科技评论 | 关于田柯宇，观点太多，事实太少 | https://mp.weixin.qq.com/s?__biz=MzA3MDU4ODkyNg==&mid=2247513242&idx=1&sn=179a7ff586aa6cf9d675d6ab025e7de7
+- 2026-10-18 | 硅谷科技评论 | Modal 与无问芯穹同一周拿到大钱：美国按收入定价，中国在为国产芯片定价 | https://mp.weixin.qq.com/s?__biz=MzA3MDU4ODkyNg==&mid=2247513234&idx=1&sn=a2e0524f193c29a09e0f997f368cc4f1
+- 2026-10-15 | 硅谷科技评论 | Ayar Labs：英伟达、AMD、英特尔同时下注的光互连公司，15 个月估值涨到 3.7 倍 | https://mp.weixin.qq.com/s?__biz=MzA3MDU4ODkyNg==&mid=2247513230&idx=1&sn=a188cca51a2f73a0bbc92dd827db9b1f
+- 2026-09-24 | 饭统戴老板 | 老乡鸡，你抄不会 | https://mp.weixin.qq.com/s?__biz=MzU4NDY2MDMzMA==&mid=2247494932&idx=1&sn=ca6850756ac7c9f42b81b78c01d03a55
+- 2026-09-16 | 饭统戴老板 | 有编制的Agent，才是好用的Agent | https://mp.weixin.qq.com/s?__biz=MzU4NDY2MDMzMA==&mid=2247494897&idx=1&sn=f64542741ab5a17cd482f2258cd68803
+- 2026-09-11 | 饭统戴老板 | 永远不要低估小米 | https://mp.weixin.qq.com/s?__biz=MzU4NDY2MDMzMA==&mid=2247494878&idx=1&sn=b2de1111f576d9c9a246b555594a8d1f
+- 2026-09-09 | 饭统戴老板 | 董建华的狮子山下 | https://mp.weixin.qq.com/s?__biz=MzU4NDY2MDMzMA==&mid=2247494846&idx=1&sn=e48b1acf0e3e8956e98a8b8a6622cbf6
+- 2026-09-03 | 饭统戴老板 | 找到改写时代的好公司 | https://mp.weixin.qq.com/s?__biz=MzU4NDY2MDMzMA==&mid=2247494834&idx=1&sn=42cb22b4fe87332fdefeac683fa4c88f
+- 2026-09-02 | 饭统戴老板 | 蔚来是一种命运 | https://mp.weixin.qq.com/s?__biz=MzU4NDY2MDMzMA==&mid=2247494812&idx=1&sn=8b412df9adee5a0aed01e7d412a5da95
+- 2026-08-22 | 饭统戴老板 | 影 视 纠 察 队 | https://mp.weixin.qq.com/s?__biz=MzU4NDY2MDMzMA==&mid=2247494781&idx=1&sn=e4e3695fc8c3aeff8c544ebc9c1ead97
+- 2026-08-15 | 饭统戴老板 | 朱镕基的1993年 | https://mp.weixin.qq.com/s?__biz=MzU4NDY2MDMzMA==&mid=2247494742&idx=1&sn=4daf06ae16ceb02d14ac397bc3875238
+- 2025-05-19 | 晚点对话 | 晚点对话美的方洪波：我只是一个过客，不需要被任何人记住 | https://mp.weixin.qq.com/s?__biz=Mzg4ODgyMjk3Nw==&mid=2247484091&idx=1&sn=ac870b8072dd97bb6ffe917d7fd3a517
+- 2025-05-16 | 晚点对话 | 对话 VITURE 姜公略：把 AR 眼镜卖到美国第一 ，从负需求到离不开 | https://mp.weixin.qq.com/s?__biz=Mzg4ODgyMjk3Nw==&mid=2247484077&idx=1&sn=e69e8c460b7e8f3005137c55200d897f
+- 2025-05-12 | 晚点对话 | 晚点对话印奇：AI 1.0 的教训是，所有不能闭环的辉煌都是暂时的 | https://mp.weixin.qq.com/s?__biz=Mzg4ODgyMjk3Nw==&mid=2247484072&idx=1&sn=8f9277212b6141a5ec9d1e6f3625845e
+- 2025-04-29 | 晚点对话 | 通义千问 Qwen3 发布，对话阿里周靖人 | https://mp.weixin.qq.com/s?__biz=Mzg4ODgyMjk3Nw==&mid=2247484034&idx=1&sn=6a50b858ec510e964bd2e55465408911
+- 2025-04-17 | 晚点对话 | 对话彭文生：应对贸易战，让中国人有钱消费 | https://mp.weixin.qq.com/s?__biz=Mzg4ODgyMjk3Nw==&mid=2247484011&idx=1&sn=93316e704788c91c0d070fa9d82e9e70
+- 2025-04-14 | 晚点对话 | 对话 iCAR 苏峻：“认怂，听劝” | https://mp.weixin.qq.com/s?__biz=Mzg4ODgyMjk3Nw==&mid=2247483985&idx=1&sn=45e136116447782e3c5c37077b0a0905
+- 2025-04-10 | 晚点对话 | 对话经济学家洪灏：股市短期会反弹，长期上涨所需基本面未变 | https://mp.weixin.qq.com/s?__biz=Mzg4ODgyMjk3Nw==&mid=2247483976&idx=1&sn=a40b4f2a76e5e437079f08bd6e0adc7d
+- 2025-04-10 | 晚点对话 | 对话申万宏源王胜：我相信我们正站在中国资产长线上涨的前夜 | https://mp.weixin.qq.com/s?__biz=Mzg4ODgyMjk3Nw==&mid=2247483976&idx=2&sn=b3cc74175e005bf01fb96d2b2867008d
+- 2025-04-07 | 晚点对话 | 晚点对话两位经济学家：关税大战走势难以预测，但种种危险正在积累 | https://mp.weixin.qq.com/s?__biz=Mzg4ODgyMjk3Nw==&mid=2247483963&idx=1&sn=5a43db179ec47e8433d897caf559b438
+- 2025-03-21 | 晚点对话 | 对谈余轶南：创业做机器人，立项 100 天融资两个亿 | https://mp.weixin.qq.com/s?__biz=Mzg4ODgyMjk3Nw==&mid=2247483951&idx=1&sn=b88931321e95147bc81bfec0489d555e

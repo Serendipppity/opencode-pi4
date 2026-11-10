@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""RSS 统一抓料器：8 源导入 → 偏好标记（ignore/⭐/去重）→ 全量留底 raw_rss_*.md → stdout 输出可推送材料
+"""RSS 统一抓料器：17 源导入 → 偏好标记（ignore/⭐/去重）→ 全量留底 raw_rss_*.md → stdout 输出可推送材料
 
 底稿 STATUS 标记说明（只标记不删除，全量留痕）：
   ⭐focus          命中 user_prefs focus_keywords
@@ -46,6 +46,19 @@ RSSHUB_FEEDS = [
 # 华尔街见闻走官方 JSON API（不走 RSS）
 WALLSTCN_API = "https://api-one.wallstcn.com/apiv1/content/lives?channel=global-channel&limit=20"
 
+# 中文新闻源（wechat2rss 公共实例直连 RSS）：每源封顶 8 条、只取标题+链接（描述截 120 字）
+WECHAT_FEEDS = {
+    "财联社": "https://wechat2rss.bestblogs.dev/feed/8e9c7dfaf07013f4da379dd0f87c3a298f2ed501.xml",
+    "央视财经": "https://wechat2rss.bestblogs.dev/feed/f53a1ab575594fbfdcb65815157c1eccf2de048a.xml",
+    "凤凰网财经": "https://wechat2rss.bestblogs.dev/feed/404573560480142fd2322430f3c1efe696cc89af.xml",
+    "21世纪经济报道": "https://wechat2rss.bestblogs.dev/feed/c6a39cae0e7e0979ed9f2eece16695c5f664f147.xml",
+    "投资界": "https://wechat2rss.bestblogs.dev/feed/94251955e48961a24956ccb721652d02c75a75d0.xml",
+    "晚点LatePost": "https://wechat2rss.bestblogs.dev/feed/c442206ec9957f3c52f2f40300ca532079538b31.xml",
+    "晚点AI": "https://wechat2rss.bestblogs.dev/feed/316def62ee3a6d499bf3981ffe22a09bf7256265.xml",
+    "虎嗅APP": "https://wechat2rss.bestblogs.dev/feed/804d04874a3bbfce3cdc4ad0a0b5520943b9f551.xml",
+    "半导体行业观察": "https://wechat2rss.bestblogs.dev/feed/39f625822b35f7573a7e70d3b27a735a3c0d24a4.xml",
+}
+
 STATUS_FOCUS = "⭐focus"
 STATUS_OK = "ok"
 
@@ -67,13 +80,17 @@ def load_seen_links():
     except Exception:
         return set()
 
-def fetch_url(url, timeout=15):
+def fetch_url(url, timeout=15, retries=2):
     req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0'})
-    try:
-        with urllib.request.urlopen(req, timeout=timeout) as response:
-            return response.read().decode('utf-8', 'ignore')
-    except Exception:
-        return ""
+    for i in range(retries):
+        try:
+            with urllib.request.urlopen(req, timeout=timeout) as response:
+                return response.read().decode('utf-8', 'ignore')
+        except Exception:
+            if i == retries - 1:
+                return ""
+            time.sleep(2)
+    return ""
 
 def parse_xml(xml_content):
     if not xml_content:
@@ -99,7 +116,7 @@ def one_line(text):
     """压平为单行，保证底稿条目块结构稳定可解析"""
     return re.sub(r'\s+', ' ', text).strip()
 
-def extract_items(root, limit=15):
+def extract_items(root, limit=15, desc_max=None):
     items = []
     for item in root.findall('.//item')[:limit]:
         title_node = item.find('title')
@@ -108,6 +125,8 @@ def extract_items(root, limit=15):
         title = one_line(title_node.text) if title_node is not None and title_node.text else "无标题"
         link = link_node.text.strip() if link_node is not None and link_node.text else ""
         desc = one_line(clean_html(desc_node.text)) if desc_node is not None else ""
+        if desc_max and len(desc) > desc_max:
+            desc = desc[:desc_max].rstrip() + "…"
         items.append((title, desc, link))
     return items
 
@@ -128,17 +147,27 @@ def fetch_wallstreetcn(limit=15):
         pass
     return items
 
-def collect_source(kind, locator):
+def collect_source(kind, locator, limit=15, desc_max=None):
     """按通道抓取单个源，返回 (title, desc, link) 列表"""
     if kind == 'rss':
         root = parse_xml(fetch_url(locator))
-        return extract_items(root) if root is not None else []
+        return extract_items(root, limit=limit, desc_max=desc_max) if root is not None else []
     if kind == 'rsshub':
         root = fetch_rsshub(locator)
-        return extract_items(root) if root is not None else []
+        return extract_items(root, limit=limit, desc_max=desc_max) if root is not None else []
     if kind == 'api':
-        return fetch_wallstreetcn()
+        return fetch_wallstreetcn(limit=limit)
     return []
+
+def norm_title(t):
+    return re.sub(r'[\W_]+', '', t or '').lower()
+
+def norm_url(u):
+    # 只去 fragment 与常见跟踪参数，保留 mid/idx/sn 等真实文章标识（微信 mp 链接标识全在 query）
+    u = (u or '').split('#')[0]
+    u = re.sub(r'([?&])(?:utm_[^=&]+|cb|spm|from|isappinstalled|scene)=[^&]*', r'\1', u)
+    u = re.sub(r'[?&]+$', '', u)
+    return u.rstrip('/')
 
 def classify(content_str, link, ignore_words, focus_words, seen_links):
     """返回 (是否进 LLM 材料, STATUS 标记)。只标记不删除，底稿全量留痕。"""
@@ -157,27 +186,36 @@ def process_feeds(archive_path, stamp):
     ignore_words = prefs.get("ignore_keywords", [])
     seen_links = load_seen_links()
 
-    sources = [(name, 'rss', url) for name, url in RSS_FEEDS.items()]
-    sources += [(name, 'rsshub', path) for name, path in RSSHUB_FEEDS]
-    sources += [("Wallstreetcn", 'api', WALLSTCN_API)]
+    sources = [(name, 'rss', url, 15, None) for name, url in RSS_FEEDS.items()]
+    sources += [(name, 'rsshub', path, 15, None) for name, path in RSSHUB_FEEDS]
+    sources += [("Wallstreetcn", 'api', WALLSTCN_API, 15, None)]
+    sources += [(name, 'rss', url, 8, 120) for name, url in WECHAT_FEEDS.items()]
 
     total = len(sources)
     llm_material = []
+    seen_titles, seen_urls = set(), set()
 
     with open(archive_path, 'w', encoding='utf-8') as archive_file:
         archive_file.write(f"# RSS 全量底稿 - {stamp}\n")
 
-        for current_feed, (source_name, kind, locator) in enumerate(sources, 1):
+        for current_feed, (source_name, kind, locator, limit, desc_max) in enumerate(sources, 1):
             print(f"[{current_feed}/{total}] 🔄 正在抓取: {source_name} ...", flush=True)
             archive_file.write(f"\n## Source: {source_name}\n")
 
-            entries = collect_source(kind, locator)
+            entries = collect_source(kind, locator, limit=limit, desc_max=desc_max)
             if not entries:
                 print(f"  ❌ {source_name} 抓取失败或超时跳过。", flush=True)
                 continue
 
             kept = 0
             for title, desc, link in entries:
+                nt, nu = norm_title(title), norm_url(link)
+                if nt in seen_titles or (nu and nu in seen_urls):
+                    archive_file.write(f"### {title}\n{desc}\n🔗 {link}\nSTATUS: ↺dup\n\n")
+                    continue
+                seen_titles.add(nt)
+                if nu:
+                    seen_urls.add(nu)
                 keep, status = classify(title + desc, link.strip(), ignore_words, focus_words, seen_links)
                 archive_file.write(f"### {title}\n{desc}\n🔗 {link}\nSTATUS: {status}\n\n")
                 if keep:
