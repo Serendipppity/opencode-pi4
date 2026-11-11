@@ -1,35 +1,31 @@
 # Wechat to Markdown Skill
 
 ## 功能
-- 自动处理微信公众号文章的动态加载（JS 渲染）。
-- 绕过基础反爬虫检测。
-- 将 HTML 正文转换为标准的 Markdown 格式。
+- 微信公众号文章 → Markdown 全文
+- 图片本地化：`images/<文章key>/figNN.jpg`，正文用相对路径引用
+- 文首写原文链接，元信息块对齐中金研报归档格式
+- 直连被验证码拦截时回退 Wechat2RSS 订阅源
 
-## 安装步骤
-1. 确保已安装依赖：
-   `/home/pi/openclaw_env/bin/pip install playwright html2text`
-2. 安装浏览器驱动：
-   `/home/pi/openclaw_env/bin/playwright install chromium`
-3. 赋予执行权限：
-   `chmod +x ~/.openclaw/workspace/skills/wechat_to_md/wechat_to_md.py`
-4. 在 OpenClaw 中输入 `/new` 重新加载技能。
-
-## 注意事项
-- 脚本依赖 Playwright，首次运行可能较慢。
-- 若遇到微信验证码，请检查是否需要更新 User-Agent 或 Referer。
-
-### 最后一步：部署检查
-请在终端执行以下命令完成部署：
+## 安装
 ```bash
-# 1. 创建目录
-mkdir -p ~/.openclaw/workspace/skills/wechat_to_md/
-
-# 2. 移动文件 (假设你已经创建好上述三个文件)
-# mv wechat_to_md.py SKILL.md README.md ~/.openclaw/workspace/skills/wechat_to_md/
-
-# 3. 赋予权限
-chmod +x ~/.openclaw/workspace/skills/wechat_to_md/wechat_to_md.py
-
-# 4. 刷新 OpenClaw
-# 在聊天窗口输入 /new
+/home/pi/agent-venv/bin/pip install playwright html2text
+/home/pi/agent-venv/bin/playwright install chromium
+chmod +x ~/.config/opencode/skills/wechat-to-md/wechat_to_md.py
 ```
+
+## 文件
+| 文件 | 作用 |
+|------|------|
+| `wechat_to_md.py` | 主脚本 |
+| `feeds.json` | Wechat2RSS 回退源：`公众号名 → feed id` |
+
+## 用法
+```bash
+python3 wechat_to_md.py "https://mp.weixin.qq.com/s/xxx" [--out-dir DIR] [-o FILE] [--no-images] [--stdout]
+```
+
+## 说明
+- 微信对数据中心 IP 有验证码风控，直连失败属预期，脚本会自动回退
+- 回退只覆盖 `feeds.json` 中已订阅公众号的最近 10 篇
+- 图片下载 3 次重试，失败保留原链
+- 默认输出到 `~/agent-workspace/outbox_obsidian/articles_微信/`

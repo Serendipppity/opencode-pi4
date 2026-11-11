@@ -1,5 +1,13 @@
 # 研究源文章索引（新→旧）
 
+- 2026-11-11 | 中金点睛 | 中金热点解读 | 25 or 50？美联储加息前瞻 | https://mp.weixin.qq.com/s?__biz=MzI3MDMzMjg0MA==&mid=2247869001&idx=1&sn=68dc9ff4f0be80a19801682ee26c05f0
+- 2026-11-11 | 中金点睛 | 中金：通胀粘性未退，支持美联储继续加息 | https://mp.weixin.qq.com/s?__biz=MzI3MDMzMjg0MA==&mid=2247868981&idx=1&sn=aec0b61de08b7b18cfbc6f10c990c473
+- 2026-11-11 | 中金点睛 | 中金｜潮退之后：白酒行业的底部信号与增长路径 | https://mp.weixin.qq.com/s?__biz=MzI3MDMzMjg0MA==&mid=2247868981&idx=2&sn=29d521945e63708ac2388d5556c6d248
+- 2026-11-10 | 远川研究所 | 拿什么留住姜诚和杨金金？ | https://mp.weixin.qq.com/s?__biz=MzIwMDY2NTgwMA==&mid=2247528013&idx=1&sn=c6797fcd6e46719f2ac8cb7ca3b03317
+- 2026-11-10 | 晚点再听LaterCast | Gemini产品负责人谈AI时代产品经理为什么又重要了丨Lenny's Podcast | https://mp.weixin.qq.com/s?__biz=MzcxMDA5NTI0OA==&mid=2247489461&idx=1&sn=2859639a4bebfc39ceeb604f2a7463ba
+- 2026-11-10 | 中国金融四十人论坛 | 各国都在寻找美元替代品，人民币何以突围？ | https://mp.weixin.qq.com/s?__biz=MjM5NjgyNDk4NA==&mid=2686359073&idx=1&sn=57921c1fcb0f8c8a852b6c070de7a038
+- 2026-11-10 | 中国金融四十人论坛 | 锐评 | 出口量边际放缓，能源补库推升进口 | https://mp.weixin.qq.com/s?__biz=MjM5NjgyNDk4NA==&mid=2686359073&idx=2&sn=5689160464fa933ea6fda28a83103828
+- 2026-11-10 | 硅基观察Pro | 蚂蚁灵波，寻找具身智能产业的“最大公约数” | https://mp.weixin.qq.com/s?__biz=MzkyNTY1MjE2OA==&mid=2247494673&idx=1&sn=6428fe9dbc75e594e325e60ff728cca5
 - 2026-11-10 | 中金点睛 | 中金：PPI同比拐点或已现——2026年10月物价数据点评 | https://mp.weixin.qq.com/s?__biz=MzI3MDMzMjg0MA==&mid=2247868920&idx=1&sn=c438119e304efe6679204e2bd17889e9
 - 2026-11-10 | 中金点睛 | 中金：卡位交互入口，Agent时代硬件迎创新机遇 | https://mp.weixin.qq.com/s?__biz=MzI3MDMzMjg0MA==&mid=2247868920&idx=2&sn=5d1134cf0cd63c9c5d9e13e739df843b
 - 2026-11-09 | 远川研究所 | 维密老了怎么办 | https://mp.weixin.qq.com/s?__biz=MzIwMDY2NTgwMA==&mid=2247528010&idx=1&sn=6793d632556a81161cddd3144156f7af
