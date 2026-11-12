@@ -1,5 +1,11 @@
 # 研究源文章索引（新→旧）
 
+- 2026-11-12 | 硅谷科技评论 | Gradient：离开谷歌第一年，8 笔出手里 7 笔是追加投资 | https://mp.weixin.qq.com/s?__biz=MzA3MDU4ODkyNg==&mid=2247513308&idx=1&sn=b4a0f4bf2159dd6795bcc884fe31f015
+- 2026-11-12 | 中金点睛 | CGI产业视点 | 走过八大枢纽，再看“算电协同”之路 ——基于专题调研的八点观察 | https://mp.weixin.qq.com/s?__biz=MzI3MDMzMjg0MA==&mid=2247869101&idx=1&sn=54cf49b6c4f8f543e265b073487e0882
+- 2026-11-12 | 中金点睛 | 中金｜行业轮动系列（6）：轮动速度×集中度三象限分域的行业轮动3.0模型 | https://mp.weixin.qq.com/s?__biz=MzI3MDMzMjg0MA==&mid=2247869101&idx=2&sn=50892679f04083ad4a9b3c6b4c9959b0
+- 2026-11-11 | 中国金融四十人论坛 | 中美关系下一步：如何落实“建设性战略稳定关系”新定位 | https://mp.weixin.qq.com/s?__biz=MjM5NjgyNDk4NA==&mid=2686359109&idx=1&sn=ed76582102da1646ee95c9b5983c5efb
+- 2026-11-11 | 中国金融四十人论坛 | 欧央行首席经济学家：欧元国际化的两把“流动性钥匙” | https://mp.weixin.qq.com/s?__biz=MjM5NjgyNDk4NA==&mid=2686359109&idx=2&sn=f931b1717f574fa8e6b1c52b27bfacf6
+- 2026-11-11 | 硅基观察Pro | 上市半年股价暴跌77%，英伟达“挑战者”Cerebras怎么了？ | https://mp.weixin.qq.com/s?__biz=MzkyNTY1MjE2OA==&mid=2247494678&idx=1&sn=0fdac24f7e8fc869d8dbb5bee794087a
 - 2026-11-11 | 中金点睛 | 中金热点解读 | 25 or 50？美联储加息前瞻 | https://mp.weixin.qq.com/s?__biz=MzI3MDMzMjg0MA==&mid=2247869001&idx=1&sn=68dc9ff4f0be80a19801682ee26c05f0
 - 2026-11-11 | 中金点睛 | 中金：通胀粘性未退，支持美联储继续加息 | https://mp.weixin.qq.com/s?__biz=MzI3MDMzMjg0MA==&mid=2247868981&idx=1&sn=aec0b61de08b7b18cfbc6f10c990c473
 - 2026-11-11 | 中金点睛 | 中金｜潮退之后：白酒行业的底部信号与增长路径 | https://mp.weixin.qq.com/s?__biz=MzI3MDMzMjg0MA==&mid=2247868981&idx=2&sn=29d521945e63708ac2388d5556c6d248
