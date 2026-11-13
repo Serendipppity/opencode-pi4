@@ -1,5 +1,10 @@
 # 研究源文章索引（新→旧）
 
+- 2026-11-13 | 中金点睛 | CGI视点 | “AI+”的产业重构逻辑初探：以汽车为例 | https://mp.weixin.qq.com/s?__biz=MzI3MDMzMjg0MA==&mid=2247869225&idx=1&sn=a446f56a511ed61eb9c4e44b13b4ba5f
+- 2026-11-13 | 中金点睛 | 中金：“滤镜”消散，资管信托回归本源——《资产管理信托管理办法》正式稿点评 | https://mp.weixin.qq.com/s?__biz=MzI3MDMzMjg0MA==&mid=2247869225&idx=2&sn=8171adcd316bbc3b35698ba63254806b
+- 2026-11-12 | 晚点再听LaterCast | 如何比99%的人更擅长使用Grok Bot？丨Greg Isenberg | https://mp.weixin.qq.com/s?__biz=MzcxMDA5NTI0OA==&mid=2247489470&idx=1&sn=fa2ea17949af4b2715be7a522bcf994a
+- 2026-11-12 | 中国金融四十人论坛 | 专访布鲁盖尔研究所所长：当中国成为新的德国，欧洲如何重新定位自己 | https://mp.weixin.qq.com/s?__biz=MjM5NjgyNDk4NA==&mid=2686359119&idx=1&sn=6992acc5d3847824734376189507b838
+- 2026-11-12 | 硅基观察Pro | Character.AI都要破产了，AI陪伴却开始闷声赚大钱 | https://mp.weixin.qq.com/s?__biz=MzkyNTY1MjE2OA==&mid=2247494683&idx=1&sn=21ee314e3623951151e5debc111ff131
 - 2026-11-12 | 硅谷科技评论 | Gradient：离开谷歌第一年，8 笔出手里 7 笔是追加投资 | https://mp.weixin.qq.com/s?__biz=MzA3MDU4ODkyNg==&mid=2247513308&idx=1&sn=b4a0f4bf2159dd6795bcc884fe31f015
 - 2026-11-12 | 中金点睛 | CGI产业视点 | 走过八大枢纽，再看“算电协同”之路 ——基于专题调研的八点观察 | https://mp.weixin.qq.com/s?__biz=MzI3MDMzMjg0MA==&mid=2247869101&idx=1&sn=54cf49b6c4f8f543e265b073487e0882
 - 2026-11-12 | 中金点睛 | 中金｜行业轮动系列（6）：轮动速度×集中度三象限分域的行业轮动3.0模型 | https://mp.weixin.qq.com/s?__biz=MzI3MDMzMjg0MA==&mid=2247869101&idx=2&sn=50892679f04083ad4a9b3c6b4c9959b0
