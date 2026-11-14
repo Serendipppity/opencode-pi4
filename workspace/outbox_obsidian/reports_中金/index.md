@@ -1,5 +1,9 @@
 # 研究源文章索引（新→旧）
 
+- 2026-11-13 | 晚点再听LaterCast | AI自动化之后，人类工作的新图景丨Every | https://mp.weixin.qq.com/s?__biz=MzcxMDA5NTI0OA==&mid=2247489477&idx=1&sn=5d74172d51a69a8e21038e5b250f3a58
+- 2026-11-13 | 中国金融四十人论坛 | 缪延亮：“轻叙事、重现实”验证期，中国资产重估靠基本面 | https://mp.weixin.qq.com/s?__biz=MjM5NjgyNDk4NA==&mid=2686359128&idx=1&sn=a71d8a6215c6b56d9756da2d6a4fa02d
+- 2026-11-13 | 中国金融四十人论坛 | CF40招聘 | 研究、市场等岗位开放中 | https://mp.weixin.qq.com/s?__biz=MjM5NjgyNDk4NA==&mid=2686359128&idx=2&sn=7d43c3df1489ac3c9382b552388881d7
+- 2026-11-13 | 硅基观察Pro | 被围剿的黄仁勋，暴露了AI投资的最大风险 | https://mp.weixin.qq.com/s?__biz=MzkyNTY1MjE2OA==&mid=2247494688&idx=1&sn=1ad3d215bc55b878bcbe3ff4b084eed4
 - 2026-11-13 | 中金点睛 | CGI视点 | “AI+”的产业重构逻辑初探：以汽车为例 | https://mp.weixin.qq.com/s?__biz=MzI3MDMzMjg0MA==&mid=2247869225&idx=1&sn=a446f56a511ed61eb9c4e44b13b4ba5f
 - 2026-11-13 | 中金点睛 | 中金：“滤镜”消散，资管信托回归本源——《资产管理信托管理办法》正式稿点评 | https://mp.weixin.qq.com/s?__biz=MzI3MDMzMjg0MA==&mid=2247869225&idx=2&sn=8171adcd316bbc3b35698ba63254806b
 - 2026-11-12 | 晚点再听LaterCast | 如何比99%的人更擅长使用Grok Bot？丨Greg Isenberg | https://mp.weixin.qq.com/s?__biz=MzcxMDA5NTI0OA==&mid=2247489470&idx=1&sn=fa2ea17949af4b2715be7a522bcf994a
