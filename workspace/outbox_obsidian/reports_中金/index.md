@@ -1,5 +1,7 @@
 # 研究源文章索引（新→旧）
 
+- 2026-11-15 | 硅谷科技评论 | 软银领投思灵机器人 5 亿美元：机器人的后期钱，先给了扛交付的公司 | https://mp.weixin.qq.com/s?__biz=MzA3MDU4ODkyNg==&mid=2247513314&idx=1&sn=5b75775f97afeba8e62ca130e578ab9d
+- 2026-11-14 | 远川研究所 | 大动脉辞职了怎么办 | https://mp.weixin.qq.com/s?__biz=MzIwMDY2NTgwMA==&mid=2247528027&idx=1&sn=e1b8e74bf9dc6786a89be21f44ac7972
 - 2026-11-13 | 晚点再听LaterCast | AI自动化之后，人类工作的新图景丨Every | https://mp.weixin.qq.com/s?__biz=MzcxMDA5NTI0OA==&mid=2247489477&idx=1&sn=5d74172d51a69a8e21038e5b250f3a58
 - 2026-11-13 | 中国金融四十人论坛 | 缪延亮：“轻叙事、重现实”验证期，中国资产重估靠基本面 | https://mp.weixin.qq.com/s?__biz=MjM5NjgyNDk4NA==&mid=2686359128&idx=1&sn=a71d8a6215c6b56d9756da2d6a4fa02d
 - 2026-11-13 | 中国金融四十人论坛 | CF40招聘 | 研究、市场等岗位开放中 | https://mp.weixin.qq.com/s?__biz=MjM5NjgyNDk4NA==&mid=2686359128&idx=2&sn=7d43c3df1489ac3c9382b552388881d7
