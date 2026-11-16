@@ -1,5 +1,10 @@
 # 研究源文章索引（新→旧）
 
+- 2026-11-16 | 中金点睛 | 中金｜全球研究：债市风波中的法国 | https://mp.weixin.qq.com/s?__biz=MzI3MDMzMjg0MA==&mid=2247869361&idx=1&sn=5257d626863540c0cd5b59569077d5e7
+- 2026-11-16 | 中金点睛 | 中金：10月金融数据解读 | https://mp.weixin.qq.com/s?__biz=MzI3MDMzMjg0MA==&mid=2247869361&idx=2&sn=dda383504b79e51ffb0f8e6fb2d234bb
+- 2026-11-16 | 中金点睛 | 中金：消费品出口的积极变化 | https://mp.weixin.qq.com/s?__biz=MzI3MDMzMjg0MA==&mid=2247869361&idx=3&sn=e3a882e746e8e4d8cde47953227e89b9
+- 2026-11-15 | 晚点再听LaterCast | AI 同事来了，公司能把哪些工作交给它？丨Y Combinator | https://mp.weixin.qq.com/s?__biz=MzcxMDA5NTI0OA==&mid=2247489482&idx=1&sn=850bf5ab7a3e877d7b0751cfbf8f5181
+- 2026-11-15 | 中国金融四十人论坛 | CF40研究 | 老龄化与少子化对居民消费率的影响测算 | https://mp.weixin.qq.com/s?__biz=MjM5NjgyNDk4NA==&mid=2686359139&idx=1&sn=20284b19c343ba0dd77c1e440ba3d28e
 - 2026-11-15 | 硅谷科技评论 | 软银领投思灵机器人 5 亿美元：机器人的后期钱，先给了扛交付的公司 | https://mp.weixin.qq.com/s?__biz=MzA3MDU4ODkyNg==&mid=2247513314&idx=1&sn=5b75775f97afeba8e62ca130e578ab9d
 - 2026-11-14 | 远川研究所 | 大动脉辞职了怎么办 | https://mp.weixin.qq.com/s?__biz=MzIwMDY2NTgwMA==&mid=2247528027&idx=1&sn=e1b8e74bf9dc6786a89be21f44ac7972
 - 2026-11-13 | 晚点再听LaterCast | AI自动化之后，人类工作的新图景丨Every | https://mp.weixin.qq.com/s?__biz=MzcxMDA5NTI0OA==&mid=2247489477&idx=1&sn=5d74172d51a69a8e21038e5b250f3a58
