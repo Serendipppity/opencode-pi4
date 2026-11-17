@@ -1,5 +1,13 @@
 # 研究源文章索引（新→旧）
 
+- 2026-11-17 | 中金点睛 | 中金11月数说资产 | https://mp.weixin.qq.com/s?__biz=MzI3MDMzMjg0MA==&mid=2247869391&idx=1&sn=ee4245e2f9720842965f8515f1bd11e8
+- 2026-11-17 | 中金点睛 | 中金｜AI应用参考（5）：从火山引擎看AI云格局重塑，MaaS成为云增长新主线 | https://mp.weixin.qq.com/s?__biz=MzI3MDMzMjg0MA==&mid=2247869391&idx=2&sn=a887957e9d954bcab9a5aee602327414
+- 2026-11-17 | 中金点睛 | 中金：如何研判A股市场底部？ | https://mp.weixin.qq.com/s?__biz=MzI3MDMzMjg0MA==&mid=2247869391&idx=3&sn=f29e1755c3bbe4db4b06d888790da372
+- 2026-11-16 | 晚点再听LaterCast | Grok Bot 核心工程师：所有代码都是垃圾（除了我的）丨AI Engineer | https://mp.weixin.qq.com/s?__biz=MzcxMDA5NTI0OA==&mid=2247489487&idx=1&sn=ff4afb2f9e57104818dd29e12c70b57d
+- 2026-11-16 | 远川研究所 | BBA在中国最难熬的一年 | https://mp.weixin.qq.com/s?__biz=MzIwMDY2NTgwMA==&mid=2247528029&idx=1&sn=a12a0842a4a2cb4484bd712ac9dd3121
+- 2026-11-16 | 饭统戴老板 | 未竟的旅程：贝壳的五年与二十五年 | https://mp.weixin.qq.com/s?__biz=MzU4NDY2MDMzMA==&mid=2247494987&idx=1&sn=b975a69614420243f53dae5a9f0959fe
+- 2026-11-16 | 中国金融四十人论坛 | 宏观医生 | 透视10月宏观数据：财政支出待提速 | https://mp.weixin.qq.com/s?__biz=MjM5NjgyNDk4NA==&mid=2686359154&idx=1&sn=e9b3a9040a577eca5ed1654c7c0f4299
+- 2026-11-16 | 硅基观察Pro | 硅谷风向变了！最前沿的AI公司，开始抢传统生意了 | https://mp.weixin.qq.com/s?__biz=MzkyNTY1MjE2OA==&mid=2247494695&idx=1&sn=88ab98f19b1305563b5bc9468fe52cf6
 - 2026-11-16 | 中金点睛 | 中金｜全球研究：债市风波中的法国 | https://mp.weixin.qq.com/s?__biz=MzI3MDMzMjg0MA==&mid=2247869361&idx=1&sn=5257d626863540c0cd5b59569077d5e7
 - 2026-11-16 | 中金点睛 | 中金：10月金融数据解读 | https://mp.weixin.qq.com/s?__biz=MzI3MDMzMjg0MA==&mid=2247869361&idx=2&sn=dda383504b79e51ffb0f8e6fb2d234bb
 - 2026-11-16 | 中金点睛 | 中金：消费品出口的积极变化 | https://mp.weixin.qq.com/s?__biz=MzI3MDMzMjg0MA==&mid=2247869361&idx=3&sn=e3a882e746e8e4d8cde47953227e89b9
