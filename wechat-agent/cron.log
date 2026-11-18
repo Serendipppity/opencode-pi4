@@ -10601,3 +10601,112 @@ subprocess.TimeoutExpired: Command '['python3', '/home/pi/wechat-agent/jobs/pars
 同步未完成，跳过清理
 同步未完成，跳过清理
 同步未完成，跳过清理
+backup: [master 7e0fc77] Auto-backup: 2026-11-18
+ 38 files changed, 3804 insertions(+), 158 deletions(-)
+ cr
+push: To github.com:Serendipppity/opencode-pi4.git
+   8fe7b34..7e0fc77  HEAD -> main
+status saved: /home/pi/.cache/backup_status/git_backup.json
+同步未完成，跳过清理
+同步未完成，跳过清理
+同步未完成，跳过清理
+同步未完成，跳过清理
+🖥️ **Pi 健康巡检** 2026-11-18 06:00
+
+✅ **Git**
+- ✅ 昨夜文件备份: push OK (2026-11-18)
+- ✅ 未提交变更: 1 | 领先远程: 0
+
+✅ **Syncthing**
+- ✅ systemd --user 服务: active
+- ✅ folder[pi-outbox]: state=idle (sendonly，待同步 50 项忽略)
+
+✅ **系统**
+- ✅ 温度: 43.8°C
+- ✅ 内存可用: 4481MB
+- ✅ 磁盘: 18.3%
+- ✅ load15: 0.44
+- ℹ️ uptime: 71天13h23m
+
+✅ **服务存活**
+- ✅ syncthing
+- ✅ kimaki
+- ✅ cron
+
+✅ **模型清单**
+- providers: google, opencode-go | 默认模型: gemini-flash-lite-latest
+- - **brief**: `gemini-3.5-flash-lite` → fb: `gemini-2.5-flash`
+- - **cavecrew-builder、cavecrew-investigator、cavecrew-reviewer、xiabao、xiatiao**: `ox-alpha-free`
+
+✅ **网络**
+- ✅ 内网网关(192.168.1.100): 平均 0.5ms
+- ✅ 国内公网(baidu.com): DNS+TLS 76ms
+- ✅ 墙外(google 204): 598ms
+
+✅ **Gemini API**
+- ✅ gemini-3.5-flash-lite 连通 1908ms
+push discord summary: 0
+同步未完成，跳过清理
+同步未完成，跳过清理
+[+] RAW RSS 底稿: /home/pi/agent-workspace/outbox_obsidian/news_archives/raw_rss_2026-11-18_0800.md | LLM 材料 65014 字符
+[!] opencode 诊断: model=默认(brief.md) returncode=1 stdout_len=0 stderr尾: [0m > brief · gemini-3.5-flash-lite [0m [91m[1mError: [0mRequests ending with a model turn are not supported. 
+[!] 第1次尝试未通过: 缺分区 ## 核心要闻；缺分区 ## 国际风云；缺分区 ## 财经速递；缺分区 ## 科技前沿；缺分区 ## 国内要闻；条数不足(需20条，少于18判失败)
+[!] 30s 退避后重试
+[!] opencode 诊断: model=默认(brief.md) returncode=1 stdout_len=0 stderr尾: [0m > brief · gemini-3.5-flash-lite [0m [91m[1mError: [0mRequests ending with a model turn are not supported. 
+[!] 第2次尝试未通过: 缺分区 ## 核心要闻；缺分区 ## 国际风云；缺分区 ## 财经速递；缺分区 ## 科技前沿；缺分区 ## 国内要闻；条数不足(需20条，少于18判失败)
+[!] 切换 fallback 模型: google/gemini-2.5-flash
+[!] 第3次尝试未通过: 缺分区 ## 科技前沿；缺分区 ## 国内要闻；条数不足(需20条，少于18判失败)
+MD_LEN: 310 GEN_OK: False MODEL: google/gemini-2.5-flash
+=== 生成失败，已告警并跳过推送 ===
+同步未完成，跳过清理
+同步未完成，跳过清理
+同步未完成，跳过清理
+同步未完成，跳过清理
+[+] RAW RSS 底稿: /home/pi/agent-workspace/outbox_obsidian/news_archives/raw_rss_2026-11-18_1200.md | LLM 材料 62620 字符
+MD_LEN: 10574 GEN_OK: True MODEL: google/gemini-3.5-flash-lite
+format: OK
+HTML_LEN: 30510
+[+] 最终版留底: /home/pi/agent-workspace/outbox_obsidian/news_archives/brief_final_2026-11-18_1203_午.{md,html}
+token fail
+push wechat: 1
+[!] 推送失败，不记账，下次补发可重推
+✅ Part 1/7
+✅ Part 2/7
+✅ Part 3/7
+✅ Part 4/7
+✅ Part 5/7
+✅ Part 6/7
+✅ Part 7/7
+[+] 已推送 7/7 条消息到 Discord
+push discord: 0 model: google/gemini-3.5-flash-lite
+同步未完成，跳过清理
+同步未完成，跳过清理
+同步未完成，跳过清理
+同步未完成，跳过清理
+正在拉取最新持仓与净值数据...
+✅ 理财日报已推送 money 频道（5 只产品）
+同步未完成，跳过清理
+同步未完成，跳过清理
+同步未完成，跳过清理
+同步未完成，跳过清理
+[+] RAW RSS 底稿: /home/pi/agent-workspace/outbox_obsidian/news_archives/raw_rss_2026-11-18_2030.md | LLM 材料 58113 字符
+MD_LEN: 7526 GEN_OK: True MODEL: google/gemini-3.5-flash-lite
+format: OK
+HTML_LEN: 27311
+[+] 最终版留底: /home/pi/agent-workspace/outbox_obsidian/news_archives/brief_final_2026-11-18_2034_晚.{md,html}
+token fail
+push wechat: 1
+[!] 推送失败，不记账，下次补发可重推
+✅ Part 1/5
+✅ Part 2/5
+✅ Part 3/5
+✅ Part 4/5
+✅ Part 5/5
+[+] 已推送 5/5 条消息到 Discord
+push discord: 0 model: google/gemini-3.5-flash-lite
+同步未完成，跳过清理
+同步未完成，跳过清理
+同步未完成，跳过清理
+同步未完成，跳过清理
+同步未完成，跳过清理
+同步未完成，跳过清理

@@ -1,5 +1,10 @@
 # 研究源文章索引（新→旧）
 
+- 2026-11-18 | 硅谷科技评论 | 亚马逊今年 8 笔全跟投，创业者去 re:Invent 该要什么？ | https://mp.weixin.qq.com/s?__biz=MzA3MDU4ODkyNg==&mid=2247513318&idx=1&sn=6a96e3b76bd3e3e72c725cc3cfcf7a11
+- 2026-11-18 | 中金点睛 | 中金缪延亮 | 政策利率换锚：利率市场化的里程碑 | https://mp.weixin.qq.com/s?__biz=MzI3MDMzMjg0MA==&mid=2247869444&idx=1&sn=b9116d6f572db15a69305d87d90dd758
+- 2026-11-17 | 远川研究所 | 耐克惨遭阶级滑落 | https://mp.weixin.qq.com/s?__biz=MzIwMDY2NTgwMA==&mid=2247528044&idx=1&sn=b712dea8621a92bf33da33d8e02374fd
+- 2026-11-17 | 晚点再听LaterCast | Meta 产品副总裁复盘 Muse 如何从周末原型做到 App Store 榜首丨Lenny's Podcast | https://mp.weixin.qq.com/s?__biz=MzcxMDA5NTI0OA==&mid=2247489494&idx=1&sn=856045fdab2e3e7833ad0d0bf157e38a
+- 2026-11-17 | 硅基观察Pro | 从63家AI硬件创业公司，我看到了这两个变化 | https://mp.weixin.qq.com/s?__biz=MzkyNTY1MjE2OA==&mid=2247494701&idx=1&sn=7643669973b4c0ea5e742e9cf6e2855d
 - 2026-11-17 | 中金点睛 | 中金11月数说资产 | https://mp.weixin.qq.com/s?__biz=MzI3MDMzMjg0MA==&mid=2247869391&idx=1&sn=ee4245e2f9720842965f8515f1bd11e8
 - 2026-11-17 | 中金点睛 | 中金｜AI应用参考（5）：从火山引擎看AI云格局重塑，MaaS成为云增长新主线 | https://mp.weixin.qq.com/s?__biz=MzI3MDMzMjg0MA==&mid=2247869391&idx=2&sn=a887957e9d954bcab9a5aee602327414
 - 2026-11-17 | 中金点睛 | 中金：如何研判A股市场底部？ | https://mp.weixin.qq.com/s?__biz=MzI3MDMzMjg0MA==&mid=2247869391&idx=3&sn=f29e1755c3bbe4db4b06d888790da372
