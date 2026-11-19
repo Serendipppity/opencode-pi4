@@ -1,5 +1,14 @@
 # 研究源文章索引（新→旧）
 
+- 2026-11-19 | 中金点睛 | 中金：推升人民币的资金从何而来？ | https://mp.weixin.qq.com/s?__biz=MzI3MDMzMjg0MA==&mid=2247869591&idx=1&sn=a8a010781b04cc98c6998499e032a752
+- 2026-11-19 | 中金点睛 | 中金2027年度展望 | 全球研究之东南亚：砥砺前行 | https://mp.weixin.qq.com/s?__biz=MzI3MDMzMjg0MA==&mid=2247869591&idx=2&sn=4194c374abb816a336bbfaaa52fddadc
+- 2026-11-19 | 中金点睛 | 中金：如何看待商业用地使用权续期的相关影响？ | https://mp.weixin.qq.com/s?__biz=MzI3MDMzMjg0MA==&mid=2247869591&idx=3&sn=28b7face530cd547e3433fb605750e26
+- 2026-11-18 | 远川研究所 | 人生不过三万天，Anthropic一万亿 | https://mp.weixin.qq.com/s?__biz=MzIwMDY2NTgwMA==&mid=2247528062&idx=1&sn=bab1f22c35966a8a6526e6669016182f
+- 2026-11-18 | 晚点再听LaterCast | OpenAI联合创始人与首席研究官解读：AI的递归自我改进丨a16z | https://mp.weixin.qq.com/s?__biz=MzcxMDA5NTI0OA==&mid=2247489505&idx=1&sn=34305bf2570852b615c57cf6ea241717
+- 2026-11-18 | 中国金融四十人论坛 | 习近平在亚太经合组织工商领导人峰会上的主旨演讲（全文） | https://mp.weixin.qq.com/s?__biz=MjM5NjgyNDk4NA==&mid=2686359184&idx=1&sn=f8d1bed3dfe786f1f23030091ddf412b
+- 2026-11-18 | 硅基观察Pro | 一份看空中际旭创的报告，戳中了AI硬件的最大软肋 | https://mp.weixin.qq.com/s?__biz=MzkyNTY1MjE2OA==&mid=2247494706&idx=1&sn=5e594cd37ca2f159d3ce6bebd7394253
+- 2026-11-17 | 中国金融四十人论坛 | 逆风中的亚洲经济，为何反而要向内看？ | https://mp.weixin.qq.com/s?__biz=MjM5NjgyNDk4NA==&mid=2686359173&idx=1&sn=d174f6da6682e09f735728d48e963dd3
+- 2026-11-17 | 中国金融四十人论坛 | CF40路劲奖学金2026年度启动仪式在京举行 | https://mp.weixin.qq.com/s?__biz=MjM5NjgyNDk4NA==&mid=2686359173&idx=2&sn=8afe7e3bc1f9cb03bc01e1c94969f757
 - 2026-11-18 | 硅谷科技评论 | 亚马逊今年 8 笔全跟投，创业者去 re:Invent 该要什么？ | https://mp.weixin.qq.com/s?__biz=MzA3MDU4ODkyNg==&mid=2247513318&idx=1&sn=6a96e3b76bd3e3e72c725cc3cfcf7a11
 - 2026-11-18 | 中金点睛 | 中金缪延亮 | 政策利率换锚：利率市场化的里程碑 | https://mp.weixin.qq.com/s?__biz=MzI3MDMzMjg0MA==&mid=2247869444&idx=1&sn=b9116d6f572db15a69305d87d90dd758
 - 2026-11-17 | 远川研究所 | 耐克惨遭阶级滑落 | https://mp.weixin.qq.com/s?__biz=MzIwMDY2NTgwMA==&mid=2247528044&idx=1&sn=b712dea8621a92bf33da33d8e02374fd

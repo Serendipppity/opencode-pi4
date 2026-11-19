@@ -10710,3 +10710,121 @@ push discord: 0 model: google/gemini-3.5-flash-lite
 同步未完成，跳过清理
 同步未完成，跳过清理
 同步未完成，跳过清理
+backup: [master f22ae7d] Auto-backup: 2026-11-19
+ 13 files changed, 3588 insertions(+), 118 deletions(-)
+ cr
+push: To github.com:Serendipppity/opencode-pi4.git
+   7e0fc77..f22ae7d  HEAD -> main
+status saved: /home/pi/.cache/backup_status/git_backup.json
+同步未完成，跳过清理
+同步未完成，跳过清理
+同步未完成，跳过清理
+同步未完成，跳过清理
+🖥️ **Pi 健康巡检** 2026-11-19 06:00
+
+✅ **Git**
+- ✅ 昨夜文件备份: push OK (2026-11-19)
+- ✅ 未提交变更: 1 | 领先远程: 0
+
+✅ **Syncthing**
+- ✅ systemd --user 服务: active
+- ✅ folder[pi-outbox]: state=idle (sendonly，待同步 50 项忽略)
+
+✅ **系统**
+- ✅ 温度: 43.3°C
+- ✅ 内存可用: 4465MB
+- ✅ 磁盘: 18.3%
+- ✅ load15: 1.27
+- ℹ️ uptime: 72天13h23m
+
+✅ **服务存活**
+- ✅ syncthing
+- ✅ kimaki
+- ✅ cron
+
+✅ **模型清单**
+- providers: google, opencode-go | 默认模型: gemini-flash-lite-latest
+- - **brief**: `gemini-3.5-flash-lite` → fb: `gemini-2.5-flash`
+- - **cavecrew-builder、cavecrew-investigator、cavecrew-reviewer、xiabao、xiatiao**: `ox-alpha-free`
+
+✅ **网络**
+- ✅ 内网网关(192.168.1.100): 平均 0.5ms
+- ✅ 国内公网(baidu.com): DNS+TLS 82ms
+- ✅ 墙外(google 204): 620ms
+
+✅ **Gemini API**
+- ✅ gemini-3.5-flash-lite 连通 1270ms
+push discord summary: 0
+同步未完成，跳过清理
+同步未完成，跳过清理
+[+] RAW RSS 底稿: /home/pi/agent-workspace/outbox_obsidian/news_archives/raw_rss_2026-11-19_0800.md | LLM 材料 60608 字符
+MD_LEN: 10140 GEN_OK: True MODEL: google/gemini-3.5-flash-lite
+format: OK
+HTML_LEN: 30172
+[+] 最终版留底: /home/pi/agent-workspace/outbox_obsidian/news_archives/brief_final_2026-11-19_0803_早.{md,html}
+token fail
+push wechat: 1
+[!] 推送失败，不记账，下次补发可重推
+✅ Part 1/7
+✅ Part 2/7
+✅ Part 3/7
+✅ Part 4/7
+✅ Part 5/7
+✅ Part 6/7
+✅ Part 7/7
+[+] 已推送 7/7 条消息到 Discord
+push discord: 0 model: google/gemini-3.5-flash-lite
+同步未完成，跳过清理
+同步未完成，跳过清理
+同步未完成，跳过清理
+同步未完成，跳过清理
+[+] RAW RSS 底稿: /home/pi/agent-workspace/outbox_obsidian/news_archives/raw_rss_2026-11-19_1200.md | LLM 材料 57188 字符
+MD_LEN: 7643 GEN_OK: True MODEL: google/gemini-3.5-flash-lite
+format: OK
+HTML_LEN: 27567
+[+] 最终版留底: /home/pi/agent-workspace/outbox_obsidian/news_archives/brief_final_2026-11-19_1204_午.{md,html}
+token fail
+push wechat: 1
+[!] 推送失败，不记账，下次补发可重推
+✅ Part 1/5
+✅ Part 2/5
+✅ Part 3/5
+✅ Part 4/5
+✅ Part 5/5
+[+] 已推送 5/5 条消息到 Discord
+push discord: 0 model: google/gemini-3.5-flash-lite
+同步未完成，跳过清理
+同步未完成，跳过清理
+同步未完成，跳过清理
+同步未完成，跳过清理
+正在拉取最新持仓与净值数据...
+✅ 理财日报已推送 money 频道（5 只产品）
+同步未完成，跳过清理
+同步未完成，跳过清理
+同步未完成，跳过清理
+同步未完成，跳过清理
+Traceback (most recent call last):
+  File "/home/pi/wechat-agent/jobs/news_brief.py", line 90, in <module>
+    p1 = subprocess.run(['python3', os.path.join(os.path.dirname(os.path.abspath(__file__)), 'parse_rss.py'),
+        '--out', raw_path],
+        cwd='/home/pi/agent-workspace', capture_output=True, text=True, timeout=240, env=env)
+  File "/usr/lib/python3.14/subprocess.py", line 557, in run
+    stdout, stderr = process.communicate(input, timeout=timeout)
+                     ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.14/subprocess.py", line 1221, in communicate
+    stdout, stderr = self._communicate(input, endtime, timeout)
+                     ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.14/subprocess.py", line 2154, in _communicate
+    self._check_timeout(endtime, orig_timeout, stdout, stderr)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.14/subprocess.py", line 1268, in _check_timeout
+    raise TimeoutExpired(
+    ...<2 lines>...
+            stderr=b''.join(stderr_seq) if stderr_seq else None)
+subprocess.TimeoutExpired: Command '['python3', '/home/pi/wechat-agent/jobs/parse_rss.py', '--out', '/home/pi/agent-workspace/outbox_obsidian/news_archives/raw_rss_2026-11-19_2030.md']' timed out after 240 seconds
+同步未完成，跳过清理
+同步未完成，跳过清理
+同步未完成，跳过清理
+同步未完成，跳过清理
+同步未完成，跳过清理
+同步未完成，跳过清理
