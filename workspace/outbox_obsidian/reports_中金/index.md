@@ -1,5 +1,10 @@
 # 研究源文章索引（新→旧）
 
+- 2026-11-20 | 远川研究所 | 腾讯游戏早就在船上了 | https://mp.weixin.qq.com/s?__biz=MzIwMDY2NTgwMA==&mid=2247528082&idx=1&sn=5475876bb79a3895f5d36fa51f42036b
+- 2026-11-20 | 远川研究所 | 未来城市：杨浦高能级创新进行时 | https://mp.weixin.qq.com/s?__biz=MzIwMDY2NTgwMA==&mid=2247528082&idx=2&sn=f57e1406e3c6ae893e3165aec51e88f9
+- 2026-11-20 | 晚点再听LaterCast | Instagram负责人揭秘顶尖1%人群如何与AI协同工作丨Silicon Valley Girl | https://mp.weixin.qq.com/s?__biz=MzcxMDA5NTI0OA==&mid=2247489517&idx=1&sn=4fdff2cac5b3b3712f2830dfc6b048cb
+- 2026-11-20 | 中国金融四十人论坛 | 美联储前副主席科恩：通胀、债务、AI三重夹击，美联储如何出牌？ | https://mp.weixin.qq.com/s?__biz=MjM5NjgyNDk4NA==&mid=2686359212&idx=1&sn=626839b71f9800b1edc2899d307c1916
+- 2026-11-20 | 硅基观察Pro | AI硬件的牛市结束了 | https://mp.weixin.qq.com/s?__biz=MzkyNTY1MjE2OA==&mid=2247494717&idx=1&sn=737d862a64917f4d07c4fdce99b4d4b1
 - 2026-11-20 | 中金点睛 | 中金点睛「量化择时Skill」正式上线！ | https://mp.weixin.qq.com/s?__biz=MzI3MDMzMjg0MA==&mid=2247869877&idx=1&sn=58a4e30a5bd001940123d2193bb0b337
 - 2026-11-20 | 中金点睛 | 中金 | 资产配置手册（二）：“10年10倍”的挑战 | https://mp.weixin.qq.com/s?__biz=MzI3MDMzMjg0MA==&mid=2247869874&idx=1&sn=2919ec3d8be1608b21b5f18af5014f33
 - 2026-11-20 | 中金点睛 | 中金：政府债券税收利差的来龙和去脉 | https://mp.weixin.qq.com/s?__biz=MzI3MDMzMjg0MA==&mid=2247869874&idx=2&sn=2e2bec75dde2416ec38fde0011ac6e26
