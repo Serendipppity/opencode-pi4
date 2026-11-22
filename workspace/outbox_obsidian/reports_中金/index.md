@@ -1,5 +1,9 @@
 # 研究源文章索引（新→旧）
 
+- 2026-11-22 | 硅谷科技评论 | Anthropic 上市拿到 916 亿美元的同一周，钱在帮企业训练自己的模型 | https://mp.weixin.qq.com/s?__biz=MzA3MDU4ODkyNg==&mid=2247513324&idx=1&sn=749f1a1e9f5c99c4957891d5b4dc59ba
+- 2026-11-22 | 中金点睛 | 中金点睛「量化择时Skill」正式上线！ | https://mp.weixin.qq.com/s?__biz=MzI3MDMzMjg0MA==&mid=2247870176&idx=1&sn=e8a6ec76a7e617f99d4718107d3fc32b
+- 2026-11-22 | 中金点睛 | 中金：外部“逆风”再起引致超调，保持信心 | https://mp.weixin.qq.com/s?__biz=MzI3MDMzMjg0MA==&mid=2247870058&idx=1&sn=59bdfb0471804941d83acf52d636ef11
+- 2026-11-21 | 晚点再听LaterCast | 晚点再听发新品！我们做了一个 Personal Agent 叫 “AlterContacts”，帮你处理客户关系中的一切 | https://mp.weixin.qq.com/s?__biz=MzcxMDA5NTI0OA==&mid=2247489543&idx=1&sn=a2f7590e8e32a346dfc2660777cf4c95
 - 2026-11-20 | 远川研究所 | 腾讯游戏早就在船上了 | https://mp.weixin.qq.com/s?__biz=MzIwMDY2NTgwMA==&mid=2247528082&idx=1&sn=5475876bb79a3895f5d36fa51f42036b
 - 2026-11-20 | 远川研究所 | 未来城市：杨浦高能级创新进行时 | https://mp.weixin.qq.com/s?__biz=MzIwMDY2NTgwMA==&mid=2247528082&idx=2&sn=f57e1406e3c6ae893e3165aec51e88f9
 - 2026-11-20 | 晚点再听LaterCast | Instagram负责人揭秘顶尖1%人群如何与AI协同工作丨Silicon Valley Girl | https://mp.weixin.qq.com/s?__biz=MzcxMDA5NTI0OA==&mid=2247489517&idx=1&sn=4fdff2cac5b3b3712f2830dfc6b048cb
