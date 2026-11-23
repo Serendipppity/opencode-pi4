@@ -1,5 +1,12 @@
 # 研究源文章索引（新→旧）
 
+- 2026-11-23 | 中金点睛 | 陕西新兴产业全景调研·年度策略会特别策划 | https://mp.weixin.qq.com/s?__biz=MzI3MDMzMjg0MA==&mid=2247870750&idx=1&sn=1ae8f8c042d478dca40aa7c4efe456f4
+- 2026-11-23 | 中金点睛 | 中金热点解读 | 政策利率换锚 | https://mp.weixin.qq.com/s?__biz=MzI3MDMzMjg0MA==&mid=2247870686&idx=1&sn=599dd94aaf68220d9db850134b12887d
+- 2026-11-23 | 中金点睛 | 中金2027年度展望 | 全球市场：行到转折处 | https://mp.weixin.qq.com/s?__biz=MzI3MDMzMjg0MA==&mid=2247870685&idx=1&sn=88ba3a2cffff58b2dcd5f716246180c9
+- 2026-11-23 | 中金点睛 | 中金2027年度展望 | 中美经济及债市：债务增长约束下，中美债券利率殊途同归 | https://mp.weixin.qq.com/s?__biz=MzI3MDMzMjg0MA==&mid=2247870685&idx=2&sn=0d50dbc5dc13cab83f2886b71542c7cb
+- 2026-11-23 | 中金点睛 | 中金2027年度展望 | 大宗商品综述：新秩序续章，看需求分野 | https://mp.weixin.qq.com/s?__biz=MzI3MDMzMjg0MA==&mid=2247870685&idx=3&sn=2cd9708b6de19a3638e5adf379c5c7d7
+- 2026-11-23 | 中金点睛 | 中金：恒科与港股通有哪些新变化？ （2026-11） | https://mp.weixin.qq.com/s?__biz=MzI3MDMzMjg0MA==&mid=2247870685&idx=4&sn=a8e45bc06ca5071458e1ec925ea72fe1
+- 2026-11-22 | 中国金融四十人论坛 | CF40研究 | 中国与OECD国家税收结构比较 | https://mp.weixin.qq.com/s?__biz=MjM5NjgyNDk4NA==&mid=2686359235&idx=1&sn=253ee720c916fd69d745799afce84e39
 - 2026-11-22 | 硅谷科技评论 | Anthropic 上市拿到 916 亿美元的同一周，钱在帮企业训练自己的模型 | https://mp.weixin.qq.com/s?__biz=MzA3MDU4ODkyNg==&mid=2247513324&idx=1&sn=749f1a1e9f5c99c4957891d5b4dc59ba
 - 2026-11-22 | 中金点睛 | 中金点睛「量化择时Skill」正式上线！ | https://mp.weixin.qq.com/s?__biz=MzI3MDMzMjg0MA==&mid=2247870176&idx=1&sn=e8a6ec76a7e617f99d4718107d3fc32b
 - 2026-11-22 | 中金点睛 | 中金：外部“逆风”再起引致超调，保持信心 | https://mp.weixin.qq.com/s?__biz=MzI3MDMzMjg0MA==&mid=2247870058&idx=1&sn=59bdfb0471804941d83acf52d636ef11
