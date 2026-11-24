@@ -1,5 +1,15 @@
 # 研究源文章索引（新→旧）
 
+- 2026-11-24 | 中金点睛 | 中金2027年度展望 | 港股市场：不破难立 | https://mp.weixin.qq.com/s?__biz=MzI3MDMzMjg0MA==&mid=2247870753&idx=1&sn=05ae3930a9ba67d31ea8aa4b6303099e
+- 2026-11-24 | 中金点睛 | 中金2027年度展望 | 新能源车中游：拨云方见日，择势觅新机 | https://mp.weixin.qq.com/s?__biz=MzI3MDMzMjg0MA==&mid=2247870753&idx=2&sn=19da8a5ff8717f7ff64864d30cd10742
+- 2026-11-24 | 中金点睛 | 中金：银行视角看居民去杠杆 | https://mp.weixin.qq.com/s?__biz=MzI3MDMzMjg0MA==&mid=2247870753&idx=3&sn=2dbfd822f91ee4631bbd8f735f80fdaf
+- 2026-11-24 | 中金点睛 | 中金 • REITs | 短期或已超跌，重申关注结构性配置机会 | https://mp.weixin.qq.com/s?__biz=MzI3MDMzMjg0MA==&mid=2247870753&idx=4&sn=2f769d27e9f9ddae62f553fb88eabd61
+- 2026-11-23 | 晚点再听LaterCast | AI的递归自我改进，已经开始了丨Dwarkesh Patel | https://mp.weixin.qq.com/s?__biz=MzcxMDA5NTI0OA==&mid=2247489611&idx=1&sn=c9594db57882f3d010e7f3b53737a3af
+- 2026-11-23 | 远川研究所 | 游戏业还需要多少GTA6？ | https://mp.weixin.qq.com/s?__biz=MzIwMDY2NTgwMA==&mid=2247528101&idx=1&sn=b86f10b9db890cb20a0f87a971caddec
+- 2026-11-23 | 硅基观察Pro | 你在上班，汽车出去跑滴滴！马斯克7年前吹的牛，要成真了？ | https://mp.weixin.qq.com/s?__biz=MzkyNTY1MjE2OA==&mid=2247494723&idx=1&sn=5fb2f613e7d35165fdd5d7126f847b59
+- 2026-11-23 | 中国金融四十人论坛 | 中国经济进入后房地产时代，新经济接棒还要多久？ | https://mp.weixin.qq.com/s?__biz=MjM5NjgyNDk4NA==&mid=2686359250&idx=1&sn=7f7b6664b0af55e4a3ba49d1359b43b7
+- 2026-11-23 | 晚点再听LaterCast | 新产品拿下 Product Hunt 日榜第一 🎉 | https://mp.weixin.qq.com/s?__biz=MzcxMDA5NTI0OA==&mid=2247489595&idx=1&sn=bd9ed5b30777e20c0e8bca1f2512eea3
+- 2026-11-22 | 晚点再听LaterCast | Atlassian AI负责人：开发越来越快，为什么反而更需要产品经理？丨Lenny's Podcast | https://mp.weixin.qq.com/s?__biz=MzcxMDA5NTI0OA==&mid=2247489559&idx=1&sn=3ab5d289d917af5da61d6105df06b58b
 - 2026-11-23 | 中金点睛 | 陕西新兴产业全景调研·年度策略会特别策划 | https://mp.weixin.qq.com/s?__biz=MzI3MDMzMjg0MA==&mid=2247870750&idx=1&sn=1ae8f8c042d478dca40aa7c4efe456f4
 - 2026-11-23 | 中金点睛 | 中金热点解读 | 政策利率换锚 | https://mp.weixin.qq.com/s?__biz=MzI3MDMzMjg0MA==&mid=2247870686&idx=1&sn=599dd94aaf68220d9db850134b12887d
 - 2026-11-23 | 中金点睛 | 中金2027年度展望 | 全球市场：行到转折处 | https://mp.weixin.qq.com/s?__biz=MzI3MDMzMjg0MA==&mid=2247870685&idx=1&sn=88ba3a2cffff58b2dcd5f716246180c9

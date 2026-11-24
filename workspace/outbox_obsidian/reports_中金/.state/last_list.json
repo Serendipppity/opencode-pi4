@@ -1,7 +1,105 @@
 {
-  "saved_at": "2026-11-23T20:31:49+08:00",
+  "saved_at": "2026-11-24T20:31:38+08:00",
   "count": 80,
   "articles": [
+    {
+      "feed": "中金点睛",
+      "mode": "keyword",
+      "title": "中金2027年度展望 | 港股市场：不破难立",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzI3MDMzMjg0MA==&mid=2247870753&idx=1&sn=05ae3930a9ba67d31ea8aa4b6303099e",
+      "date": "2026-11-24 08:10",
+      "chars": 38368,
+      "img_count": 46,
+      "hit": [
+        "港股"
+      ],
+      "id": "2247870753_1",
+      "no": 1
+    },
+    {
+      "feed": "中金点睛",
+      "mode": "keyword",
+      "title": "中金2027年度展望 | 新能源车中游：拨云方见日，择势觅新机",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzI3MDMzMjg0MA==&mid=2247870753&idx=2&sn=19da8a5ff8717f7ff64864d30cd10742",
+      "date": "2026-11-24 08:10",
+      "chars": 20093,
+      "img_count": 25,
+      "hit": [],
+      "id": "2247870753_2",
+      "no": 2
+    },
+    {
+      "feed": "中金点睛",
+      "mode": "keyword",
+      "title": "中金：银行视角看居民去杠杆",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzI3MDMzMjg0MA==&mid=2247870753&idx=3&sn=2dbfd822f91ee4631bbd8f735f80fdaf",
+      "date": "2026-11-24 08:10",
+      "chars": 10777,
+      "img_count": 20,
+      "hit": [],
+      "id": "2247870753_3",
+      "no": 3
+    },
+    {
+      "feed": "中金点睛",
+      "mode": "keyword",
+      "title": "中金 • REITs | 短期或已超跌，重申关注结构性配置机会",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzI3MDMzMjg0MA==&mid=2247870753&idx=4&sn=2f769d27e9f9ddae62f553fb88eabd61",
+      "date": "2026-11-24 08:10",
+      "chars": 3871,
+      "img_count": 10,
+      "hit": [],
+      "id": "2247870753_4",
+      "no": 4
+    },
+    {
+      "feed": "晚点再听LaterCast",
+      "mode": "manual",
+      "title": "AI的递归自我改进，已经开始了丨Dwarkesh Patel",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzcxMDA5NTI0OA==&mid=2247489611&idx=1&sn=c9594db57882f3d010e7f3b53737a3af",
+      "date": "2026-11-23 22:23",
+      "chars": 5496,
+      "img_count": 3,
+      "hit": [],
+      "id": "2247489611_1",
+      "no": 5
+    },
+    {
+      "feed": "远川研究所",
+      "mode": "manual",
+      "title": "游戏业还需要多少GTA6？",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzIwMDY2NTgwMA==&mid=2247528101&idx=1&sn=b86f10b9db890cb20a0f87a971caddec",
+      "date": "2026-11-23 21:10",
+      "chars": 10131,
+      "img_count": 18,
+      "hit": [],
+      "id": "2247528101_1",
+      "no": 6
+    },
+    {
+      "feed": "硅基观察Pro",
+      "mode": "manual",
+      "title": "你在上班，汽车出去跑滴滴！马斯克7年前吹的牛，要成真了？",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzkyNTY1MjE2OA==&mid=2247494723&idx=1&sn=5fb2f613e7d35165fdd5d7126f847b59",
+      "date": "2026-11-23 19:00",
+      "chars": 4683,
+      "img_count": 4,
+      "hit": [],
+      "id": "2247494723_1",
+      "no": 7
+    },
+    {
+      "feed": "中国金融四十人论坛",
+      "mode": "manual",
+      "title": "中国经济进入后房地产时代，新经济接棒还要多久？",
+      "url": "https://mp.weixin.qq.com/s?__biz=MjM5NjgyNDk4NA==&mid=2686359250&idx=1&sn=7f7b6664b0af55e4a3ba49d1359b43b7",
+      "date": "2026-11-23 18:25",
+      "chars": 10873,
+      "img_count": 18,
+      "hit": [],
+      "id": "2686359250_1",
+      "no": 8
+    },
     {
       "feed": "中金点睛",
       "mode": "keyword",
@@ -12,7 +110,19 @@
       "img_count": 1,
       "hit": [],
       "id": "2247870750_1",
-      "no": 1
+      "no": 9
+    },
+    {
+      "feed": "晚点再听LaterCast",
+      "mode": "manual",
+      "title": "新产品拿下 Product Hunt 日榜第一 🎉",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzcxMDA5NTI0OA==&mid=2247489595&idx=1&sn=bd9ed5b30777e20c0e8bca1f2512eea3",
+      "date": "2026-11-23 15:24",
+      "chars": 1223,
+      "img_count": 1,
+      "hit": [],
+      "id": "2247489595_1",
+      "no": 10
     },
     {
       "feed": "中金点睛",
@@ -24,7 +134,7 @@
       "img_count": 1,
       "hit": [],
       "id": "2247870686_1",
-      "no": 2
+      "no": 11
     },
     {
       "feed": "中金点睛",
@@ -36,7 +146,7 @@
       "img_count": 49,
       "hit": [],
       "id": "2247870685_1",
-      "no": 3
+      "no": 12
     },
     {
       "feed": "中金点睛",
@@ -48,7 +158,7 @@
       "img_count": 184,
       "hit": [],
       "id": "2247870685_2",
-      "no": 4
+      "no": 13
     },
     {
       "feed": "中金点睛",
@@ -60,7 +170,7 @@
       "img_count": 22,
       "hit": [],
       "id": "2247870685_3",
-      "no": 5
+      "no": 14
     },
     {
       "feed": "中金点睛",
@@ -74,7 +184,19 @@
         "港股"
       ],
       "id": "2247870685_4",
-      "no": 6
+      "no": 15
+    },
+    {
+      "feed": "晚点再听LaterCast",
+      "mode": "manual",
+      "title": "Atlassian AI负责人：开发越来越快，为什么反而更需要产品经理？丨Lenny's Podcast",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzcxMDA5NTI0OA==&mid=2247489559&idx=1&sn=3ab5d289d917af5da61d6105df06b58b",
+      "date": "2026-11-22 23:30",
+      "chars": 6016,
+      "img_count": 3,
+      "hit": [],
+      "id": "2247489559_1",
+      "no": 16
     },
     {
       "feed": "中国金融四十人论坛",
@@ -86,7 +208,7 @@
       "img_count": 30,
       "hit": [],
       "id": "2686359235_1",
-      "no": 7
+      "no": 17
     },
     {
       "feed": "硅谷科技评论",
@@ -98,31 +220,7 @@
       "img_count": 4,
       "hit": [],
       "id": "2247513324_1",
-      "no": 8
-    },
-    {
-      "feed": "中金点睛",
-      "mode": "keyword",
-      "title": "中金点睛「量化择时Skill」正式上线！",
-      "url": "https://mp.weixin.qq.com/s?__biz=MzI3MDMzMjg0MA==&mid=2247870176&idx=1&sn=e8a6ec76a7e617f99d4718107d3fc32b",
-      "date": "2026-11-22 10:00",
-      "chars": 389,
-      "img_count": 1,
-      "hit": [],
-      "id": "2247870176_1",
-      "no": 9
-    },
-    {
-      "feed": "中金点睛",
-      "mode": "keyword",
-      "title": "中金：外部“逆风”再起引致超调，保持信心",
-      "url": "https://mp.weixin.qq.com/s?__biz=MzI3MDMzMjg0MA==&mid=2247870058&idx=1&sn=59bdfb0471804941d83acf52d636ef11",
-      "date": "2026-11-22 08:00",
-      "chars": 4577,
-      "img_count": 5,
-      "hit": [],
-      "id": "2247870058_1",
-      "no": 10
+      "no": 18
     },
     {
       "feed": "晚点再听LaterCast",
@@ -134,7 +232,7 @@
       "img_count": 7,
       "hit": [],
       "id": "2247489543_1",
-      "no": 11
+      "no": 19
     },
     {
       "feed": "远川研究所",
@@ -146,7 +244,7 @@
       "img_count": 12,
       "hit": [],
       "id": "2247528082_1",
-      "no": 12
+      "no": 20
     },
     {
       "feed": "远川研究所",
@@ -158,7 +256,7 @@
       "img_count": 14,
       "hit": [],
       "id": "2247528082_2",
-      "no": 13
+      "no": 21
     },
     {
       "feed": "晚点再听LaterCast",
@@ -170,7 +268,7 @@
       "img_count": 4,
       "hit": [],
       "id": "2247489517_1",
-      "no": 14
+      "no": 22
     },
     {
       "feed": "中国金融四十人论坛",
@@ -182,7 +280,7 @@
       "img_count": 17,
       "hit": [],
       "id": "2686359212_1",
-      "no": 15
+      "no": 23
     },
     {
       "feed": "硅基观察Pro",
@@ -194,33 +292,7 @@
       "img_count": 3,
       "hit": [],
       "id": "2247494717_1",
-      "no": 16
-    },
-    {
-      "feed": "中金点睛",
-      "mode": "keyword",
-      "title": "中金点睛「量化择时Skill」正式上线！",
-      "url": "https://mp.weixin.qq.com/s?__biz=MzI3MDMzMjg0MA==&mid=2247869877&idx=1&sn=58a4e30a5bd001940123d2193bb0b337",
-      "date": "2026-11-20 08:12",
-      "chars": 389,
-      "img_count": 1,
-      "hit": [],
-      "id": "2247869877_1",
-      "no": 17
-    },
-    {
-      "feed": "中金点睛",
-      "mode": "keyword",
-      "title": "中金 | 资产配置手册（二）：“10年10倍”的挑战",
-      "url": "https://mp.weixin.qq.com/s?__biz=MzI3MDMzMjg0MA==&mid=2247869874&idx=1&sn=2919ec3d8be1608b21b5f18af5014f33",
-      "date": "2026-11-20 08:03",
-      "chars": 30000,
-      "img_count": 62,
-      "hit": [
-        "资产配置"
-      ],
-      "id": "2247869874_1",
-      "no": 18
+      "no": 24
     },
     {
       "feed": "晚点再听LaterCast",
@@ -232,7 +304,7 @@
       "img_count": 4,
       "hit": [],
       "id": "2247489512_1",
-      "no": 19
+      "no": 25
     },
     {
       "feed": "远川研究所",
@@ -244,7 +316,7 @@
       "img_count": 11,
       "hit": [],
       "id": "2247528064_1",
-      "no": 20
+      "no": 26
     },
     {
       "feed": "中国金融四十人论坛",
@@ -256,7 +328,7 @@
       "img_count": 13,
       "hit": [],
       "id": "2686359208_1",
-      "no": 21
+      "no": 27
     },
     {
       "feed": "中国金融四十人论坛",
@@ -268,7 +340,7 @@
       "img_count": 13,
       "hit": [],
       "id": "2686359208_2",
-      "no": 22
+      "no": 28
     },
     {
       "feed": "中国金融四十人论坛",
@@ -280,7 +352,7 @@
       "img_count": 13,
       "hit": [],
       "id": "2686359208_3",
-      "no": 23
+      "no": 29
     },
     {
       "feed": "硅基观察Pro",
@@ -292,7 +364,7 @@
       "img_count": 3,
       "hit": [],
       "id": "2247494712_1",
-      "no": 24
+      "no": 30
     },
     {
       "feed": "饭统戴老板",
@@ -304,7 +376,7 @@
       "img_count": 11,
       "hit": [],
       "id": "2247495013_1",
-      "no": 25
+      "no": 31
     },
     {
       "feed": "远川研究所",
@@ -316,7 +388,7 @@
       "img_count": 17,
       "hit": [],
       "id": "2247528062_1",
-      "no": 26
+      "no": 32
     },
     {
       "feed": "晚点再听LaterCast",
@@ -328,7 +400,7 @@
       "img_count": 3,
       "hit": [],
       "id": "2247489505_1",
-      "no": 27
+      "no": 33
     },
     {
       "feed": "中国金融四十人论坛",
@@ -340,7 +412,7 @@
       "img_count": 13,
       "hit": [],
       "id": "2686359184_1",
-      "no": 28
+      "no": 34
     },
     {
       "feed": "硅基观察Pro",
@@ -352,7 +424,7 @@
       "img_count": 3,
       "hit": [],
       "id": "2247494706_1",
-      "no": 29
+      "no": 35
     },
     {
       "feed": "硅谷科技评论",
@@ -364,7 +436,7 @@
       "img_count": 6,
       "hit": [],
       "id": "2247513318_1",
-      "no": 30
+      "no": 36
     },
     {
       "feed": "中国金融四十人论坛",
@@ -376,7 +448,7 @@
       "img_count": 17,
       "hit": [],
       "id": "2686359173_1",
-      "no": 31
+      "no": 37
     },
     {
       "feed": "中国金融四十人论坛",
@@ -388,7 +460,7 @@
       "img_count": 18,
       "hit": [],
       "id": "2686359173_2",
-      "no": 32
+      "no": 38
     },
     {
       "feed": "远川研究所",
@@ -400,7 +472,7 @@
       "img_count": 23,
       "hit": [],
       "id": "2247528044_1",
-      "no": 33
+      "no": 39
     },
     {
       "feed": "晚点再听LaterCast",
@@ -412,7 +484,7 @@
       "img_count": 5,
       "hit": [],
       "id": "2247489494_1",
-      "no": 34
+      "no": 40
     },
     {
       "feed": "硅基观察Pro",
@@ -424,7 +496,7 @@
       "img_count": 4,
       "hit": [],
       "id": "2247494701_1",
-      "no": 35
+      "no": 41
     },
     {
       "feed": "远川研究所",
@@ -436,7 +508,7 @@
       "img_count": 19,
       "hit": [],
       "id": "2247528029_1",
-      "no": 36
+      "no": 42
     },
     {
       "feed": "饭统戴老板",
@@ -448,7 +520,7 @@
       "img_count": 13,
       "hit": [],
       "id": "2247494987_1",
-      "no": 37
+      "no": 43
     },
     {
       "feed": "中国金融四十人论坛",
@@ -460,7 +532,7 @@
       "img_count": 20,
       "hit": [],
       "id": "2686359154_1",
-      "no": 38
+      "no": 44
     },
     {
       "feed": "晚点再听LaterCast",
@@ -472,7 +544,7 @@
       "img_count": 5,
       "hit": [],
       "id": "2247489487_1",
-      "no": 39
+      "no": 45
     },
     {
       "feed": "硅基观察Pro",
@@ -484,7 +556,7 @@
       "img_count": 4,
       "hit": [],
       "id": "2247494695_1",
-      "no": 40
+      "no": 46
     },
     {
       "feed": "晚点再听LaterCast",
@@ -496,19 +568,7 @@
       "img_count": 3,
       "hit": [],
       "id": "2247489482_1",
-      "no": 41
-    },
-    {
-      "feed": "中国金融四十人论坛",
-      "mode": "manual",
-      "title": "CF40研究 | 老龄化与少子化对居民消费率的影响测算",
-      "url": "https://mp.weixin.qq.com/s?__biz=MjM5NjgyNDk4NA==&mid=2686359139&idx=1&sn=20284b19c343ba0dd77c1e440ba3d28e",
-      "date": "2026-11-15 16:35",
-      "chars": 8723,
-      "img_count": 17,
-      "hit": [],
-      "id": "2686359139_1",
-      "no": 42
+      "no": 47
     },
     {
       "feed": "硅谷科技评论",
@@ -520,7 +580,7 @@
       "img_count": 5,
       "hit": [],
       "id": "2247513314_1",
-      "no": 43
+      "no": 48
     },
     {
       "feed": "远川研究所",
@@ -532,19 +592,7 @@
       "img_count": 13,
       "hit": [],
       "id": "2247528027_1",
-      "no": 44
-    },
-    {
-      "feed": "晚点再听LaterCast",
-      "mode": "manual",
-      "title": "AI自动化之后，人类工作的新图景丨Every",
-      "url": "https://mp.weixin.qq.com/s?__biz=MzcxMDA5NTI0OA==&mid=2247489477&idx=1&sn=5d74172d51a69a8e21038e5b250f3a58",
-      "date": "2026-11-13 21:00",
-      "chars": 4569,
-      "img_count": 3,
-      "hit": [],
-      "id": "2247489477_1",
-      "no": 45
+      "no": 49
     },
     {
       "feed": "硅基观察Pro",
@@ -556,19 +604,7 @@
       "img_count": 3,
       "hit": [],
       "id": "2247494688_1",
-      "no": 46
-    },
-    {
-      "feed": "晚点再听LaterCast",
-      "mode": "manual",
-      "title": "如何比99%的人更擅长使用Grok Bot？丨Greg Isenberg",
-      "url": "https://mp.weixin.qq.com/s?__biz=MzcxMDA5NTI0OA==&mid=2247489470&idx=1&sn=fa2ea17949af4b2715be7a522bcf994a",
-      "date": "2026-11-12 20:45",
-      "chars": 5149,
-      "img_count": 3,
-      "hit": [],
-      "id": "2247489470_1",
-      "no": 47
+      "no": 50
     },
     {
       "feed": "硅基观察Pro",
@@ -580,7 +616,7 @@
       "img_count": 3,
       "hit": [],
       "id": "2247494683_1",
-      "no": 48
+      "no": 51
     },
     {
       "feed": "硅谷科技评论",
@@ -592,7 +628,7 @@
       "img_count": 8,
       "hit": [],
       "id": "2247513308_1",
-      "no": 49
+      "no": 52
     },
     {
       "feed": "硅基观察Pro",
@@ -604,7 +640,7 @@
       "img_count": 3,
       "hit": [],
       "id": "2247494678_1",
-      "no": 50
+      "no": 53
     },
     {
       "feed": "远川研究所",
@@ -616,19 +652,7 @@
       "img_count": 11,
       "hit": [],
       "id": "2247528013_1",
-      "no": 51
-    },
-    {
-      "feed": "晚点再听LaterCast",
-      "mode": "manual",
-      "title": "Gemini产品负责人谈AI时代产品经理为什么又重要了丨Lenny's Podcast",
-      "url": "https://mp.weixin.qq.com/s?__biz=MzcxMDA5NTI0OA==&mid=2247489461&idx=1&sn=2859639a4bebfc39ceeb604f2a7463ba",
-      "date": "2026-11-10 20:54",
-      "chars": 4351,
-      "img_count": 2,
-      "hit": [],
-      "id": "2247489461_1",
-      "no": 52
+      "no": 54
     },
     {
       "feed": "硅基观察Pro",
@@ -640,7 +664,7 @@
       "img_count": 6,
       "hit": [],
       "id": "2247494673_1",
-      "no": 53
+      "no": 55
     },
     {
       "feed": "远川研究所",
@@ -652,19 +676,7 @@
       "img_count": 23,
       "hit": [],
       "id": "2247528010_1",
-      "no": 54
-    },
-    {
-      "feed": "硅基观察Pro",
-      "mode": "manual",
-      "title": "华大智造，盯上了AI制药最缺的东西",
-      "url": "https://mp.weixin.qq.com/s?__biz=MzkyNTY1MjE2OA==&mid=2247494659&idx=1&sn=5bbbcaa6ad0aed1fae2f33fddcb9e70c",
-      "date": "2026-11-09 18:23",
-      "chars": 6902,
-      "img_count": 7,
-      "hit": [],
-      "id": "2247494659_1",
-      "no": 55
+      "no": 56
     },
     {
       "feed": "硅谷科技评论",
@@ -676,7 +688,7 @@
       "img_count": 3,
       "hit": [],
       "id": "2247513298_1",
-      "no": 56
+      "no": 57
     },
     {
       "feed": "硅谷科技评论",
@@ -688,18 +700,6 @@
       "img_count": 5,
       "hit": [],
       "id": "2247513292_1",
-      "no": 57
-    },
-    {
-      "feed": "远川研究所",
-      "mode": "manual",
-      "title": "买山下有松的人是什么阶级？",
-      "url": "https://mp.weixin.qq.com/s?__biz=MzIwMDY2NTgwMA==&mid=2247528008&idx=1&sn=931cd0965efeb22f682801f7750e4271",
-      "date": "2026-11-05 21:10",
-      "chars": 13220,
-      "img_count": 30,
-      "hit": [],
-      "id": "2247528008_1",
       "no": 58
     },
     {
