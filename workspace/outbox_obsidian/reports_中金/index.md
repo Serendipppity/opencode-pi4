@@ -1,5 +1,14 @@
 # 研究源文章索引（新→旧）
 
+- 2026-11-25 | 中金点睛 | 中金2027年度展望 | 房地产：革故鼎新，曙光初现 | https://mp.weixin.qq.com/s?__biz=MzI3MDMzMjg0MA==&mid=2247870956&idx=1&sn=e1f88cfefe8479a70134928165aa72de
+- 2026-11-25 | 中金点睛 | 中金 | 稳市制度研究系列（4）：“三支箭”助力市场信心修复 | https://mp.weixin.qq.com/s?__biz=MzI3MDMzMjg0MA==&mid=2247870956&idx=2&sn=b08096c35d7c2dbe55985e3073da6853
+- 2026-11-25 | 中金点睛 | 中金 | 寿险黄金发展期（1）：负债增长加速的三大宏观驱动 | https://mp.weixin.qq.com/s?__biz=MzI3MDMzMjg0MA==&mid=2247870956&idx=3&sn=e536525c483378681b634c2aa1b57d28
+- 2026-11-25 | 中金点睛 | 中金 | 告别“谈衍色变”：重识场外衍生品业务——解码头部券商Alpha系列（四） | https://mp.weixin.qq.com/s?__biz=MzI3MDMzMjg0MA==&mid=2247870956&idx=4&sn=4283cba73bade99ba7a3e8f8f56848c3
+- 2026-11-24 | 远川研究所 | 曲曲大女人征服AI | https://mp.weixin.qq.com/s?__biz=MzIwMDY2NTgwMA==&mid=2247528126&idx=1&sn=5ca6a0833c335e594f8779476c814cf3
+- 2026-11-24 | 晚点再听LaterCast | Anthropic的工程师们停止了AI Agent的研发（他们转向研发其他产品）丨Jay E | https://mp.weixin.qq.com/s?__biz=MzcxMDA5NTI0OA==&mid=2247489620&idx=1&sn=7eb8da4f423e459c8e44558a0dee924b
+- 2026-11-24 | 中国金融四十人论坛 | 薛澜：破解AI治理难题，先要改变当前的AI叙事 | https://mp.weixin.qq.com/s?__biz=MjM5NjgyNDk4NA==&mid=2686359263&idx=1&sn=f140625fa558c40336703c024960c291
+- 2026-11-24 | 硅基观察Pro | 翻完11307次AI购物测试，我发现消费品牌的赚钱逻辑变了 | https://mp.weixin.qq.com/s?__biz=MzkyNTY1MjE2OA==&mid=2247494734&idx=1&sn=beca2cd76fdc12886b4cdeb358b090cf
+- 2026-11-24 | 饭统戴老板 | 零售品牌新范式：山姆为什么率先做起“城市叙事”？ | https://mp.weixin.qq.com/s?__biz=MzU4NDY2MDMzMA==&mid=2247495057&idx=1&sn=8d62b3b2ed48662df1baf533f9dd37d3
 - 2026-11-24 | 中金点睛 | 中金2027年度展望 | 港股市场：不破难立 | https://mp.weixin.qq.com/s?__biz=MzI3MDMzMjg0MA==&mid=2247870753&idx=1&sn=05ae3930a9ba67d31ea8aa4b6303099e
 - 2026-11-24 | 中金点睛 | 中金2027年度展望 | 新能源车中游：拨云方见日，择势觅新机 | https://mp.weixin.qq.com/s?__biz=MzI3MDMzMjg0MA==&mid=2247870753&idx=2&sn=19da8a5ff8717f7ff64864d30cd10742
 - 2026-11-24 | 中金点睛 | 中金：银行视角看居民去杠杆 | https://mp.weixin.qq.com/s?__biz=MzI3MDMzMjg0MA==&mid=2247870753&idx=3&sn=2dbfd822f91ee4631bbd8f735f80fdaf
