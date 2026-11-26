@@ -1,5 +1,15 @@
 # 研究源文章索引（新→旧）
 
+- 2026-11-26 | 中金点睛 | 中金2027年度展望 | 美国：周期扩散，K型收敛 | https://mp.weixin.qq.com/s?__biz=MzI3MDMzMjg0MA==&mid=2247871275&idx=1&sn=b13ffcfec200a4c2334517c392ff12fc
+- 2026-11-26 | 中金点睛 | 中金2027年度展望 | REITs：广厦渐成，价值分野 | https://mp.weixin.qq.com/s?__biz=MzI3MDMzMjg0MA==&mid=2247871275&idx=2&sn=b3d75e314eb09f02818f40d5115d8f9a
+- 2026-11-26 | 中金点睛 | 中金 | 现房政策分析之三：定量分析现房政策对房企IRR影响 | https://mp.weixin.qq.com/s?__biz=MzI3MDMzMjg0MA==&mid=2247871275&idx=3&sn=be1f172ac4085304c16e8b48fa1d18ee
+- 2026-11-26 | 中金点睛 | 中金 • 全球研究 | 日本企业盈利韧性延续，估值改善仍有空间 | https://mp.weixin.qq.com/s?__biz=MzI3MDMzMjg0MA==&mid=2247871275&idx=4&sn=79e32a13659f95a1bcf875c4ef0d9513
+- 2026-11-25 | 晚点再听LaterCast | Robinhood CEO：普通人如何在AI时代积累财富？丨Silicon Valley Girl | https://mp.weixin.qq.com/s?__biz=MzcxMDA5NTI0OA==&mid=2247489631&idx=1&sn=efec30771784a37cebae2e7ffdf56660
+- 2026-11-25 | 远川研究所 | 拆解山姆MM：真标准和硬功夫 | https://mp.weixin.qq.com/s?__biz=MzIwMDY2NTgwMA==&mid=2247528161&idx=1&sn=cefe7ad36fb568f716ba6895179a6675
+- 2026-11-25 | 饭统戴老板 | 百胜中国的十年：扎得更深，看得更远 | https://mp.weixin.qq.com/s?__biz=MzU4NDY2MDMzMA==&mid=2247495058&idx=1&sn=68b0d0fad01b14421483899245b81d7e
+- 2026-11-25 | 硅基观察Pro | AI炒股新玩法！盯上3000万散户，提前24小时预测交易行为 | https://mp.weixin.qq.com/s?__biz=MzkyNTY1MjE2OA==&mid=2247494744&idx=1&sn=07726d32b2a93334518d25ede1e97603
+- 2026-11-25 | 中国金融四十人论坛 | 走出需求不足的认知困境（上）：先认清，这是一场市场失灵 | https://mp.weixin.qq.com/s?__biz=MjM5NjgyNDk4NA==&mid=2686359278&idx=1&sn=70ef6dc5ec9b9e82ddcc282113378af5
+- 2026-11-25 | 中国金融四十人论坛 | CF40招聘 | 研究、市场等岗位开放中 | https://mp.weixin.qq.com/s?__biz=MjM5NjgyNDk4NA==&mid=2686359278&idx=2&sn=8255135f08226f08526c9b43e42cc5bb
 - 2026-11-25 | 中金点睛 | 中金2027年度展望 | 房地产：革故鼎新，曙光初现 | https://mp.weixin.qq.com/s?__biz=MzI3MDMzMjg0MA==&mid=2247870956&idx=1&sn=e1f88cfefe8479a70134928165aa72de
 - 2026-11-25 | 中金点睛 | 中金 | 稳市制度研究系列（4）：“三支箭”助力市场信心修复 | https://mp.weixin.qq.com/s?__biz=MzI3MDMzMjg0MA==&mid=2247870956&idx=2&sn=b08096c35d7c2dbe55985e3073da6853
 - 2026-11-25 | 中金点睛 | 中金 | 寿险黄金发展期（1）：负债增长加速的三大宏观驱动 | https://mp.weixin.qq.com/s?__biz=MzI3MDMzMjg0MA==&mid=2247870956&idx=3&sn=e536525c483378681b634c2aa1b57d28

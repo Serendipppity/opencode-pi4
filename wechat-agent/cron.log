@@ -11526,3 +11526,114 @@ push discord: 0 model: google/gemini-3.5-flash-lite
 同步未完成，跳过清理
 同步未完成，跳过清理
 同步未完成，跳过清理
+backup: [master 02cf3b9] Auto-backup: 2026-11-26
+ 16 files changed, 3931 insertions(+), 171 deletions(-)
+ cr
+push: To github.com:Serendipppity/opencode-pi4.git
+   fe0017c..02cf3b9  HEAD -> main
+status saved: /home/pi/.cache/backup_status/git_backup.json
+同步未完成，跳过清理
+同步未完成，跳过清理
+同步未完成，跳过清理
+同步未完成，跳过清理
+🖥️ **Pi 健康巡检** 2026-11-26 06:00
+
+✅ **Git**
+- ✅ 昨夜文件备份: push OK (2026-11-26)
+- ✅ 未提交变更: 1 | 领先远程: 0
+
+✅ **Syncthing**
+- ✅ systemd --user 服务: active
+- ✅ folder[pi-outbox]: state=idle (sendonly，待同步 59 项忽略)
+
+✅ **系统**
+- ✅ 温度: 45.3°C
+- ✅ 内存可用: 4254MB
+- ✅ 磁盘: 18.8%
+- ✅ load15: 0.31
+- ℹ️ uptime: 79天13h23m
+
+✅ **服务存活**
+- ✅ syncthing
+- ✅ kimaki
+- ✅ cron
+
+✅ **模型清单**
+- providers: google, opencode-go | 默认模型: gemini-flash-lite-latest
+- - **brief**: `gemini-3.5-flash-lite` → fb: `gemini-2.5-flash`
+- - **cavecrew-builder、cavecrew-investigator、cavecrew-reviewer、xiabao、xiatiao**: `ox-alpha-free`
+
+✅ **网络**
+- ✅ 内网网关(192.168.1.100): 平均 0.5ms
+- ✅ 国内公网(baidu.com): DNS+TLS 85ms
+- ✅ 墙外(google 204): 466ms
+
+✅ **Gemini API**
+- ✅ gemini-3.5-flash-lite 连通 6214ms
+push discord summary: 0
+同步未完成，跳过清理
+同步未完成，跳过清理
+[+] RAW RSS 底稿: /home/pi/agent-workspace/outbox_obsidian/news_archives/raw_rss_2026-11-26_0800.md | LLM 材料 63617 字符
+MD_LEN: 9300 GEN_OK: True MODEL: google/gemini-3.5-flash-lite
+format: OK
+HTML_LEN: 29276
+[+] 最终版留底: /home/pi/agent-workspace/outbox_obsidian/news_archives/brief_final_2026-11-26_0803_早.{md,html}
+token fail
+push wechat: 1
+[!] 推送失败，不记账，下次补发可重推
+✅ Part 1/6
+✅ Part 2/6
+✅ Part 3/6
+✅ Part 4/6
+✅ Part 5/6
+✅ Part 6/6
+[+] 已推送 6/6 条消息到 Discord
+push discord: 0 model: google/gemini-3.5-flash-lite
+同步未完成，跳过清理
+同步未完成，跳过清理
+同步未完成，跳过清理
+同步未完成，跳过清理
+[+] RAW RSS 底稿: /home/pi/agent-workspace/outbox_obsidian/news_archives/raw_rss_2026-11-26_1200.md | LLM 材料 59841 字符
+[!] opencode 诊断: model=默认(brief.md) returncode=1 stdout_len=0 stderr尾: [0m > brief · gemini-3.5-flash-lite [0m [91m[1mError: [0mRequests ending with a model turn are not supported. 
+[!] 第1次尝试未通过: 缺分区 ## 核心要闻；缺分区 ## 国际风云；缺分区 ## 财经速递；缺分区 ## 科技前沿；缺分区 ## 国内要闻；条数不足(需20条，少于18判失败)
+[!] 30s 退避后重试
+[!] opencode 诊断: model=默认(brief.md) returncode=1 stdout_len=0 stderr尾: [0m > brief · gemini-3.5-flash-lite [0m [91m[1mError: [0mRequests ending with a model turn are not supported. 
+[!] 第2次尝试未通过: 缺分区 ## 核心要闻；缺分区 ## 国际风云；缺分区 ## 财经速递；缺分区 ## 科技前沿；缺分区 ## 国内要闻；条数不足(需20条，少于18判失败)
+[!] 切换 fallback 模型: google/gemini-2.5-flash
+[!] opencode 诊断: model=google/gemini-2.5-flash returncode=1 stdout_len=0 stderr尾: [91m[1mError: [0m{   "name": "UnknownError",   "data": {     "message": "Unexpected server error. Check server logs for details.",     "ref": "err_06779c7f"   } } 
+[!] 第3次尝试未通过: 缺分区 ## 核心要闻；缺分区 ## 国际风云；缺分区 ## 财经速递；缺分区 ## 科技前沿；缺分区 ## 国内要闻；条数不足(需20条，少于18判失败)
+MD_LEN: 10 GEN_OK: False MODEL: google/gemini-2.5-flash
+=== 生成失败，已告警并跳过推送 ===
+同步未完成，跳过清理
+同步未完成，跳过清理
+同步未完成，跳过清理
+同步未完成，跳过清理
+正在拉取最新持仓与净值数据...
+✅ 理财日报已推送 money 频道（5 只产品）
+同步未完成，跳过清理
+同步未完成，跳过清理
+同步未完成，跳过清理
+同步未完成，跳过清理
+[+] RAW RSS 底稿: /home/pi/agent-workspace/outbox_obsidian/news_archives/raw_rss_2026-11-26_2030.md | LLM 材料 58555 字符
+MD_LEN: 10688 GEN_OK: True MODEL: google/gemini-3.5-flash-lite
+format: OK
+HTML_LEN: 30632
+[+] 最终版留底: /home/pi/agent-workspace/outbox_obsidian/news_archives/brief_final_2026-11-26_2033_晚.{md,html}
+token fail
+push wechat: 1
+[!] 推送失败，不记账，下次补发可重推
+✅ Part 1/7
+✅ Part 2/7
+✅ Part 3/7
+✅ Part 4/7
+✅ Part 5/7
+✅ Part 6/7
+✅ Part 7/7
+[+] 已推送 7/7 条消息到 Discord
+push discord: 0 model: google/gemini-3.5-flash-lite
+同步未完成，跳过清理
+同步未完成，跳过清理
+同步未完成，跳过清理
+同步未完成，跳过清理
+同步未完成，跳过清理
+同步未完成，跳过清理

@@ -1,7 +1,127 @@
 {
-  "saved_at": "2026-11-25T20:31:26+08:00",
+  "saved_at": "2026-11-26T20:31:20+08:00",
   "count": 80,
   "articles": [
+    {
+      "feed": "中金点睛",
+      "mode": "keyword",
+      "title": "中金2027年度展望 | 美国：周期扩散，K型收敛",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzI3MDMzMjg0MA==&mid=2247871275&idx=1&sn=b13ffcfec200a4c2334517c392ff12fc",
+      "date": "2026-11-26 07:57",
+      "chars": 12820,
+      "img_count": 24,
+      "hit": [],
+      "id": "2247871275_1",
+      "no": 1
+    },
+    {
+      "feed": "中金点睛",
+      "mode": "keyword",
+      "title": "中金2027年度展望 | REITs：广厦渐成，价值分野",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzI3MDMzMjg0MA==&mid=2247871275&idx=2&sn=b3d75e314eb09f02818f40d5115d8f9a",
+      "date": "2026-11-26 07:57",
+      "chars": 25111,
+      "img_count": 31,
+      "hit": [],
+      "id": "2247871275_2",
+      "no": 2
+    },
+    {
+      "feed": "中金点睛",
+      "mode": "keyword",
+      "title": "中金 | 现房政策分析之三：定量分析现房政策对房企IRR影响",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzI3MDMzMjg0MA==&mid=2247871275&idx=3&sn=be1f172ac4085304c16e8b48fa1d18ee",
+      "date": "2026-11-26 07:57",
+      "chars": 12820,
+      "img_count": 17,
+      "hit": [],
+      "id": "2247871275_3",
+      "no": 3
+    },
+    {
+      "feed": "中金点睛",
+      "mode": "keyword",
+      "title": "中金 • 全球研究 | 日本企业盈利韧性延续，估值改善仍有空间",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzI3MDMzMjg0MA==&mid=2247871275&idx=4&sn=79e32a13659f95a1bcf875c4ef0d9513",
+      "date": "2026-11-26 07:57",
+      "chars": 7228,
+      "img_count": 11,
+      "hit": [],
+      "id": "2247871275_4",
+      "no": 4
+    },
+    {
+      "feed": "晚点再听LaterCast",
+      "mode": "manual",
+      "title": "Robinhood CEO：普通人如何在AI时代积累财富？丨Silicon Valley Girl",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzcxMDA5NTI0OA==&mid=2247489631&idx=1&sn=efec30771784a37cebae2e7ffdf56660",
+      "date": "2026-11-25 21:22",
+      "chars": 6236,
+      "img_count": 3,
+      "hit": [],
+      "id": "2247489631_1",
+      "no": 5
+    },
+    {
+      "feed": "远川研究所",
+      "mode": "manual",
+      "title": "拆解山姆MM：真标准和硬功夫",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzIwMDY2NTgwMA==&mid=2247528161&idx=1&sn=cefe7ad36fb568f716ba6895179a6675",
+      "date": "2026-11-25 21:00",
+      "chars": 11300,
+      "img_count": 21,
+      "hit": [],
+      "id": "2247528161_1",
+      "no": 6
+    },
+    {
+      "feed": "饭统戴老板",
+      "mode": "manual",
+      "title": "百胜中国的十年：扎得更深，看得更远",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzU4NDY2MDMzMA==&mid=2247495058&idx=1&sn=68b0d0fad01b14421483899245b81d7e",
+      "date": "2026-11-25 20:00",
+      "chars": 10719,
+      "img_count": 10,
+      "hit": [],
+      "id": "2247495058_1",
+      "no": 7
+    },
+    {
+      "feed": "硅基观察Pro",
+      "mode": "manual",
+      "title": "AI炒股新玩法！盯上3000万散户，提前24小时预测交易行为",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzkyNTY1MjE2OA==&mid=2247494744&idx=1&sn=07726d32b2a93334518d25ede1e97603",
+      "date": "2026-11-25 19:14",
+      "chars": 4287,
+      "img_count": 4,
+      "hit": [],
+      "id": "2247494744_1",
+      "no": 8
+    },
+    {
+      "feed": "中国金融四十人论坛",
+      "mode": "manual",
+      "title": "走出需求不足的认知困境（上）：先认清，这是一场市场失灵",
+      "url": "https://mp.weixin.qq.com/s?__biz=MjM5NjgyNDk4NA==&mid=2686359278&idx=1&sn=70ef6dc5ec9b9e82ddcc282113378af5",
+      "date": "2026-11-25 18:43",
+      "chars": 11990,
+      "img_count": 17,
+      "hit": [],
+      "id": "2686359278_1",
+      "no": 9
+    },
+    {
+      "feed": "中国金融四十人论坛",
+      "mode": "manual",
+      "title": "CF40招聘 | 研究、市场等岗位开放中",
+      "url": "https://mp.weixin.qq.com/s?__biz=MjM5NjgyNDk4NA==&mid=2686359278&idx=2&sn=8255135f08226f08526c9b43e42cc5bb",
+      "date": "2026-11-25 18:43",
+      "chars": 1997,
+      "img_count": 2,
+      "hit": [],
+      "id": "2686359278_2",
+      "no": 10
+    },
     {
       "feed": "中金点睛",
       "mode": "keyword",
@@ -12,7 +132,7 @@
       "img_count": 30,
       "hit": [],
       "id": "2247870956_1",
-      "no": 1
+      "no": 11
     },
     {
       "feed": "中金点睛",
@@ -24,7 +144,7 @@
       "img_count": 5,
       "hit": [],
       "id": "2247870956_2",
-      "no": 2
+      "no": 12
     },
     {
       "feed": "中金点睛",
@@ -36,7 +156,7 @@
       "img_count": 21,
       "hit": [],
       "id": "2247870956_3",
-      "no": 3
+      "no": 13
     },
     {
       "feed": "中金点睛",
@@ -48,7 +168,7 @@
       "img_count": 17,
       "hit": [],
       "id": "2247870956_4",
-      "no": 4
+      "no": 14
     },
     {
       "feed": "远川研究所",
@@ -60,7 +180,7 @@
       "img_count": 23,
       "hit": [],
       "id": "2247528126_1",
-      "no": 5
+      "no": 15
     },
     {
       "feed": "晚点再听LaterCast",
@@ -72,7 +192,7 @@
       "img_count": 3,
       "hit": [],
       "id": "2247489620_1",
-      "no": 6
+      "no": 16
     },
     {
       "feed": "中国金融四十人论坛",
@@ -84,7 +204,7 @@
       "img_count": 16,
       "hit": [],
       "id": "2686359263_1",
-      "no": 7
+      "no": 17
     },
     {
       "feed": "硅基观察Pro",
@@ -96,7 +216,7 @@
       "img_count": 6,
       "hit": [],
       "id": "2247494734_1",
-      "no": 8
+      "no": 18
     },
     {
       "feed": "饭统戴老板",
@@ -108,7 +228,7 @@
       "img_count": 15,
       "hit": [],
       "id": "2247495057_1",
-      "no": 9
+      "no": 19
     },
     {
       "feed": "中金点睛",
@@ -122,7 +242,7 @@
         "港股"
       ],
       "id": "2247870753_1",
-      "no": 10
+      "no": 20
     },
     {
       "feed": "中金点睛",
@@ -134,31 +254,7 @@
       "img_count": 25,
       "hit": [],
       "id": "2247870753_2",
-      "no": 11
-    },
-    {
-      "feed": "中金点睛",
-      "mode": "keyword",
-      "title": "中金：银行视角看居民去杠杆",
-      "url": "https://mp.weixin.qq.com/s?__biz=MzI3MDMzMjg0MA==&mid=2247870753&idx=3&sn=2dbfd822f91ee4631bbd8f735f80fdaf",
-      "date": "2026-11-24 08:10",
-      "chars": 10777,
-      "img_count": 20,
-      "hit": [],
-      "id": "2247870753_3",
-      "no": 12
-    },
-    {
-      "feed": "中金点睛",
-      "mode": "keyword",
-      "title": "中金 • REITs | 短期或已超跌，重申关注结构性配置机会",
-      "url": "https://mp.weixin.qq.com/s?__biz=MzI3MDMzMjg0MA==&mid=2247870753&idx=4&sn=2f769d27e9f9ddae62f553fb88eabd61",
-      "date": "2026-11-24 08:10",
-      "chars": 3871,
-      "img_count": 10,
-      "hit": [],
-      "id": "2247870753_4",
-      "no": 13
+      "no": 21
     },
     {
       "feed": "晚点再听LaterCast",
@@ -170,7 +266,7 @@
       "img_count": 3,
       "hit": [],
       "id": "2247489611_1",
-      "no": 14
+      "no": 22
     },
     {
       "feed": "远川研究所",
@@ -182,7 +278,7 @@
       "img_count": 18,
       "hit": [],
       "id": "2247528101_1",
-      "no": 15
+      "no": 23
     },
     {
       "feed": "硅基观察Pro",
@@ -194,7 +290,7 @@
       "img_count": 4,
       "hit": [],
       "id": "2247494723_1",
-      "no": 16
+      "no": 24
     },
     {
       "feed": "中国金融四十人论坛",
@@ -206,19 +302,7 @@
       "img_count": 18,
       "hit": [],
       "id": "2686359250_1",
-      "no": 17
-    },
-    {
-      "feed": "中金点睛",
-      "mode": "keyword",
-      "title": "陕西新兴产业全景调研·年度策略会特别策划",
-      "url": "https://mp.weixin.qq.com/s?__biz=MzI3MDMzMjg0MA==&mid=2247870750&idx=1&sn=1ae8f8c042d478dca40aa7c4efe456f4",
-      "date": "2026-11-23 16:20",
-      "chars": 529,
-      "img_count": 1,
-      "hit": [],
-      "id": "2247870750_1",
-      "no": 18
+      "no": 25
     },
     {
       "feed": "晚点再听LaterCast",
@@ -230,19 +314,7 @@
       "img_count": 1,
       "hit": [],
       "id": "2247489595_1",
-      "no": 19
-    },
-    {
-      "feed": "中金点睛",
-      "mode": "keyword",
-      "title": "中金热点解读 | 政策利率换锚",
-      "url": "https://mp.weixin.qq.com/s?__biz=MzI3MDMzMjg0MA==&mid=2247870686&idx=1&sn=599dd94aaf68220d9db850134b12887d",
-      "date": "2026-11-23 12:00",
-      "chars": 876,
-      "img_count": 1,
-      "hit": [],
-      "id": "2247870686_1",
-      "no": 20
+      "no": 26
     },
     {
       "feed": "晚点再听LaterCast",
@@ -254,7 +326,7 @@
       "img_count": 3,
       "hit": [],
       "id": "2247489559_1",
-      "no": 21
+      "no": 27
     },
     {
       "feed": "中国金融四十人论坛",
@@ -266,7 +338,7 @@
       "img_count": 30,
       "hit": [],
       "id": "2686359235_1",
-      "no": 22
+      "no": 28
     },
     {
       "feed": "硅谷科技评论",
@@ -278,7 +350,7 @@
       "img_count": 4,
       "hit": [],
       "id": "2247513324_1",
-      "no": 23
+      "no": 29
     },
     {
       "feed": "晚点再听LaterCast",
@@ -290,7 +362,7 @@
       "img_count": 7,
       "hit": [],
       "id": "2247489543_1",
-      "no": 24
+      "no": 30
     },
     {
       "feed": "远川研究所",
@@ -302,7 +374,7 @@
       "img_count": 12,
       "hit": [],
       "id": "2247528082_1",
-      "no": 25
+      "no": 31
     },
     {
       "feed": "远川研究所",
@@ -314,7 +386,7 @@
       "img_count": 14,
       "hit": [],
       "id": "2247528082_2",
-      "no": 26
+      "no": 32
     },
     {
       "feed": "晚点再听LaterCast",
@@ -326,7 +398,7 @@
       "img_count": 4,
       "hit": [],
       "id": "2247489517_1",
-      "no": 27
+      "no": 33
     },
     {
       "feed": "中国金融四十人论坛",
@@ -338,7 +410,7 @@
       "img_count": 17,
       "hit": [],
       "id": "2686359212_1",
-      "no": 28
+      "no": 34
     },
     {
       "feed": "硅基观察Pro",
@@ -350,7 +422,7 @@
       "img_count": 3,
       "hit": [],
       "id": "2247494717_1",
-      "no": 29
+      "no": 35
     },
     {
       "feed": "晚点再听LaterCast",
@@ -362,7 +434,7 @@
       "img_count": 4,
       "hit": [],
       "id": "2247489512_1",
-      "no": 30
+      "no": 36
     },
     {
       "feed": "远川研究所",
@@ -374,7 +446,7 @@
       "img_count": 11,
       "hit": [],
       "id": "2247528064_1",
-      "no": 31
+      "no": 37
     },
     {
       "feed": "中国金融四十人论坛",
@@ -386,7 +458,7 @@
       "img_count": 13,
       "hit": [],
       "id": "2686359208_1",
-      "no": 32
+      "no": 38
     },
     {
       "feed": "中国金融四十人论坛",
@@ -398,7 +470,7 @@
       "img_count": 13,
       "hit": [],
       "id": "2686359208_2",
-      "no": 33
+      "no": 39
     },
     {
       "feed": "中国金融四十人论坛",
@@ -410,7 +482,7 @@
       "img_count": 13,
       "hit": [],
       "id": "2686359208_3",
-      "no": 34
+      "no": 40
     },
     {
       "feed": "硅基观察Pro",
@@ -422,7 +494,7 @@
       "img_count": 3,
       "hit": [],
       "id": "2247494712_1",
-      "no": 35
+      "no": 41
     },
     {
       "feed": "饭统戴老板",
@@ -434,7 +506,7 @@
       "img_count": 11,
       "hit": [],
       "id": "2247495013_1",
-      "no": 36
+      "no": 42
     },
     {
       "feed": "远川研究所",
@@ -446,7 +518,7 @@
       "img_count": 17,
       "hit": [],
       "id": "2247528062_1",
-      "no": 37
+      "no": 43
     },
     {
       "feed": "晚点再听LaterCast",
@@ -458,7 +530,7 @@
       "img_count": 3,
       "hit": [],
       "id": "2247489505_1",
-      "no": 38
+      "no": 44
     },
     {
       "feed": "中国金融四十人论坛",
@@ -470,7 +542,7 @@
       "img_count": 13,
       "hit": [],
       "id": "2686359184_1",
-      "no": 39
+      "no": 45
     },
     {
       "feed": "硅基观察Pro",
@@ -482,7 +554,7 @@
       "img_count": 3,
       "hit": [],
       "id": "2247494706_1",
-      "no": 40
+      "no": 46
     },
     {
       "feed": "硅谷科技评论",
@@ -494,31 +566,7 @@
       "img_count": 6,
       "hit": [],
       "id": "2247513318_1",
-      "no": 41
-    },
-    {
-      "feed": "中国金融四十人论坛",
-      "mode": "manual",
-      "title": "逆风中的亚洲经济，为何反而要向内看？",
-      "url": "https://mp.weixin.qq.com/s?__biz=MjM5NjgyNDk4NA==&mid=2686359173&idx=1&sn=d174f6da6682e09f735728d48e963dd3",
-      "date": "2026-11-17 22:09",
-      "chars": 8573,
-      "img_count": 17,
-      "hit": [],
-      "id": "2686359173_1",
-      "no": 42
-    },
-    {
-      "feed": "中国金融四十人论坛",
-      "mode": "manual",
-      "title": "CF40路劲奖学金2026年度启动仪式在京举行",
-      "url": "https://mp.weixin.qq.com/s?__biz=MjM5NjgyNDk4NA==&mid=2686359173&idx=2&sn=8afe7e3bc1f9cb03bc01e1c94969f757",
-      "date": "2026-11-17 22:09",
-      "chars": 5709,
-      "img_count": 18,
-      "hit": [],
-      "id": "2686359173_2",
-      "no": 43
+      "no": 47
     },
     {
       "feed": "远川研究所",
@@ -530,7 +578,7 @@
       "img_count": 23,
       "hit": [],
       "id": "2247528044_1",
-      "no": 44
+      "no": 48
     },
     {
       "feed": "晚点再听LaterCast",
@@ -542,7 +590,7 @@
       "img_count": 5,
       "hit": [],
       "id": "2247489494_1",
-      "no": 45
+      "no": 49
     },
     {
       "feed": "硅基观察Pro",
@@ -554,7 +602,7 @@
       "img_count": 4,
       "hit": [],
       "id": "2247494701_1",
-      "no": 46
+      "no": 50
     },
     {
       "feed": "远川研究所",
@@ -566,7 +614,7 @@
       "img_count": 19,
       "hit": [],
       "id": "2247528029_1",
-      "no": 47
+      "no": 51
     },
     {
       "feed": "饭统戴老板",
@@ -578,19 +626,7 @@
       "img_count": 13,
       "hit": [],
       "id": "2247494987_1",
-      "no": 48
-    },
-    {
-      "feed": "晚点再听LaterCast",
-      "mode": "manual",
-      "title": "Grok Bot 核心工程师：所有代码都是垃圾（除了我的）丨AI Engineer",
-      "url": "https://mp.weixin.qq.com/s?__biz=MzcxMDA5NTI0OA==&mid=2247489487&idx=1&sn=ff4afb2f9e57104818dd29e12c70b57d",
-      "date": "2026-11-16 20:45",
-      "chars": 5246,
-      "img_count": 5,
-      "hit": [],
-      "id": "2247489487_1",
-      "no": 49
+      "no": 52
     },
     {
       "feed": "硅基观察Pro",
@@ -602,7 +638,7 @@
       "img_count": 4,
       "hit": [],
       "id": "2247494695_1",
-      "no": 50
+      "no": 53
     },
     {
       "feed": "硅谷科技评论",
@@ -614,7 +650,7 @@
       "img_count": 5,
       "hit": [],
       "id": "2247513314_1",
-      "no": 51
+      "no": 54
     },
     {
       "feed": "远川研究所",
@@ -626,7 +662,7 @@
       "img_count": 13,
       "hit": [],
       "id": "2247528027_1",
-      "no": 52
+      "no": 55
     },
     {
       "feed": "硅基观察Pro",
@@ -638,7 +674,7 @@
       "img_count": 3,
       "hit": [],
       "id": "2247494688_1",
-      "no": 53
+      "no": 56
     },
     {
       "feed": "硅基观察Pro",
@@ -650,7 +686,7 @@
       "img_count": 3,
       "hit": [],
       "id": "2247494683_1",
-      "no": 54
+      "no": 57
     },
     {
       "feed": "硅谷科技评论",
@@ -662,31 +698,7 @@
       "img_count": 8,
       "hit": [],
       "id": "2247513308_1",
-      "no": 55
-    },
-    {
-      "feed": "硅基观察Pro",
-      "mode": "manual",
-      "title": "上市半年股价暴跌77%，英伟达“挑战者”Cerebras怎么了？",
-      "url": "https://mp.weixin.qq.com/s?__biz=MzkyNTY1MjE2OA==&mid=2247494678&idx=1&sn=0fdac24f7e8fc869d8dbb5bee794087a",
-      "date": "2026-11-11 19:00",
-      "chars": 4897,
-      "img_count": 3,
-      "hit": [],
-      "id": "2247494678_1",
-      "no": 56
-    },
-    {
-      "feed": "远川研究所",
-      "mode": "manual",
-      "title": "拿什么留住姜诚和杨金金？",
-      "url": "https://mp.weixin.qq.com/s?__biz=MzIwMDY2NTgwMA==&mid=2247528013&idx=1&sn=c6797fcd6e46719f2ac8cb7ca3b03317",
-      "date": "2026-11-10 21:10",
-      "chars": 6446,
-      "img_count": 11,
-      "hit": [],
-      "id": "2247528013_1",
-      "no": 57
+      "no": 58
     },
     {
       "feed": "硅谷科技评论",
@@ -698,7 +710,7 @@
       "img_count": 3,
       "hit": [],
       "id": "2247513298_1",
-      "no": 58
+      "no": 59
     },
     {
       "feed": "硅谷科技评论",
@@ -710,7 +722,7 @@
       "img_count": 5,
       "hit": [],
       "id": "2247513292_1",
-      "no": 59
+      "no": 60
     },
     {
       "feed": "饭统戴老板",
@@ -722,7 +734,7 @@
       "img_count": 23,
       "hit": [],
       "id": "2247494971_1",
-      "no": 60
+      "no": 61
     },
     {
       "feed": "硅谷科技评论",
@@ -734,7 +746,7 @@
       "img_count": 4,
       "hit": [],
       "id": "2247513284_1",
-      "no": 61
+      "no": 62
     },
     {
       "feed": "硅谷科技评论",
@@ -746,7 +758,7 @@
       "img_count": 4,
       "hit": [],
       "id": "2247513276_1",
-      "no": 62
+      "no": 63
     },
     {
       "feed": "硅谷科技评论",
@@ -758,7 +770,7 @@
       "img_count": 5,
       "hit": [],
       "id": "2247513264_1",
-      "no": 63
+      "no": 64
     },
     {
       "feed": "饭统戴老板",
@@ -770,7 +782,7 @@
       "img_count": 9,
       "hit": [],
       "id": "2247494969_1",
-      "no": 64
+      "no": 65
     },
     {
       "feed": "硅谷科技评论",
@@ -782,7 +794,7 @@
       "img_count": 1,
       "hit": [],
       "id": "2247513260_1",
-      "no": 65
+      "no": 66
     },
     {
       "feed": "饭统戴老板",
@@ -794,7 +806,7 @@
       "img_count": 14,
       "hit": [],
       "id": "2247494932_1",
-      "no": 66
+      "no": 67
     },
     {
       "feed": "饭统戴老板",
@@ -806,7 +818,7 @@
       "img_count": 9,
       "hit": [],
       "id": "2247494897_1",
-      "no": 67
+      "no": 68
     },
     {
       "feed": "饭统戴老板",
@@ -818,7 +830,7 @@
       "img_count": 15,
       "hit": [],
       "id": "2247494878_1",
-      "no": 68
+      "no": 69
     },
     {
       "feed": "饭统戴老板",
@@ -830,18 +842,6 @@
       "img_count": 10,
       "hit": [],
       "id": "2247494846_1",
-      "no": 69
-    },
-    {
-      "feed": "饭统戴老板",
-      "mode": "manual",
-      "title": "找到改写时代的好公司",
-      "url": "https://mp.weixin.qq.com/s?__biz=MzU4NDY2MDMzMA==&mid=2247494834&idx=1&sn=42cb22b4fe87332fdefeac683fa4c88f",
-      "date": "2026-09-03 21:00",
-      "chars": 7854,
-      "img_count": 7,
-      "hit": [],
-      "id": "2247494834_1",
       "no": 70
     },
     {
