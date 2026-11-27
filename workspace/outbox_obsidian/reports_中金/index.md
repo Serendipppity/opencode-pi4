@@ -1,5 +1,13 @@
 # 研究源文章索引（新→旧）
 
+- 2026-11-27 | 中金点睛 | 中金 | 资产配置：如何应对市场动荡 | https://mp.weixin.qq.com/s?__biz=MzI3MDMzMjg0MA==&mid=2247871535&idx=1&sn=15009498c382c33d6538d5676f7311de
+- 2026-11-27 | 中金点睛 | 中金：美国新征关税的影响 | https://mp.weixin.qq.com/s?__biz=MzI3MDMzMjg0MA==&mid=2247871535&idx=2&sn=e4089ccc5fa22c6ff014343f08ba17f4
+- 2026-11-27 | 中金点睛 | 中金 • 全球研究 | AI对海外互联网影响几何（2）：问题变多，风险在累积 | https://mp.weixin.qq.com/s?__biz=MzI3MDMzMjg0MA==&mid=2247871535&idx=3&sn=b4aeb9f6215e2bb6461b657bbf59233c
+- 2026-11-27 | 中金点睛 | 中金 • 全球研究 | 拨云见日：菲律宾宏观或迎转折点 | https://mp.weixin.qq.com/s?__biz=MzI3MDMzMjg0MA==&mid=2247871535&idx=4&sn=a0cb40fc008eea88f6b7abd25979d9f6
+- 2026-11-26 | 远川研究所 | 百胜中国的十年：扎得更深，看得更远 | https://mp.weixin.qq.com/s?__biz=MzIwMDY2NTgwMA==&mid=2247528183&idx=1&sn=2c738716a3ac9a56c2f315b54a9e79dd
+- 2026-11-26 | 晚点再听LaterCast | Lauren Tan：如何让30多个Agent在你睡觉时提交并合并代码？丨Ai insider | https://mp.weixin.qq.com/s?__biz=MzcxMDA5NTI0OA==&mid=2247489636&idx=1&sn=bff67bad51e1dd684f55da234f05f954
+- 2026-11-26 | 中国金融四十人论坛 | 走出需求不足的认知困境（下）：七点澄清，走出误区 | https://mp.weixin.qq.com/s?__biz=MjM5NjgyNDk4NA==&mid=2686359284&idx=1&sn=edf27fdabf4470ac71e57a77425937bc
+- 2026-11-26 | 硅基观察Pro | Neocloud的好日子到头了？ | https://mp.weixin.qq.com/s?__biz=MzkyNTY1MjE2OA==&mid=2247494750&idx=1&sn=d97e07236a34efb720870dc20afa7ecd
 - 2026-11-26 | 中金点睛 | 中金2027年度展望 | 美国：周期扩散，K型收敛 | https://mp.weixin.qq.com/s?__biz=MzI3MDMzMjg0MA==&mid=2247871275&idx=1&sn=b13ffcfec200a4c2334517c392ff12fc
 - 2026-11-26 | 中金点睛 | 中金2027年度展望 | REITs：广厦渐成，价值分野 | https://mp.weixin.qq.com/s?__biz=MzI3MDMzMjg0MA==&mid=2247871275&idx=2&sn=b3d75e314eb09f02818f40d5115d8f9a
 - 2026-11-26 | 中金点睛 | 中金 | 现房政策分析之三：定量分析现房政策对房企IRR影响 | https://mp.weixin.qq.com/s?__biz=MzI3MDMzMjg0MA==&mid=2247871275&idx=3&sn=be1f172ac4085304c16e8b48fa1d18ee
