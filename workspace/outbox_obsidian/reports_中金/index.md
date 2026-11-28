@@ -1,5 +1,7 @@
 # 研究源文章索引（新→旧）
 
+- 2026-11-27 | 晚点再听LaterCast | Nick Bostrom：为什么超级智能可能终结衰老？丨a16z | https://mp.weixin.qq.com/s?__biz=MzcxMDA5NTI0OA==&mid=2247489647&idx=1&sn=90f8ab68632d7d37a6f4793de84a6bd5
+- 2026-11-27 | 硅基观察Pro | 蚂蚁灵波为什么要把机器人导航重新做一遍？ | https://mp.weixin.qq.com/s?__biz=MzkyNTY1MjE2OA==&mid=2247494774&idx=1&sn=007dd408b763847287f9c06207bfe7ee
 - 2026-11-27 | 中金点睛 | 中金 | 资产配置：如何应对市场动荡 | https://mp.weixin.qq.com/s?__biz=MzI3MDMzMjg0MA==&mid=2247871535&idx=1&sn=15009498c382c33d6538d5676f7311de
 - 2026-11-27 | 中金点睛 | 中金：美国新征关税的影响 | https://mp.weixin.qq.com/s?__biz=MzI3MDMzMjg0MA==&mid=2247871535&idx=2&sn=e4089ccc5fa22c6ff014343f08ba17f4
 - 2026-11-27 | 中金点睛 | 中金 • 全球研究 | AI对海外互联网影响几何（2）：问题变多，风险在累积 | https://mp.weixin.qq.com/s?__biz=MzI3MDMzMjg0MA==&mid=2247871535&idx=3&sn=b4aeb9f6215e2bb6461b657bbf59233c
